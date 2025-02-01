@@ -1,0 +1,39 @@
+header {
+	background: rgb(219, 219, 219);
+	background: linear-gradient(
+		90deg,
+		rgba(219, 219, 219, 1) 6%,
+		var(--dark-blue) 30%
+	);
+	display: flex;
+	flex-direction: row;
+	height: 12rem;
+	align-items: center;
+	font-size: var(--font-sz-navbar);
+	padding: 0 2rem;
+	color: white;
+	min-width: 144rem;
+	min-height: 12rem;
+}
+
+.navbar-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+img {
+	height: 8.2rem;
+	width: 10rem;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+li {
+	margin: 0 2rem;
+}
