@@ -11,19 +11,19 @@ export const Navbar = () => {
 					<a href="/ejercicios">
 						<li>Ejercicios</li>
 					</a>
-					<a href="">
+					<a href="/acercade">
 						<li>Acerca de</li>
 					</a>
-					<a href="">
+					<a href="/descargar">
 						<li>Descargar</li>
 					</a>
-					<a href="">
+					<a href="/documentacion">
 						<li>Documentación</li>
 					</a>
-					<a href="">
+					<a href="/novedades">
 						<li>Novedades</li>
 					</a>
-					<a href="">
+					<a href="/contribuir">
 						<li>Contribuir</li>
 					</a>
 				</ul>
