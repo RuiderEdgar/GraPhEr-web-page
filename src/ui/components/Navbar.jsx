@@ -32,27 +32,27 @@ export const Navbar = () => {
 								</a>
 							</li>
 							<li key="acerca">
-								<a href="#" onClick={resetMenu}>
+								<a href="/acercade" onClick={resetMenu}>
 									Acerca de
 								</a>
 							</li>
 							<li key="descargar">
-								<a href="#" onClick={resetMenu}>
+								<a href="/descargar" onClick={resetMenu}>
 									Descargar
 								</a>
 							</li>
 							<li key="documentacion">
-								<a href="#" onClick={resetMenu}>
+								<a href="/documentacion" onClick={resetMenu}>
 									Documentación
 								</a>
 							</li>
 							<li key="novedades">
-								<a href="#" onClick={resetMenu}>
+								<a href="/novedades" onClick={resetMenu}>
 									Novedades
 								</a>
 							</li>
 							<li key="contribuir">
-								<a href="#" onClick={resetMenu}>
+								<a href="/contribuir" onClick={resetMenu}>
 									Contribuir
 								</a>
 							</li>
@@ -73,27 +73,27 @@ export const Navbar = () => {
 					</a>
 				</li>
 				<li key="acerca">
-					<a href="#" onClick={resetMenu}>
+					<a href="/acercade" onClick={resetMenu}>
 						Acerca de
 					</a>
 				</li>
 				<li key="descargar">
-					<a href="#" onClick={resetMenu}>
+					<a href="/descargar" onClick={resetMenu}>
 						Descargar
 					</a>
 				</li>
 				<li key="documentacion">
-					<a href="#" onClick={resetMenu}>
+					<a href="/documentacion" onClick={resetMenu}>
 						Documentación
 					</a>
 				</li>
 				<li key="novedades">
-					<a href="#" onClick={resetMenu}>
+					<a href="/novedades" onClick={resetMenu}>
 						Novedades
 					</a>
 				</li>
 				<li key="contribuir">
-					<a href="#" onClick={resetMenu}>
+					<a href="/contribuir" onClick={resetMenu}>
 						Contribuir
 					</a>
 				</li>
