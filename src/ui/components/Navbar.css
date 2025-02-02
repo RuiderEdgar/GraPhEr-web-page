@@ -1,23 +1,22 @@
 header {
-	background: rgb(219, 219, 219);
 	background: linear-gradient(
 		90deg,
-<<<<<<< HEAD
-		rgba(219, 219, 219, 1) 6%,
-=======
-		rgba(219, 219, 219, 1) 0%,
->>>>>>> ff501ac5cc22ffa86346e9870d8d2d540b14cf05
-		var(--dark-blue) 36%
+		rgba(219, 219, 219, 1) 7%,
+		var(--dark-blue) 45%
 	);
 	display: flex;
 	flex-direction: row;
-	height: 12rem;
+	height: 10rem;
 	align-items: center;
 	font-size: var(--font-sz-navbar);
 	padding: 0 2rem;
 	color: white;
 	min-width: 144rem;
 	min-height: 12rem;
+}
+
+.menu-container {
+	position: relative;
 }
 
 .navbar-container {
@@ -27,15 +26,22 @@ header {
 	align-items: center;
 	width: 100%;
 }
-img {
-	height: 8.2rem;
-	width: 10rem;
+.logo-desktop {
+	height: 7.6rem;
+	width: 29.4rem;
+}
+.logo-movil {
+	display: none;
 }
 
 ul {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
+}
+
+.icon-menu {
+	display: none;
 }
 
 li {
@@ -45,4 +51,90 @@ li {
 a {
 	color: white;
 	text-decoration: none;
+}
+
+.menu {
+	display: none;
+}
+
+/* ---- media querys ---- */
+
+@media screen and (max-width: 768px) {
+	/* ocultamos el menu principal */
+	.menu-row {
+		display: none;
+	}
+	.logo-desktop {
+		height: 6.3rem;
+		width: 24.3rem;
+	}
+
+	/* modificamos un poco el header para adaptarlo a la vista tablet */
+	header {
+		background: linear-gradient(
+			90deg,
+			rgba(219, 219, 219, 1) 10%,
+			var(--dark-blue) 95%
+		);
+		font-size: var(--font-sz-navbar);
+		min-width: 57.5rem;
+		min-height: 10rem;
+	}
+
+	.menu {
+		display: none;
+		background: var(--dark-blue);
+		flex-direction: column;
+		width: 100vw;
+		padding: 3rem 0 3rem 2rem;
+		min-width: 57.5rem;
+		border-top: 0.2rem solid var(--gray);
+	}
+	.menu li {
+		margin: 1rem 0;
+		text-align: left;
+	}
+
+	.menu li a {
+		font-size: var(--font-sz-navbar);
+	}
+
+	.icon-menu {
+		display: block;
+		filter: invert(100%);
+		cursor: pointer;
+		height: 5rem;
+		width: 5rem;
+	}
+
+	.menu.abierto {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	header {
+		background: linear-gradient(
+			90deg,
+			rgba(219, 219, 219, 1) 5%,
+			var(--dark-blue) 90%
+		);
+		font-size: var(--font-sz-navbar);
+		min-width: 32rem;
+		min-height: 10rem;
+	}
+	.logo-desktop {
+		height: 5.5rem;
+		width: 21.2rem;
+	}
+
+	.menu {
+		display: none;
+		background: var(--dark-blue);
+		flex-direction: column;
+		width: 100vw;
+		padding: 3rem 0 3rem 2rem;
+		min-width: 32rem;
+		border-top: 0.2rem solid var(--gray);
+	}
 }
