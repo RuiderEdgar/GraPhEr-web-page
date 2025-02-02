@@ -24,22 +24,6 @@ export const Navbar = () => {
 							alt="logo principal"
 						/>
 					</a>
-<<<<<<< HEAD
-					<a href="/acercade">
-						<li>Acerca de</li>
-					</a>
-					<a href="/descargar">
-						<li>Descargar</li>
-					</a>
-					<a href="/documentacion">
-						<li>Documentación</li>
-					</a>
-					<a href="/novedades">
-						<li>Novedades</li>
-					</a>
-					<a href="/contribuir">
-						<li>Contribuir</li>
-=======
 					<div className="menu-container">
 						<ul className="menu-row">
 							<li key="ejercicios">
@@ -106,7 +90,6 @@ export const Navbar = () => {
 				<li key="novedades">
 					<a href="#" onClick={resetMenu}>
 						Novedades
->>>>>>> e78ba06afc22920dc09d31ea1c40bfa5f083fbc6
 					</a>
 				</li>
 				<li key="contribuir">
