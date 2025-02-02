@@ -2,8 +2,8 @@ header {
 	background: rgb(219, 219, 219);
 	background: linear-gradient(
 		90deg,
-		rgba(219, 219, 219, 1) 6%,
-		var(--dark-blue) 30%
+		rgba(219, 219, 219, 1) 0%,
+		var(--dark-blue) 36%
 	);
 	display: flex;
 	flex-direction: row;
