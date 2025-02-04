@@ -1,14 +1,15 @@
-import './HomePage.css'
+import { useState } from 'react';
+import s from './Homepage.module.css';
 
 export const HomePage = () => {
 	return (
-		<body class="back">
-			<div class="container">
-				<div class="column">
-					<h1 class="name">GraPhEr</h1>
-					<p class="title">Graficadora para Ecuaciones <br></br> Diferencias Parciales </p>
+		<body className={s.back}>
+			<div className={s.container}>
+				<div className={s.column}>
+					<h1 className={s.name}>GraPhEr</h1>
+					<p className={s.title}>Graficadora para Ecuaciones <br></br> Diferencias Parciales </p>
 
-					<p class="description">
+					<p className={s.description}>
 					GraPhEr crea una gráfica interactiva de la solución de<br></br>
 					una Ecuación Diferencial Parcial a partir de aproximar<br></br>
 					numéricamente la solución analítica ingresada.<br></br>
@@ -18,9 +19,9 @@ export const HomePage = () => {
 					numérica obtenida.	
 					</p>
 
-					<input type="button" value="Descargar GraPhEr" class="download"/>
+					<input type="s.button" value="Descargar GraPhEr" className={s.download}/>
 				</div>
-				<div class="column">
+				<div className={s.column}>
 					<h2>Columna Derecha</h2>
 					<p>Contenido de la segunda columna.</p>
 				</div>
