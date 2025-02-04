@@ -6,8 +6,7 @@ export const HomePage = () => {
 			<div class="container">
 				<div class="column">
 					<h1>GraPhEr</h1>
-					<h3>Graficadora para Ecuaciones.</h3>
-					<h3>Diferencias Parciales</h3>
+					<p class="title">Graficadora para Ecuaciones <br></br> Diferencias Parciales </p>
 				</div>
 				<div class="column">
 					<h2>Columna Derecha</h2>
