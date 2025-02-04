@@ -1,6 +1,6 @@
 .container {
     background-color:#EAEDEF;
-    height: calc(100vh - 12rem - 3.8rem);
+    height: calc(100vh - 12rem - 2.8rem);
     display: grid;
     grid-template-columns: 1fr 2.4fr; 
     gap: 0px;
@@ -74,24 +74,34 @@
     margin: 0;
     background-color: var(--gray);
     display: grid;
-    grid-template-columns: 2.5fr 1fr; /* Dos columnas del mismo tamaño */
-    gap: 1fr; /* Espacio entre las columnas */
+    grid-template-columns: 4fr 1fr; /* Dos columnas del mismo tamaño */
+    gap: 2fr; /* Espacio entre las columnas */
 }
 
 .footerColumnLeft {
     justify-content: left;
-    margin: 1rem 1rem;
+    margin: 0.5rem 1rem;
     font-size: var(--details);
 }
 
+.footerInfo {
+    padding: 0;
+    margin: 0;
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Dos columnas del mismo tamaño */
+    gap: 0; /* Espacio entre las columnas */
+}
+
 .footerColumnRight {
-    justify-content: right;
-    margin: 1rem 1rem;
+    justify-content: end;
+    margin: 0.5rem 1rem;
     font-size: var(--details);
 }
 
 .footerImage {
-    justify-self: center;
+    margin: 0;
+    padding: 0;
     height: 1.3rem;
     width: 1.3rem;
 }
