@@ -32,12 +32,12 @@ export const HomePage = () => {
 			</div>
 
 			<div className={s.footer}>
-			<div className={s.footerColumn}> 
-			<p>GraPhEr es un software de uso abierto bajo la licencia GNU GENERAL PUBLIC LICENSE Versión 3.0</p>
+			<div className={s.footerColumnLeft}> 
+			<p>GraPhEr es un software de uso abierto bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html"> GNU GENERAL PUBLIC LICENSE Versión 3.0 </a></p>
 			</div>
 			
-			<div className={s.footerColumn}>
-			<p> © Luis Enrique Nava Garcia - 2025 <img src="../../../assets/icons/github-mark.svg" className={s.footerImage} /> </p> 
+			<div className={s.footerColumnRight}>
+			<p> © Luis Enrique Nava Garcia - 2025 <a href="https://github.com/LuisNavaFisBio/GraPhEr"> <img src="../../../assets/icons/github-mark.svg" className={s.footerImage} /></a> </p> 
 			</div>
 			</div>
 

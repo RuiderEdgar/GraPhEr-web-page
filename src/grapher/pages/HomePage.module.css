@@ -10,7 +10,7 @@
 
 .column {
     padding: 4rem;
-    margin: 0rem 6rem;
+    margin: 2rem 6rem;
     justify-content: center;
     place-items: center;
 }
@@ -48,7 +48,8 @@
 }
 
 .video {
-    height: 40rem;
+    margin: 2rem 0rem;
+    height: 39rem;
     width: 60rem;
     border: 0.1rem solid var(--gray);
     background-color: var(--gray);
@@ -77,13 +78,20 @@
     gap: 1fr; /* Espacio entre las columnas */
 }
 
-.footerColumn {
+.footerColumnLeft {
     justify-content: left;
-    margin: 1rem 6rem;
+    margin: 1rem 1rem;
+    font-size: var(--details);
+}
+
+.footerColumnRight {
+    justify-content: right;
+    margin: 1rem 1rem;
     font-size: var(--details);
 }
 
 .footerImage {
+    justify-self: center;
     height: 1.3rem;
     width: 1.3rem;
 }
