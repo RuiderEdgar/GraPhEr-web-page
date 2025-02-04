@@ -3,7 +3,7 @@ import s from './Homepage.module.css';
 
 export const HomePage = () => {
 	return (
-		<>
+		<>	
 			<div className={s.container}>
 				<div className={s.column}>
 					<h1 className={s.name}>GraPhEr</h1>
@@ -37,7 +37,7 @@ export const HomePage = () => {
 			</div>
 			
 			<div className={s.footerColumn}>
-			<p> © Luis Enrique Nava Garcia - 2025</p>
+			<p> © Luis Enrique Nava Garcia - 2025 <img src="../../../assets/icons/github-mark.svg" className={s.footerImage} /> </p> 
 			</div>
 			</div>
 
