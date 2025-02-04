@@ -1,4 +1,4 @@
-header {
+.header {
 	background: linear-gradient(
 		90deg,
 		rgba(219, 219, 219, 1) 7%,
@@ -11,40 +11,40 @@ header {
 	font-size: var(--font-sz-navbar);
 	padding: 0 2rem;
 	color: white;
-	min-width: 144rem;
+	min-width: 102.4rem;
 	min-height: 12rem;
 }
 
-.menu-container {
+.menu_container {
 	position: relative;
 }
 
-.navbar-container {
+.navbar_container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
-.logo-desktop {
+.logo_desktop {
 	height: 7.6rem;
 	width: 29.4rem;
 }
-.logo-movil {
+.logo_movil {
 	display: none;
 }
 
-ul {
+.ul {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 }
 
-.icon-menu {
+.icon_menu {
 	display: none;
 }
 
-li {
+.li {
 	/* margin: 0 2rem; */
 	height: 4rem;
 	display: flex;
@@ -59,7 +59,7 @@ li {
 	margin: 0 1rem;
 }
 
-.menu-row > li > a {
+.menu_row > li > a {
 	color: white;
 	text-decoration: none;
 	z-index: 1;
@@ -76,7 +76,7 @@ li {
 }
 
 /* animacion */
-.menu-row > li:hover {
+.menu_row > li:hover {
 	background-color: var(--dark-blue);
 	border: 1px solid var(--gray);
 	transform: translateY(-1rem);
@@ -87,11 +87,11 @@ li {
 	-ms-transform: translateY(-1rem);
 	-o-transform: translateY(-1rem);
 }
-.menu-row > li > a:hover {
+.menu_row > li > a:hover {
 	color: var(--dark-blue);
 }
 
-.menu-row > li::after {
+.menu_row > li::after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -110,7 +110,7 @@ li {
 	-o-transition: all 0.5s ease-in-out;
 }
 
-.menu-row > li:hover::after {
+.menu_row > li:hover::after {
 	top: -35%;
 	left: -25%;
 	color: var(--dark-blue);
@@ -118,18 +118,18 @@ li {
 
 /* ---- media querys ---- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	/* ocultamos el menu principal */
-	.menu-row {
+	.menu_row {
 		display: none;
 	}
-	.logo-desktop {
+	.logo_desktop {
 		height: 6.3rem;
 		width: 24.3rem;
 	}
 
 	/* modificamos un poco el header para adaptarlo a la vista tablet */
-	header {
+	.header {
 		background: linear-gradient(
 			90deg,
 			rgba(219, 219, 219, 1) 10%,
@@ -158,7 +158,7 @@ li {
 		font-size: var(--font-sz-navbar);
 	}
 
-	.icon-menu {
+	.icon_menu {
 		display: block;
 		filter: invert(100%);
 		cursor: pointer;
@@ -172,7 +172,7 @@ li {
 }
 
 @media screen and (max-width: 575px) {
-	header {
+	.header {
 		background: linear-gradient(
 			90deg,
 			rgba(219, 219, 219, 1) 5%,
@@ -182,7 +182,7 @@ li {
 		min-width: 32rem;
 		min-height: 10rem;
 	}
-	.logo-desktop {
+	.logo_desktop {
 		height: 5.5rem;
 		width: 21.2rem;
 	}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Navbar.css'
+import s from './Navbar.module.css';
 
 export const Navbar = () => {
 
@@ -15,58 +15,60 @@ export const Navbar = () => {
 
 	return (
 		<>
-			<header>
-				<div className="navbar-container">
+			<header className={s.header}>
+				<div className={s.navbar_container}>
 					<a href="/homepage">
 						<img
-							className="logo-desktop"
+							className={s.logo_desktop}
 							src="../../../assets/logos/LogoGraPhEr_Blue.svg"
 							alt="logo principal"
 						/>
 					</a>
-					<div className="menu-container">
-						<ul className="menu-row">
-							<li key="ejercicios">
+					<div className={s.menu_container}>
+						<ul className={`${s.menu_row} ${s.ul}`}>
+							<li key="ejercicios" className={s.li}>
 								<a href="/ejercicios" onClick={resetMenu}>
 									Ejercicios
 								</a>
 							</li>
-							<li key="acerca">
+							<li key="acerca" className={s.li}>
 								<a href="/acercade" onClick={resetMenu}>
 									Acerca de
 								</a>
 							</li>
-							<li key="descargar">
+							<li key="descargar" className={s.li}>
 								<a href="/descargar" onClick={resetMenu}>
 									Descargar
 								</a>
 							</li>
-							<li key="documentacion">
+							<li key="documentacion" className={s.li}>
 								<a href="/documentacion" onClick={resetMenu}>
 									Documentación
 								</a>
 							</li>
-							<li key="novedades">
+							<li key="novedades" className={s.li}>
 								<a href="/novedades" onClick={resetMenu}>
 									Novedades
 								</a>
 							</li>
-							<li key="contribuir">
+							<li key="contribuir" className={s.li}>
 								<a href="/contribuir" onClick={resetMenu}>
 									Contribuir
 								</a>
 							</li>
 						</ul>
 						<img
-							className="icon-menu"
-							src={menuState ? '/assets/icons/list.svg' : '/assets/icons/close.svg'}
+							className={s.icon_menu}
+							src={
+								menuState ? "/assets/icons/list.svg" : "/assets/icons/close.svg"
+							}
 							alt="menu navegacion"
 							onClick={toggleMenu}
 						/>
 					</div>
 				</div>
 			</header>
-			<ul className={menuState ? "menu" : "menu abierto"}>
+			<ul className={menuState ? s.menu : `${s.menu} ${s.abierto} ${s.ul}`}>
 				<li key="ejercicios">
 					<a href="/ejercicios" onClick={resetMenu}>
 						Ejercicios
