@@ -45,16 +45,75 @@ ul {
 }
 
 li {
-	margin: 0 2rem;
+	/* margin: 0 2rem; */
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	/* margin: 0 1rem;
+	padding: 1rem 1rem; */
+	transition: all 0.5s ease-in-out;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 1rem;
 }
 
-a {
+.menu-row > li > a {
 	color: white;
 	text-decoration: none;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+	padding: 1rem 1rem;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
 
 .menu {
 	display: none;
+}
+
+/* animacion */
+.menu-row > li:hover {
+	background-color: var(--dark-blue);
+	border: 1px solid var(--gray);
+	transform: translateY(-1rem);
+	color: var(--dark-blue);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+	-webkit-transform: translateY(-1rem);
+	-moz-transform: translateY(-1rem);
+	-ms-transform: translateY(-1rem);
+	-o-transform: translateY(-1rem);
+}
+.menu-row > li > a:hover {
+	color: var(--dark-blue);
+}
+
+.menu-row > li::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: -120%;
+	width: 200%;
+	height: 400%;
+	color: var(--dark-blue);
+	background: var(--light-gray);
+	/*Colordelefecto*/
+	transform: rotate(25deg);
+	/*Inclinacióndelefecto*/
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+.menu-row > li:hover::after {
+	top: -35%;
+	left: -25%;
+	color: var(--dark-blue);
 }
 
 /* ---- media querys ---- */

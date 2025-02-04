@@ -15,9 +15,6 @@ export const MenuRoutes = () => {
 					<Route path="/documentacion" element={<Documentacion/>} />
 					<Route path="/novedades" element={<Novedades/>} />
 					<Route path="/contribuir" element={<Contribuir/>} />
-					{/* <Route path="/menu/home" element={<h1>Home</h1>} />
-					<Route path="/menu/about" element={<h1>About</h1>} />
-					<Route path="/menu/contact" element={<h1>Contact</h1>} /> */}
 					<Route path="/" element={ <Navigate to="/homepage"/>} />
 				</Routes>
 			</div>
