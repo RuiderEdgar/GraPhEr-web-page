@@ -3,7 +3,7 @@ import s from './Homepage.module.css';
 
 export const HomePage = () => {
 	return (
-		<body className={s.back}>
+		<>
 			<div className={s.container}>
 				<div className={s.column}>
 					<h1 className={s.name}>GraPhEr</h1>
@@ -21,13 +21,26 @@ export const HomePage = () => {
 
 					<input type="s.button" value="Descargar GraPhEr" className={s.download}/>
 				</div>
+
 				<div className={s.column}>
-					<h2>Columna Derecha</h2>
-					<p>Contenido de la segunda columna.</p>
+					<canvas className={s.video}> </canvas>
+					<p className={s.learn}>
+					Aprende más sobre los escenarios de uso visitando la sección de <a href="/ejercicios" className={s.learnLink}> Ejercicios</a>.
+					</p>
 				</div>
 
 			</div>
 
-		</body>
+			<div className={s.footer}>
+			<div className={s.footerColumn}> 
+			<p>GraPhEr es un software de uso abierto bajo la licencia GNU GENERAL PUBLIC LICENSE Versión 3.0</p>
+			</div>
+			
+			<div className={s.footerColumn}>
+			<p> © Luis Enrique Nava Garcia - 2025</p>
+			</div>
+			</div>
+
+		</>
 	)
 }

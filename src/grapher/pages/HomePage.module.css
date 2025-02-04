@@ -1,18 +1,17 @@
-.back {
-    background-color:#EAEDEF;
-}
-
 .container {
     background-color:#EAEDEF;
-    height: inherit;
+    height: calc(100vh-12rem);
     display: grid;
-    grid-template-columns: 1fr 2.4fr; /* Dos columnas del mismo tamaño */
-    gap: 0px; /* Espacio entre las columnas */
+    grid-template-columns: 1fr 2.4fr; 
+    gap: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .column {
-    padding: 20px;
-    margin: 2rem 0rem;
+    padding: 4rem;
+    margin: 0rem 6rem;
+    justify-content: center;
     place-items: center;
 }
 
@@ -37,7 +36,7 @@
 
 .download {
     text-align: center;
-    margin: 3rem 3rem;
+    margin: 4rem 3rem 0rem 3rem;
     padding: 1rem 12rem;
     background-color: var(--dark-blue);
     color: var(--light-gray);
@@ -46,4 +45,38 @@
 
 .download:hover {
     cursor: pointer;
+}
+
+.video {
+    height: 40rem;
+    width: 60rem;
+    border: 0.1rem solid var(--gray);
+    background-color: var(--gray);
+    border-radius: 3rem;
+}
+
+.learn {
+    justify-self: center;
+    margin: 0.5rem 3rem 0rem 3rem;
+    font-size: var(--body-text);
+}
+
+.learnLink {
+    color: var(--dark-blue);
+    font-size: var(--subtitle);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; /* Dos columnas del mismo tamaño */
+    gap: 1fr; /* Espacio entre las columnas */
+}
+
+.footerColumn {
+    justify-content: left;
+    margin: 1rem 6rem;
+    font-size: var(--details);
 }
