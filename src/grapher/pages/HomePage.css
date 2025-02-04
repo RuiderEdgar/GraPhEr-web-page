@@ -1,24 +1,49 @@
-body {
+.back {
     background-color:#EAEDEF;
 }
 
 .container {
+    background-color:#EAEDEF;
+    height: inherit;
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* Dos columnas del mismo tamaño */
+    grid-template-columns: 1fr 2.4fr; /* Dos columnas del mismo tamaño */
     gap: 0px; /* Espacio entre las columnas */
 }
 
 .column {
     padding: 20px;
+    margin: 2rem 0rem;
+    place-items: center;
 }
 
-h1 {
-    margin: 5rem 3rem 0rem 3rem;
+.name {
+    justify-self: start;
+    margin: 0rem 3rem;
     font-size: 10rem;
     color:var(--dark-blue);
 }
 
-p {
-    margin: 0.5rem 3rem 0rem 3rem;
+.title {
+    justify-self: start;
+    margin: -1.5rem 3rem 4rem 3rem;
     font-size: 2.5rem;
+}
+
+.description {
+    justify-self: start;
+    margin: 0.5rem 3rem 0rem 3rem;
+    font-size: var(--body-text);
+}
+
+.download {
+    text-align: center;
+    margin: 3rem 3rem;
+    padding: 1rem 12rem;
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+    border-radius: 1rem;
+}
+
+.download:hover {
+    cursor: pointer;
 }
