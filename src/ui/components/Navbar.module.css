@@ -75,6 +75,11 @@
 	display: none;
 }
 
+.navlink_active {
+	background-color: var(--light-gray);
+	color: var(--dark-blue) !important;
+}
+
 /* animacion */
 .menu_row > li:hover {
 	background-color: var(--dark-blue);

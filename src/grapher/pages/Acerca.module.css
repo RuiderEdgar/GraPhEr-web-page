@@ -1,33 +1,116 @@
+.container {
+	/* todo: fix height */
+	height: calc(100vh - 12rem);
+	width: 100vw;
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+}
 .main_grid {
 	padding: 2rem 2rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: calc(100vh - 12rem);
+	grid-template-columns: 70.2rem 70.2rem;
+	grid-template-rows: 10.8rem repeat(3, 44rem);
 	background-color: var(--light-gray);
-}
-
-.section_left {
+	max-width: 144rem;
+	/* 1920px */
 }
 
 .header {
+	grid-column: 1;
+	grid-row: 1;
 	display: flex;
 	justify-content: left;
 	align-items: center;
-}
-.title {
-	font-size: var(--font-logo-title);
-	height: 10.8rem;
-	color: var(--dark-blue);
-	margin-right: 3rem;
+
+	.title {
+		font-size: var(--font-logo-title);
+		height: 10.8rem;
+		color: var(--dark-blue);
+		margin-right: 3rem;
+	}
+
+	.subtitle {
+		font-size: var(--font-logo-subtitle);
+		height: 6rem;
+		color: var(--dark-blue);
+	}
 }
 
-.subtitle {
-	font-size: var(--font-logo-subtitle);
-	height: 6rem;
-	color: var(--dark-blue);
+.img_app {
+	grid-column: 1;
+	grid-row: 2;
+	width: 100%;
+	height: 44rem;
+	row-gap: 2rem;
 }
 
+.first_article {
+	grid-column: 2;
+	grid-row: 2;
+	h2 {
+		font-size: var(--title);
+		color: var(--dark-blue);
+		margin-bottom: 2rem;
+	}
+	p {
+		font-size: var(--subtitle);
+		color: var(--dark-gray);
+		text-align: justify;
+		margin-bottom: 3rem;
+	}
+}
+
+.second_article {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.img_grafica3d {
+	grid-column: 2;
+	grid-row: 3;
+	width: 100%;
+	height: 44rem;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+}
 .img_grafica2d {
-	width: 66rem;
+	grid-column: 1;
+	grid-row: 4;
+	width: 100%;
+	height: 44rem;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+}
+
+/* ------izquierda--------- */
+.section_left {
+	display: flex;
+	flex-direction: column;
+}
+.aside_left {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding-right: 1rem;
+}
+
+/* ------derecha--------- */
+
+.aside_right {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+
+.second_img {
+	grid-area: right;
+	width: 100%;
 	height: 44rem;
 }
