@@ -50,6 +50,11 @@
     font-size: var(--body-text);
 }
 
+.buttonText {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
 .download {
     text-align: center;
     font-weight: 600;
@@ -57,43 +62,90 @@
     margin: 4rem 0rem 0rem 0rem;
     height: 7rem;
     width: 45rem;
-    background-color: var(--dark-blue);
-    color: var(--light-gray);
     border-radius: 1rem;
-}
-
-.download:hover {
     cursor: pointer;
+    position: relative;
+    border-color: var(--dark-blue);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
-.download:before, .download:after, .download span:before,
-.download span:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgba(43, 82, 71, 0.25);
-    transition: 0.4s ease-in-out;
+.download span {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
 }
-.download:after, .download span:before {
-    top: auto;
-    bottom: 0;
+
+.download span a {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
 }
-.download span:before, .download span:after {
-    transition-delay: 0.4s;
+
+.download:hover span {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
 }
+
+.download:hover span a {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover::before {
+    transform: scaleY(0);
+}
+
+.download:hover::after {
+    transform: scaleX(0);
+}
+
 .download:hover {
-    
+    transition: all 0.5s ease-in-out;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 0 10rem var(--gray);
 }
 
-.download:hover:before, .download:hover:after, .download:hover span:before, 
-.download:hover span:after {
-    height: 80px;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 2rem 1rem rgba(0, 61, 100, 0.2);  /* Resplandor suave */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);  /* Vuelve al estado original */
+    }
 }
-.download:active {
-    background-color: #488876;
+
+.download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.download::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
 }
 
 .video {

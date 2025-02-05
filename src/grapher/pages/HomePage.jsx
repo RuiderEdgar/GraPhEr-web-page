@@ -18,7 +18,7 @@ export const HomePage = () => {
 						Además, provee diversas herramientas para visualizar y explorar esta gráfica, así como explorar la solución numérica obtenida.	
 						</p>
 
-						<input type="s.button" value="Descargar GraPhEr" className={s.download}/>
+						<a href="/descargar" className={s.buttonText}> <button className={s.download}> <span>  Descargar GraPhEr</span> </button> </a>
 					</div>
 
 					<div className={s.column}>
