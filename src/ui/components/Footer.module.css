@@ -41,39 +41,20 @@
 /* ---- media querys ---- */
 
 @media screen and (max-width: 1024px) {
-	/* ocultamos el menu principal */
-    
     .footer_container {
-        display: grid;
-        grid-template-rows: 4fr 1.2fr; /* Dos columnas del mismo tamaño */
-        gap: 2fr; /* Espacio entre las columnas */
+        grid-template-columns: 1.1fr 1fr; /* Dos columnas del mismo tamaño */
+        gap: 7rem; /* Espacio entre las columnas */
+        margin: 0rem 0rem 0rem 1rem;
+        place-items: center;
     }
     
     .footerColumnLeft {
-        justify-content: left;
-        margin: 0.5rem 0rem 0.5rem 2rem;
-        font-size: var(--details);
+        margin: 0.5rem 0rem 0.5rem 1rem;
     }
     
     .footerInfo {
-        padding: 0;
-        margin: 0;
-        background-color: var(--gray);
-        display: grid;
-        grid-template-columns: 3fr 1fr; /* Dos columnas del mismo tamaño */
+        place-items: center;
+        grid-template-columns: 1.2fr 0.5fr; /* Dos columnas del mismo tamaño */
         gap: 0; /* Espacio entre las columnas */
-    }
-    
-    .footerColumnRight {
-        justify-content: end;
-        margin: 0.5rem 1rem;
-        font-size: var(--details);
-    }
-    
-    .footerImage {
-        margin: 0;
-        padding: 0;
-        height: 1.3rem;
-        width: 1.3rem;
     }
 }

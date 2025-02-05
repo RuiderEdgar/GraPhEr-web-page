@@ -7,16 +7,14 @@ export const HomePage = () => {
 			<div className={s.container}>
 				<div className={s.column}>
 					<h1 className={s.name}>GraPhEr</h1>
-					<p className={s.title}>Graficadora para Ecuaciones <br></br> Diferencias Parciales </p>
+					<p className={s.title}>Graficadora para Ecuaciones <br></br> 
+					Diferencias Parciales </p>
 
 					<p className={s.description}>
-					GraPhEr crea una gráfica interactiva de la solución de<br></br>
-					una Ecuación Diferencial Parcial a partir de aproximar<br></br>
-					numéricamente la solución analítica ingresada.<br></br>
+					GraPhEr crea una gráfica interactiva de la solución de una Ecuación Diferencial Parcial a partir de aproximar numéricamente la solución analítica ingresada.
 					<br></br>
-					Además, provee diversas herramientas para visualizar<br></br>
-					y explorar esta gráfica, así como explorar la solución<br></br>
-					numérica obtenida.	
+					<br></br>
+					Además, provee diversas herramientas para visualizar y explorar esta gráfica, así como explorar la solución numérica obtenida.	
 					</p>
 
 					<input type="s.button" value="Descargar GraPhEr" className={s.download}/>
