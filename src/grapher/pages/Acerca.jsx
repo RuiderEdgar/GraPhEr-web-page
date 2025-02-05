@@ -3,13 +3,13 @@ import s from "./Acerca.module.css";
 export const AcercaDe = () => {
 	return (
 		<div className={s.container}>
+			<header className={s.header}>
+				<h1 className={s.title}>GraPhEr</h1>
+				<h2 className={s.subtitle}>
+					Graficadora para Ecuaciones <br /> Diferenciales Parciales
+				</h2>
+			</header>
 			<main className={s.main_grid}>
-				<header className={s.header}>
-					<h1 className={s.title}>GraPhEr</h1>
-					<h2 className={s.subtitle}>
-						Graficadora para Ecuaciones <br /> Diferenciales Parciales
-					</h2>
-				</header>
 				<img
 					className={s.img_app}
 					src="/assets/images/Imagen1AcercaDe.svg"
@@ -57,7 +57,14 @@ export const AcercaDe = () => {
 					src="/assets/images/grafica2d.png"
 					alt="imagen graficas 2d"
 				/>
-
+				<article className={s.third_article}>
+					<h2>Una mejora en la enseñanza</h2>
+					<p>
+						GraPhEr se diseña para lograr una mejora en la enseñanza y el
+						aprendizaje de la resolución de Ecuaciones Diferenciales Parciales a
+						través de distintos métodos.
+					</p>
+				</article>
 			</main>
 		</div>
 	);
