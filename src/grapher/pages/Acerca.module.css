@@ -1,4 +1,33 @@
-main {
+.main_grid {
+	padding: 2rem 2rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	height: calc(100vh - 12rem);
+	background-color: var(--light-gray);
+}
+
+.section_left {
+}
+
+.header {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.title {
+	font-size: var(--font-logo-title);
+	height: 10.8rem;
+	color: var(--dark-blue);
+	margin-right: 3rem;
+}
+
+.subtitle {
+	font-size: var(--font-logo-subtitle);
+	height: 6rem;
+	color: var(--dark-blue);
+}
+
+.img_grafica2d {
+	width: 66rem;
+	height: 44rem;
 }
