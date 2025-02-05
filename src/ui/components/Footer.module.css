@@ -6,33 +6,48 @@
 
 .footer_container {
     display: grid;
-    grid-template-columns: 4fr 1.2fr; /* Dos columnas del mismo tamaño */
-    gap: 2fr; /* Espacio entre las columnas */
+    justify-content: center;
+    margin: 0rem 2rem;
+    padding: 0;
+    grid-template-columns: 4fr 1.8fr 0.1fr; /* Dos columnas del mismo tamaño */
+    gap: 0.8fr; /* Espacio entre las columnas */
 }
 
 .footerColumnLeft {
     justify-content: left;
-    margin: 0.5rem 0rem 0.5rem 2rem;
+    margin: 0.5rem 0rem;
     font-size: var(--details);
-}
-
-.footerInfo {
     padding: 0;
-    margin: 0;
-    background-color: var(--gray);
-    display: grid;
-    grid-template-columns: 3fr 1fr; /* Dos columnas del mismo tamaño */
-    gap: 0; /* Espacio entre las columnas */
 }
 
 .footerColumnRight {
+    text-align: right;
     justify-content: end;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 15rem;
     font-size: var(--details);
+    padding: 0;
+}
+
+.footerContainerImage {
+    display: flex;
+    align-items: center; 
+    place-items: center;
+    margin: 0.5rem 0rem;
+    padding: 0;
+    font-size: var(--details);
+    max-width: 1.5rem;
 }
 
 .footerImage {
-    margin: 0;
+    text-align: center;
+    padding: 0;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.footerImageLink {
+    text-align: center;
+    display: inline-block; 
     padding: 0;
     height: 1.3rem;
     width: 1.3rem;
@@ -42,9 +57,8 @@
 
 @media screen and (max-width: 1024px) {
     .footer_container {
-        grid-template-columns: 1.1fr 1fr; /* Dos columnas del mismo tamaño */
-        gap: 7rem; /* Espacio entre las columnas */
-        margin: 0rem 0rem 0rem 1rem;
+        grid-template-columns: 1.8fr 1.9fr 0.1fr; /* Dos columnas del mismo tamaño */
+        gap: 0rem; /* Espacio entre las columnas */
         place-items: center;
     }
     
@@ -52,9 +66,42 @@
         margin: 0.5rem 0rem 0.5rem 1rem;
     }
     
-    .footerInfo {
+}
+
+@media screen and (max-width: 575px) {
+	.footer_container {
+        grid-template-columns: 1fr; /* Dos columnas del mismo tamaño */
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0.5rem; /* Espacio entre las columnas */
         place-items: center;
-        grid-template-columns: 1.2fr 0.5fr; /* Dos columnas del mismo tamaño */
-        gap: 0; /* Espacio entre las columnas */
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+    
+    .footerColumnLeft {
+        justify-content: center;
+        width: 34rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: var(--details);
+    }
+
+    .footerColumnRight {
+        justify-content: center;
+        text-align: center;
+        margin: 0rem 0rem;
+        font-size: var(--details);
+        padding: 0;
+    }
+
+    .footerContainerImage {
+        margin: 0rem;
+    }
+
+    .footerImage {
+        margin: 0;
+    }
+
+    .footerImageLink {
+        margin: 0;
     }
 }

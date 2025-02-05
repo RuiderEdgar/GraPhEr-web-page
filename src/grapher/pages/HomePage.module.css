@@ -1,49 +1,62 @@
+.parentContainer {
+    height: calc(100vh - 12rem - 2.9rem);
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     background-color:#EAEDEF;
     height: calc(100vh - 12rem - 2.8rem);
     display: grid;
     place-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 2.4fr; 
+    text-align: center;
+    grid-template-columns: 1fr 1.1fr; 
+    max-width: 144rem;
     gap: 0;
     margin: 0;
     padding: 0;
 }
 
 .column {
-    padding: 4rem;
-    margin: 2rem 6rem;
+    padding: 0;
+    margin: 1rem 0rem;
     justify-content: center;
     place-items: center;
 }
 
 .name {
-    justify-self: start;
-    margin: 0rem 3rem;
+    justify-self: center;
+    margin: 0rem 0rem;
     font-size: 10rem;
     color:var(--dark-blue);
 }
 
 .title {
-    justify-self: start;
-    margin: -1.5rem 3rem 4rem 3rem;
+    justify-self: center;
+    margin: -1.5rem 0rem 4rem 0rem;
     font-size: 2.5rem;
 }
 
 .description {
-    width: 40rem;
+    width: 45rem;
     justify-self: start;
     text-align: justify;
-    margin: 0.5rem 3rem 0rem 3rem;
+    margin: 0.5rem 0rem 0rem 0rem;
     font-size: var(--body-text);
 }
 
 .download {
     text-align: center;
     font-weight: 600;
-    font-size: var(--body-text);
-    margin: 4rem 3rem 0rem 3rem;
-    padding: 1rem 12rem;
+    font-size: var(--title);
+    margin: 4rem 0rem 0rem 0rem;
+    height: 7rem;
+    width: 45rem;
     background-color: var(--dark-blue);
     color: var(--light-gray);
     border-radius: 1rem;
@@ -53,8 +66,38 @@
     cursor: pointer;
 }
 
+.download:before, .download:after, .download span:before,
+.download span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(43, 82, 71, 0.25);
+    transition: 0.4s ease-in-out;
+}
+.download:after, .download span:before {
+    top: auto;
+    bottom: 0;
+}
+.download span:before, .download span:after {
+    transition-delay: 0.4s;
+}
+.download:hover {
+    
+}
+
+.download:hover:before, .download:hover:after, .download:hover span:before, 
+.download:hover span:after {
+    height: 80px;
+}
+.download:active {
+    background-color: #488876;
+}
+
 .video {
-    margin: 2rem 0rem;
+    margin: 2rem 8rem 2rem 4rem;
     height: 39rem;
     width: 60rem;
     border: 0.1rem solid var(--gray);
@@ -64,7 +107,7 @@
 
 .learn {
     justify-self: center;
-    margin: 0.5rem 3rem 0rem 3rem;
+    margin: 0.5rem 0rem 0rem 0rem;
     font-size: var(--body-text);
 }
 
@@ -76,8 +119,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.container {
+
+    .parentContainer {
         height: calc(100vh - 12rem - 2.7rem);
+    }
+    
+	.container {
+        height: calc(100vh - 12rem - 2.6rem);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr; 
         text-align: center;
@@ -102,12 +150,14 @@
 
     .description {
         width: 63rem;
+        justify-self: center;
         margin: 1rem 0rem 1rem 0rem;
         font-size: var(--body-text);
     }
 
     .download {
-        padding: 1rem 12rem;
+        height: 7rem;
+        width: 64rem;
     }
     
 
@@ -115,6 +165,64 @@
         margin: 1rem 1rem;
         height: 29rem;
         width: 65rem;
+    }
+
+    .learn {
+        justify-self: center;
+        margin: 0.5rem 3rem 0rem 3rem;
+        font-size: var(--body-text);
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .parentContainer {
+        height: 100vh;
+    }
+    
+	.container {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+        text-align: center;
+    }
+
+    .column {
+        padding: 0rem;
+        margin: 1rem 0rem;
+        justify-items: center;
+    }
+
+    .name {
+        text-align: center;
+        justify-self: center;
+        font-size: 7rem;
+    }
+
+    .title {
+        text-align: center;
+        justify-self: center;
+        margin: -1rem 0rem 4rem 0rem;
+        font-size: 2rem;
+    }
+
+    .description {
+        justify-self: center;
+        width: 32rem;
+        margin: 1rem 0rem 1rem 0rem;
+        font-size: var(--body-text);
+    }
+
+    .download {
+        height: 7rem;
+        width: 32rem;
+    }
+    
+
+    .video {
+        margin: 1rem 1rem;
+        height: 20rem;
+        width: 35rem;
     }
 
     .learn {
