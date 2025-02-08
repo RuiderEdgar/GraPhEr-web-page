@@ -1,5 +1,5 @@
 .parentContainer {
-    height: calc(100vh - 12rem - 2.9rem);
+    height: calc(100vh - 12rem - 2.8rem);
     width: 100vw;
     background-color: var(--light-gray);
     display: flex;
@@ -152,14 +152,13 @@
     margin: 2rem 8rem 2rem 4rem;
     height: 39rem;
     width: 60rem;
-    border: 0.1rem solid var(--gray);
-    background-color: var(--gray);
     border-radius: 3rem;
+    box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.75);
 }
 
 .learn {
     justify-self: center;
-    margin: 0.5rem 0rem 0rem 0rem;
+    margin: 0.5rem 8rem 0rem 4rem;
     font-size: var(--body-text);
 }
 
@@ -168,7 +167,39 @@
     font-size: var(--subtitle);
     text-decoration: none;
     font-weight: 600;
+    transition:800ms ease all;
+    outline:none;
+    border:none;
+    position:relative;
+    padding: 0 0.5rem;
 }
+
+.learnLink:hover{
+  background:var(--gray);
+  color:var(--dark-gray);
+}
+
+.learnLink:before{
+  content:'';
+  position:absolute;
+  top:-0.3rem;
+  right:0;
+  height:0.28rem;
+  width:0;
+  background: var(--dark-gray);
+  transition:600ms ease all;
+}
+.learnLink:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0.1rem;
+}
+.learnLink:hover:before,.learnLink:hover:after{
+  width:100%;
+  transition:600ms ease all;
+}
+
 
 @media screen and (max-width: 1024px) {
 
@@ -211,17 +242,16 @@
         height: 7rem;
         width: 64rem;
     }
-    
 
     .video {
         margin: 1rem 1rem;
-        height: 29rem;
-        width: 65rem;
+        height: 28rem;
+        width:50rem;
     }
 
     .learn {
         justify-self: center;
-        margin: 0.5rem 3rem 0rem 3rem;
+        margin: 1.5rem 3rem 0rem 3rem;
         font-size: var(--body-text);
     }
 }
@@ -279,7 +309,7 @@
 
     .learn {
         justify-self: center;
-        margin: 0.5rem 3rem 0rem 3rem;
+        margin: 1.5rem 3rem 1rem 3rem;
         font-size: var(--body-text);
     }
 }

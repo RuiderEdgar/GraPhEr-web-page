@@ -53,6 +53,11 @@
     width: 1.3rem;
 }
 
+.license {
+    color:black;
+    font-weight: 600;
+}
+
 /* ---- media querys ---- */
 
 @media screen and (max-width: 1024px) {
