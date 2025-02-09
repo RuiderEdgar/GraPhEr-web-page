@@ -1,6 +1,5 @@
 .container {
 	height: auto;
-	width: 100vw;
 	min-height: 100vh;
 	background-color: var(--light-gray);
 	display: flex;

@@ -32,7 +32,13 @@ export const Navbar = () => {
 					<div className={s.menu_container}>
 						<ul className={`${s.menu_row} ${s.ul}`}>
 							<li key="ejercicios" className={s.li}>
-								<NavLink to="/ejercicios" onClick={resetMenu}>
+								<NavLink
+									to="/ejercicios"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Ejercicios
 								</NavLink>
 							</li>

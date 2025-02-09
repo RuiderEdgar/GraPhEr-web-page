@@ -1,315 +1,313 @@
 .parentContainer {
-    height: calc(100vh - 12rem - 2.8rem);
-    width: 100vw;
-    background-color: var(--light-gray);
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+	height: calc(100vh - 12rem - 2.8rem);
+	width: 100vw;
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
-    background-color:#EAEDEF;
-    height: calc(100vh - 12rem - 2.8rem);
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1fr 1.1fr; 
-    max-width: 144rem;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+	background-color: #eaedef;
+	height: calc(100vh - 12rem - 2.8rem);
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	text-align: center;
+	grid-template-columns: 1fr 1.1fr;
+	max-width: 144rem;
+	gap: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .column {
-    padding: 0;
-    margin: 1rem 0rem;
-    justify-content: center;
-    place-items: center;
+	padding: 0;
+	margin: 1rem 0rem;
+	justify-content: center;
+	place-items: center;
 }
 
 .name {
-    justify-self: center;
-    margin: 0rem 0rem;
-    font-size: 10rem;
-    color:var(--dark-blue);
+	justify-self: center;
+	margin: 0rem 0rem;
+	font-size: 10rem;
+	color: var(--dark-blue);
 }
 
 .title {
-    justify-self: center;
-    margin: -1.5rem 0rem 4rem 0rem;
-    font-size: 2.5rem;
+	justify-self: center;
+	margin: -1.5rem 0rem 4rem 0rem;
+	font-size: 2.5rem;
 }
 
 .description {
-    width: 45rem;
-    justify-self: start;
-    text-align: justify;
-    margin: 0.5rem 0rem 0rem 0rem;
-    font-size: var(--body-text);
+	width: 45rem;
+	justify-self: start;
+	text-align: justify;
+	margin: 0.5rem 0rem 0rem 0rem;
+	font-size: var(--body-text);
 }
 
 .buttonText {
-    text-decoration: none;
-    color: var(--light-gray);
+	text-decoration: none;
+	color: var(--light-gray);
 }
 
 .download {
-    text-align: center;
-    font-weight: 600;
-    font-size: var(--title);
-    margin: 4rem 0rem 0rem 0rem;
-    height: 7rem;
-    width: 45rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    position: relative;
-    border-color: var(--dark-blue);
-    transition: all 0.5s ease-in-out;
-    overflow: hidden;
+	text-align: center;
+	font-weight: 600;
+	font-size: var(--title);
+	margin: 4rem 0rem 0rem 0rem;
+	height: 7rem;
+	width: 45rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	position: relative;
+	border-color: var(--dark-blue);
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
 }
 
 .download span {
-    color: var(--light-gray);
-    position: relative;
-    /* z-index coz when we put bg to before and after this span text will not be visible */
-    z-index: 3;
+	color: var(--light-gray);
+	position: relative;
+	/* z-index coz when we put bg to before and after this span text will not be visible */
+	z-index: 3;
+	transition: all 0.5s ease-in-out;
 }
 
 .download span a {
-    color: var(--light-gray);
-    position: relative;
-    /* z-index coz when we put bg to before and after this span text will not be visible */
-    z-index: 3;
+	color: var(--light-gray);
+	position: relative;
+	/* z-index coz when we put bg to before and after this span text will not be visible */
+	z-index: 3;
 }
 
 .download:hover span {
-    color: var(--dark-blue);
-    position: relative;
-    /* z-index coz when we put bg to before and after this span text will not be visible */
-    z-index: 3;
+	color: var(--dark-blue);
+	position: relative;
+	/* z-index coz when we put bg to before and after this span text will not be visible */
+	z-index: 3;
 }
 
 .download:hover span a {
-    color: var(--dark-blue);
-    position: relative;
-    /* z-index coz when we put bg to before and after this span text will not be visible */
-    z-index: 3;
+	color: var(--dark-blue);
+	position: relative;
+	/* z-index coz when we put bg to before and after this span text will not be visible */
+	z-index: 3;
 }
 
 .download:hover::before {
-    transform: scaleY(0);
+	transform: scaleY(0);
 }
 
 .download:hover::after {
-    transform: scaleX(0);
+	transform: scaleX(0);
 }
 
 .download:hover {
-    transition: all 0.5s ease-in-out;
-    animation: pulse 2s ease-in-out infinite;
-    box-shadow: 0 0 0 10rem var(--gray);
+	transition: all 0.5s ease-in-out;
+	animation: pulse 2s ease-in-out infinite;
+	box-shadow: 0 0 0 10rem var(--gray);
 }
 
 @keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);
-    }
-    50% {
-        box-shadow: 0 0 2rem 1rem rgba(0, 61, 100, 0.2);  /* Resplandor suave */
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);  /* Vuelve al estado original */
-    }
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);
+	}
+	50% {
+		box-shadow: 0 0 2rem 1rem rgba(0, 61, 100, 0.2); /* Resplandor suave */
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2); /* Vuelve al estado original */
+	}
 }
 
 .download::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-blue);
-  transition: all 0.5s ease-in-out;
-  transform: scaleY(1);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--dark-blue);
+	transition: all 0.5s ease-in-out;
+	transform: scaleY(1);
 }
 
 .download::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-blue);
-  transition: all 0.5s ease-in-out;
-  transform: scaleX(1);
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--dark-blue);
+	transition: all 0.5s ease-in-out;
+	transform: scaleX(1);
 }
 
 .video {
-    margin: 2rem 8rem 2rem 4rem;
-    height: 39rem;
-    width: 60rem;
-    border-radius: 3rem;
-    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.45);
+	margin: 2rem 8rem 2rem 4rem;
+	height: 39rem;
+	width: 60rem;
+	border-radius: 3rem;
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.45);
 }
 
 .learn {
-    justify-self: center;
-    margin: 0.5rem 8rem 0rem 4rem;
-    font-size: var(--body-text);
+	justify-self: center;
+	margin: 0.5rem 8rem 0rem 4rem;
+	font-size: var(--body-text);
 }
 
 .learnLink {
-    color: var(--dark-blue);
-    font-size: var(--subtitle);
-    text-decoration: none;
-    font-weight: 600;
-    transition:800ms ease all;
-    outline:none;
-    border:none;
-    position:relative;
-    padding: 0 0.5rem;
+	color: var(--dark-blue);
+	font-size: var(--subtitle);
+	text-decoration: none;
+	font-weight: 600;
+	transition: 800ms ease all;
+	outline: none;
+	border: none;
+	position: relative;
+	padding: 0 0.5rem;
 }
 
-.learnLink:hover{
-  background:var(--gray);
-  color:var(--dark-gray);
+.learnLink:hover {
+	background: var(--gray);
+	color: var(--dark-gray);
 }
 
-.learnLink:before{
-  content:'';
-  position:absolute;
-  top:-0.3rem;
-  right:0;
-  height:0.28rem;
-  width:0;
-  background: var(--dark-gray);
-  transition:600ms ease all;
+.learnLink:before {
+	content: "";
+	position: absolute;
+	top: -0.3rem;
+	right: 0;
+	height: 0.28rem;
+	width: 0;
+	background: var(--dark-gray);
+	transition: 600ms ease all;
 }
-.learnLink:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0.1rem;
+.learnLink:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0.1rem;
 }
-.learnLink:hover:before,.learnLink:hover:after{
-  width:100%;
-  transition:600ms ease all;
+.learnLink:hover:before,
+.learnLink:hover:after {
+	width: 100%;
+	transition: 600ms ease all;
 }
-
 
 @media screen and (max-width: 1024px) {
+	.parentContainer {
+		height: calc(100vh - 12rem - 2.7rem);
+	}
 
-    .parentContainer {
-        height: calc(100vh - 12rem - 2.7rem);
-    }
-    
 	.container {
-        height: calc(100vh - 12rem - 2.6rem);
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; 
-        text-align: center;
-    }
+		height: calc(100vh - 12rem - 2.6rem);
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		text-align: center;
+	}
 
-    .column {
-        padding: 0rem;
-        margin: 1rem 0rem;
-        justify-items: center;
-    }
+	.column {
+		padding: 0rem;
+		margin: 1rem 0rem;
+		justify-items: center;
+	}
 
-    .name {
-        text-align: center;
-        justify-self: center;
-    }
+	.name {
+		text-align: center;
+		justify-self: center;
+	}
 
-    .title {
-        text-align: center;
-        justify-self: center;
-        margin: -1.5rem 0rem 4rem 0rem;
-    }
+	.title {
+		text-align: center;
+		justify-self: center;
+		margin: -1.5rem 0rem 4rem 0rem;
+	}
 
-    .description {
-        width: 63rem;
-        justify-self: center;
-        margin: 1rem 0rem 1rem 0rem;
-        font-size: var(--body-text);
-    }
+	.description {
+		width: 63rem;
+		justify-self: center;
+		margin: 1rem 0rem 1rem 0rem;
+		font-size: var(--body-text);
+	}
 
-    .download {
-        height: 7rem;
-        width: 64rem;
-    }
+	.download {
+		height: 7rem;
+		width: 64rem;
+	}
 
-    .video {
-        margin: 1rem 1rem;
-        height: 28rem;
-        width:50rem;
-    }
+	.video {
+		margin: 1rem 1rem;
+		height: 28rem;
+		width: 50rem;
+	}
 
-    .learn {
-        justify-self: center;
-        margin: 1.5rem 3rem 0rem 3rem;
-        font-size: var(--body-text);
-    }
+	.learn {
+		justify-self: center;
+		margin: 1.5rem 3rem 0rem 3rem;
+		font-size: var(--body-text);
+	}
 }
 
 @media screen and (max-width: 575px) {
+	.parentContainer {
+		height: 100vh;
+	}
 
-    .parentContainer {
-        height: 100vh;
-    }
-    
 	.container {
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; 
-        text-align: center;
-    }
+		height: 100vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		text-align: center;
+	}
 
-    .column {
-        padding: 0rem;
-        margin: 1rem 0rem;
-        justify-items: center;
-    }
+	.column {
+		padding: 0rem;
+		margin: 1rem 0rem;
+		justify-items: center;
+	}
 
-    .name {
-        text-align: center;
-        justify-self: center;
-        font-size: 7rem;
-    }
+	.name {
+		text-align: center;
+		justify-self: center;
+		font-size: 7rem;
+	}
 
-    .title {
-        text-align: center;
-        justify-self: center;
-        margin: -1rem 0rem 4rem 0rem;
-        font-size: 2rem;
-    }
+	.title {
+		text-align: center;
+		justify-self: center;
+		margin: -1rem 0rem 4rem 0rem;
+		font-size: 2rem;
+	}
 
-    .description {
-        justify-self: center;
-        width: 32rem;
-        margin: 1rem 0rem 1rem 0rem;
-        font-size: var(--body-text);
-    }
+	.description {
+		justify-self: center;
+		width: 32rem;
+		margin: 1rem 0rem 1rem 0rem;
+		font-size: var(--body-text);
+	}
 
-    .download {
-        height: 7rem;
-        width: 32rem;
-    }
-    
+	.download {
+		height: 7rem;
+		width: 32rem;
+	}
 
-    .video {
-        margin: 1rem 1rem;
-        height: 20rem;
-        width: 35rem;
-    }
+	.video {
+		margin: 1rem 1rem;
+		height: 20rem;
+		width: 35rem;
+	}
 
-    .learn {
-        justify-self: center;
-        margin: 1.5rem 3rem 1rem 3rem;
-        font-size: var(--body-text);
-    }
+	.learn {
+		justify-self: center;
+		margin: 1.5rem 3rem 1rem 3rem;
+		font-size: var(--body-text);
+	}
 }
