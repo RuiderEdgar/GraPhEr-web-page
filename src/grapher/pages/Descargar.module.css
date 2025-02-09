@@ -37,7 +37,7 @@
 
 .row1 {
     padding: 0;
-    margin: 0rem 3rem;
+    margin: 2rem 3rem;
     justify-content: center;
     place-items: center;
     background-color: var(--cuaternary-dark-blue);
@@ -85,15 +85,104 @@
     justify-content: center;
     text-align: center;
     grid-template-columns: 1.5fr 1fr; 
-    gap: 0.2fr;
+    gap: 16rem;
+    margin: 0;
+    padding: 0;
 }
 
 .leftColumn {
-
+    place-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    margin: 0rem;
 }
 
 .rightColumn {
-    
+    margin: 5rem 2rem;
+    place-items: center;
+    justify-content: center;
+}
+
+.title1 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.ul {
+    list-style: none;
+}
+
+.li {
+    margin: 3rem 0rem 0rem 0rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.li a {
+	color: var(--light-gray);
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    font-size: 4rem;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out 0.5s;
+	padding: 1rem 8rem;
+}
+
+/* animacion */
+.li:hover {
+	background-color: var(--light-gray);
+    border: 0.2rem solid var(--dark-blue);
+	transform: translateY(-1rem);
+	color: var(--dark-blue);
+    z-index: 1;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.li > a:hover {
+	color: var(--dark-blue);
+    z-index: 1;
+    background-color: var(--light-gray);
+}
+
+.li:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -140%;
+	width: 130%;
+    z-index: 1;
+	height: 10rem;
+    color: var(--dark-blue);
+    background: var(--light-gray);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+.li:hover::after {
+	left: -25%;
+    z-index: 0;
+    color: var(--cuaternary-dark-blue);
+}
+
+.logo1 {
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    width: 30rem;
 }
 
 .name2 {

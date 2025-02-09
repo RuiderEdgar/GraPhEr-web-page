@@ -10,10 +10,17 @@ export const Descargar = () => {
 					<div className={s.row1}>
 						<div className={s.download1}>
 							<div className={s.leftColumn}>
-
+								<p className={s.title1}>Windows </p>
+								<ul className={s.ul}>
+									<li key="ejercicios" className={s.li}>
+										<a href="/ejercicios">
+											Descargar
+										</a>
+									</li>
+								</ul>
 							</div>
 							<div className={s.rightColumn}>
-								<img src="../assets/logos/LogoGraPhEr_Sin.svg"/>
+								<img class={s.logo1} src="../assets/logos/LogoGraPhEr_Sin.svg"/>
 							</div>
 						</div>
 					</div>
