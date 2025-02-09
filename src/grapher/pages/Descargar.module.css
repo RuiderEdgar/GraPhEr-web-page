@@ -1,0 +1,215 @@
+.parentContainer {
+    height: calc(218vh - 12rem - 2.7rem);
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3fr 0.4fr;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:#EAEDEF;
+    height: calc(218vh - 12rem - 2.7rem);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 144rem;
+    gap: 0.2fr;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    justify-self: center;
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 10rem;
+}
+
+.row1 {
+    padding: 0;
+    margin: 0rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--cuaternary-dark-blue);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row2 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-dark-gray);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row3 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-purple);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row4 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-green);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.download1 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 0.2fr;
+}
+
+.leftColumn {
+
+}
+
+.rightColumn {
+    
+}
+
+.name2 {
+    justify-self: left;
+    text-align: left;
+    margin: 2rem 2.5rem 0rem 2.5rem;
+    font-size: 5rem;
+    color:var(--dark-blue);
+    height: 10rem;
+}
+
+.text {
+    justify-self: left;
+    margin: 0.5rem 3rem 2rem 3rem;
+    font-size: 2.5rem;
+}
+
+.buttonText {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.download {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--title);
+    margin: 1rem 0rem 3rem 0rem;
+    height: 7rem;
+    width: 45rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    border-color: var(--dark-blue);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.download span {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download span a {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover span {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover span a {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover::before {
+    transform: scaleY(0);
+}
+
+.download:hover::after {
+    transform: scaleX(0);
+}
+
+.download:hover {
+    transition: all 0.5s ease-in-out;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 0 10rem var(--gray);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 2rem 1rem rgba(0, 61, 100, 0.2);  /* Resplandor suave */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);  /* Vuelve al estado original */
+    }
+}
+
+.download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.download::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.license {
+    color:black;
+    font-weight: 600;
+}
