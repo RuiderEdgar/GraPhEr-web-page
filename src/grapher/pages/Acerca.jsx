@@ -12,7 +12,7 @@ export const AcercaDe = () => {
 			<main className={s.main_grid}>
 				<img
 					className={s.img_app}
-					src="/assets/images/Imagen1AcercaDe.svg"
+					src="/assets/images/ImagenApp.png"
 					alt="imagen app"
 				/>
 				<article className={s.first_article}>
@@ -58,7 +58,7 @@ export const AcercaDe = () => {
 					alt="imagen graficas 2d"
 				/>
 				<article className={s.third_article}>
-					<h2>Una mejora en la enseñanza</h2>
+					<h2>Una mejor enseñanza</h2>
 					<p>
 						GraPhEr se diseña para lograr una mejora en la enseñanza y el
 						aprendizaje de la resolución de Ecuaciones Diferenciales Parciales a
