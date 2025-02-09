@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import s from './Navbar.module.css';
 
 export const Navbar = () => {
 
+	const location = useLocation();
+	//todo: usar el location para quitar la animacion del li
 	const [menuState, setMenuState] = useState('false');
 
 	const toggleMenu = () => {
@@ -12,49 +15,81 @@ export const Navbar = () => {
 		setMenuState(false);
 	}
 
+	console.log(location)
+
 
 	return (
 		<>
 			<header className={s.header}>
 				<div className={s.navbar_container}>
-					<a href="/homepage">
+					<NavLink to="/homepage">
 						<img
 							className={s.logo_desktop}
 							src="../../../assets/logos/LogoGraPhEr_Blue.svg"
 							alt="logo principal"
 						/>
-					</a>
+					</NavLink>
 					<div className={s.menu_container}>
 						<ul className={`${s.menu_row} ${s.ul}`}>
 							<li key="ejercicios" className={s.li}>
-								<a href="/ejercicios" onClick={resetMenu}>
+								<NavLink to="/ejercicios" onClick={resetMenu}>
 									Ejercicios
-								</a>
+								</NavLink>
 							</li>
 							<li key="acerca" className={s.li}>
-								<a href="/acercade" onClick={resetMenu}>
+								<NavLink
+									to="/acercade"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Acerca de
-								</a>
+								</NavLink>
 							</li>
 							<li key="descargar" className={s.li}>
-								<a href="/descargar" onClick={resetMenu}>
+								<NavLink
+									to="/descargar"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Descargar
-								</a>
+								</NavLink>
 							</li>
 							<li key="documentacion" className={s.li}>
-								<a href="/documentacion" onClick={resetMenu}>
+								<NavLink
+									to="/documentacion"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Documentación
-								</a>
+								</NavLink>
 							</li>
 							<li key="novedades" className={s.li}>
-								<a href="/novedades" onClick={resetMenu}>
+								<NavLink
+									to="/novedades"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Novedades
-								</a>
+								</NavLink>
 							</li>
 							<li key="contribuir" className={s.li}>
-								<a href="/contribuir" onClick={resetMenu}>
+								<NavLink
+									to="/contribuir"
+									onClick={resetMenu}
+									className={({ isActive }) =>
+										isActive ? s.navlink_active : null
+									}
+								>
 									Contribuir
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 						<img
