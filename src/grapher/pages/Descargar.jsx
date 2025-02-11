@@ -12,7 +12,7 @@ export const Descargar = () => {
 							<div className={s.leftColumn}>
 								<p className={s.title1}>Windows </p>
 								<ul className={s.ul}>
-									<li key="ejercicios" className={s.li}>
+									<li key="ejercicios" className={s.li1}>
 										<a href="/ejercicios">
 											Descargar
 										</a>
@@ -28,9 +28,9 @@ export const Descargar = () => {
 					<div className={s.row2}>
 						<div className={s.download2}>
 							<div className={s.leftColumn}>
-								<p className={s.title2}>Windows </p>
+								<p className={s.title2}>Linux </p>
 								<ul className={s.ul}>
-									<li key="ejercicios" className={s.li}>
+									<li key="ejercicios" className={s.li2}>
 										<a href="/ejercicios">
 											Descargar
 										</a>
