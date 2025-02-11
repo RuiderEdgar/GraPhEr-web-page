@@ -3,10 +3,11 @@
     background-color: var(--light-gray);
     display: flex;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 4fr 0.4fr;
+    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
     justify-content: center;
+    gap: 8rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0rem;
 }
 
 .container {
@@ -16,11 +17,11 @@
     justify-content: center;
     text-align: center;
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
     max-width: 144rem;
-    gap: 0.2fr;
+    gap: 8rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0rem;
 }
 
 .name {
@@ -116,8 +117,8 @@
 }
 
 .li1 {
-    margin: 3rem 0rem 0rem 0rem;
-    height: 6rem;
+    margin: 1rem 0rem 0rem 0rem;
+    height: 8rem;
     display: flex;
     align-items: center;
     border: 0.2rem solid transparent;
@@ -134,7 +135,7 @@
     font-size: 4rem;
 	text-decoration: none;
 	transition: all 1s ease-in-out;
-	padding: 1rem 8rem;
+    padding: 1rem 8rem;
 }
 
 /* animacion */
@@ -185,8 +186,8 @@
 }
 
 .li2 {
-    margin: 3rem 0rem 0rem 0rem;
-    height: 6rem;
+    margin: 1rem 0rem 0rem 0rem;
+    height: 8rem;
     display: flex;
     align-items: center;
     border: 0.2rem solid transparent;
@@ -322,7 +323,7 @@
 .textTemporal {
     justify-self: left;
     margin: 0.5rem 3rem 2rem 3rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 
 .learnLink {
@@ -471,12 +472,12 @@
     margin: 2rem 2.5rem 0rem 2.5rem;
     font-size: 5rem;
     color:var(--dark-blue);
-    height: 10rem;
+    height: 8rem;
 }
 
 .text {
     justify-self: left;
-    margin: 0.5rem 3rem 2rem 3rem;
+    margin: 0.5rem 3rem 0.5rem 3rem;
     font-size: 2.5rem;
 }
 
@@ -489,7 +490,7 @@
     text-align: center;
     font-weight: 600;
     font-size: var(--title);
-    margin: 1rem 0rem 3rem 0rem;
+    margin: 0.5rem 0rem;
     height: 7rem;
     width: 45rem;
     border-radius: 1rem;
@@ -581,4 +582,344 @@
 .license {
     color:black;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .name {
+        width: 75rem;
+        font-size: var(--header);
+    }
+
+    .li1, .li2 {
+        margin: 0rem 0rem 0rem 0rem;
+        height: 9rem;
+    }
+
+    
+    .row1 {
+        margin:-8rem 3rem 0rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download1 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .rightColumn {
+        margin: 6rem 0rem;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .logo1 {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row2 {
+        margin:-1rem 3rem 5rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download2 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .logo2 {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row3 {
+        margin:0rem 3rem 4rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download3 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .textTemporal {
+        width:35rem;
+    }
+
+    .logo3 {
+        margin: 0rem 0rem 0rem -2rem;
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row4 {
+        margin:-1rem 3rem 2rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download4 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .logo4 {
+        margin: 0rem 0rem 0rem -2rem;
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .name2 {
+        width: 65rem;
+        justify-self: center;
+        margin: -5rem 0rem 0rem 0rem;
+        font-size: var(--header);
+        height: 6rem;
+    }
+
+    .text {
+        justify-self: left;
+        justify-self: justify;
+        text-align: justify;
+        margin: 0rem 6rem 2rem 6rem;
+        font-size: 2.5rem;
+    }
+
+    .license {
+        justify-self: left;
+        color:black;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .parentContainer {
+        gap: 0.5rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 9rem 8rem;
+    }
+
+    .container {
+        gap: 0.5rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 9rem 8rem;
+    }
+
+    .name {
+        width: 35rem;
+        font-size: var(--title);
+    }
+
+    .row1 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 20rem;
+    }
+
+    .leftColumn {
+        margin: 1rem 0rem;
+        gap: 1rem;
+    }
+
+    .download1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .rightColumn {
+        margin: 0rem 0rem;
+        height: 0;
+        width: 0;
+    }
+
+    .title1 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-blue);
+    }
+
+    .li1 {
+        margin: 0;
+        height: 7rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li1 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo1 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .row2 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 20rem;
+    }
+
+    .download2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title2 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-gray);
+    }
+
+    .li2 {
+        margin: 0;
+        height: 7rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li2 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo2 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .row3 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 35rem;
+    }
+
+    .download3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title3 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--purple);
+    }
+
+    .li3 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li3 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo3 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .textTemporal {
+        width:33rem;
+    }
+
+    .row4 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 35rem;
+    }
+
+    .download4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title4 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-green);
+    }
+
+    .li4 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li4 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo4 {
+        height: 0rem;
+        width: 0rem;
+    }
+    .name2 {
+        width: 35rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: var(--subtitle);
+        height: 3rem;
+    }
+
+    .text {
+        justify-self: justify;
+        text-align: justify;
+        margin: 2rem 6rem 2rem 6rem;
+        font-size: var(--body-text);
+        width: 35rem;
+    }
+
+    .buttonText {
+        font-size: var(--details);
+    }
+    
+    .download {
+        text-align: center;
+        font-weight: 600;
+        font-size: var(--title);
+        margin: 1rem 0rem 1rem 0rem;
+        height: 7rem;
+        width: 30rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        position: relative;
+        border-color: var(--dark-blue);
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    .license {
+        justify-self: left;
+        color:black;
+        font-weight: 600;
+        font-size: var(--body-text);
+    }
 }
