@@ -68,7 +68,7 @@ export const Descargar = () => {
 								Si quieres apoyar en este proceso acude a la sección <a href="/ejercicios" className={s.learnLink2}>Contribuir</a></p>
 							</div>
 							<div className={s.rightColumn}>
-								<img class={s.logo4} src="../assets/logos/LogoGraPhEr_White-Purple.svg"/>
+								<img class={s.logo4} src="../assets/logos/LogoGraPhEr_White-Green.svg"/>
 							</div>
 						</div>
 					</div>
