@@ -44,11 +44,33 @@ export const Descargar = () => {
 					</div>
 
 					<div className={s.row3}>
-						hola
+						<div className={s.download3}>
+							<div className={s.leftColumn}>
+								<p className={s.title3}>Mac </p>
+										
+								<p className={s.textTemporal}> Estamos trabajando para crear el instalador en dispositivos con MacOs.
+								<br></br>
+								Si quieres apoyar en este proceso acude a la sección <a href="/ejercicios" className={s.learnLink}>Contribuir</a></p>
+							</div>
+							<div className={s.rightColumn}>
+								<img class={s.logo3} src="../assets/logos/LogoGraPhEr_White-Purple.svg"/>
+							</div>
+						</div>
 					</div>
 
 					<div className={s.row4}>
-						hola
+						<div className={s.download4}>
+							<div className={s.leftColumn}>
+								<p className={s.title4}>Android </p>
+										
+								<p className={s.textTemporal}> Estamos trabajando para desarrollar la versión móvil en dispositivos Android.
+								<br></br>
+								Si quieres apoyar en este proceso acude a la sección <a href="/ejercicios" className={s.learnLink2}>Contribuir</a></p>
+							</div>
+							<div className={s.rightColumn}>
+								<img class={s.logo4} src="../assets/logos/LogoGraPhEr_White-Purple.svg"/>
+							</div>
+						</div>
 					</div>
 					<h1 className={s.name2}>¿No quieres usar el instalador? (O no existe)</h1>
 
