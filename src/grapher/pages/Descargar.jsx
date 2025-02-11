@@ -26,7 +26,21 @@ export const Descargar = () => {
 					</div>
 
 					<div className={s.row2}>
-						hola
+						<div className={s.download2}>
+							<div className={s.leftColumn}>
+								<p className={s.title2}>Windows </p>
+								<ul className={s.ul}>
+									<li key="ejercicios" className={s.li}>
+										<a href="/ejercicios">
+											Descargar
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div className={s.rightColumn}>
+								<img class={s.logo2} src="../assets/logos/LogoGraPhEr_Gray.svg"/>
+							</div>
+						</div>
 					</div>
 
 					<div className={s.row3}>

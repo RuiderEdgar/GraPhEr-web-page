@@ -28,7 +28,7 @@
 .name {
     justify-self: center;
     text-align: center;
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
     font-size: 6rem;
     color:var(--dark-blue);
     background-color: var(--light-gray);
@@ -86,7 +86,7 @@
     text-align: center;
     grid-template-columns: 1.5fr 1fr; 
     gap: 16rem;
-    margin: 0;
+    margin: 0rem 3rem;
     padding: 0;
 }
 
@@ -149,10 +149,11 @@
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.li:hover > a {
+.li > a:hover  {
 	color: var(--dark-blue);
     background-color: var(--light-gray);
 }
+
 
 .li:after {
 	content: "";
@@ -178,6 +179,32 @@
 }
 
 .logo1 {
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    width: 30rem;
+}
+
+.download2 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 16rem;
+    margin: 0rem 3rem;
+    padding: 0;
+}
+
+.title2 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.logo2 {
     justify-content: center;
     text-align: center;
     height: 20rem;
