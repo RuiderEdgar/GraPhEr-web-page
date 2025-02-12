@@ -117,7 +117,7 @@
 }
 
 .li1 {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 0;
     height: 8rem;
     display: flex;
     align-items: center;
@@ -145,6 +145,7 @@
 	transform: translateY(-1rem);
 	color: var(--dark-blue);
     z-index: 1;
+    height: 8rem;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -186,7 +187,7 @@
 }
 
 .li2 {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 0;
     height: 8rem;
     display: flex;
     align-items: center;
@@ -214,6 +215,7 @@
 	transform: translateY(-1rem);
 	color: var(--dark-gray);
     z-index: 1;
+    height: 8rem;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -590,12 +592,6 @@
         font-size: var(--header);
     }
 
-    .li1, .li2 {
-        margin: 0rem 0rem 0rem 0rem;
-        height: 9rem;
-    }
-
-    
     .row1 {
         margin:-8rem 3rem 0rem 3rem;
         width: 70rem;
@@ -707,18 +703,19 @@
 @media screen and (max-width: 575px) {
     .parentContainer {
         gap: 0.5rem;
-        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 9rem 8rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
     }
 
     .container {
         gap: 0.5rem;
-        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 9rem 8rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
     }
 
     .name {
         width: 35rem;
         font-size: var(--title);
     }
+
 
     .row1 {
         margin:0rem 3rem;
@@ -753,7 +750,13 @@
 
     .li1 {
         margin: 0;
-        height: 7rem;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .li1:hover, .li2:hover {
+        margin: 0;
+        height: 5rem;
         font-size: var(--subtitle);
     }
     
@@ -790,7 +793,7 @@
 
     .li2 {
         margin: 0;
-        height: 7rem;
+        height: 5rem;
         font-size: var(--subtitle);
     }
     
