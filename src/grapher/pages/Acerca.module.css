@@ -10,22 +10,24 @@
 }
 
 .header {
-	margin-top: 6rem;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	max-width: 144rem;
 	width: 100%;
 
 	.title {
-		font-size: var(--font-logo-title);
-		height: 10.8rem;
+		font-size: var(--font-sz-logo);
+		height: 8.8rem;
 		color: var(--dark-blue);
 		margin-right: 3rem;
 	}
 
 	.subtitle {
-		font-size: 1.6rem;
+		margin-top: 4rem;
+		font-size: 1.9rem;
 		height: 6rem;
 		color: var(--black);
 		font-weight: 400;

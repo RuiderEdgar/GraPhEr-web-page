@@ -59,14 +59,16 @@ body {
 
 	/* Colors */
 	--dark-gray: #474747;
+	--light-dark-gray: #47474733;
 	--gray: #dbdbdb;
 	--light-gray: #eaedef;
 	--dark-blue: #003d64;
 	--secundary-dark-blue: #003d64e6;
 	--terciary-dark-blue: #003d64b3;
+	--cuaternary-dark-blue: #003d6433;
 	--light-blue: #003e6433;
 	--dark-green: #476242;
-	--light-green: #47624266;
+	--light-green: #47624233;
 	--purple: #8c6abb;
 	--light-purple: #8c6abb4d;
 }

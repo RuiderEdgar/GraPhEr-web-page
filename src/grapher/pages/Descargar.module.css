@@ -1,0 +1,928 @@
+.parentContainer {
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+
+.container {
+    background-color:#EAEDEF;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
+    max-width: 144rem;
+    gap: 8rem;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+
+.name {
+    justify-self: center;
+    text-align: center;
+    margin: 2rem 0rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 10rem;
+}
+
+.row1 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--cuaternary-dark-blue);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row2 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-dark-gray);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row3 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-purple);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.row4 {
+    padding: 0;
+    margin: 2rem 3rem;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--light-green);
+    width: 130rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.download1 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 9rem;
+    margin: 0rem 3rem;
+    padding: 0;
+}
+
+.leftColumn {
+    place-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    margin: 0rem;
+}
+
+.rightColumn {
+    margin: 5rem 2rem;
+    place-items: center;
+    justify-content: center;
+}
+
+.title1 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.ul {
+    list-style: none;
+}
+
+.li1 {
+    margin: 0;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.li1 a {
+	color: var(--light-gray);
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    font-size: 4rem;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
+    padding: 1rem 8rem;
+}
+
+/* animacion */
+.li1:hover {
+	background-color: var(--light-gray);
+    border: 0.2rem solid var(--dark-blue);
+	transform: translateY(-1rem);
+	color: var(--dark-blue);
+    z-index: 1;
+    height: 8rem;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.li1:hover > a {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.li1 > a:hover  {
+	color: var(--dark-blue);
+    background-color: var(--light-gray);
+}
+
+
+.logo1 {
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    width: 30rem;
+}
+
+.download2 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 9rem;
+    margin: 0rem 3rem;
+    padding: 0;
+}
+
+.title2 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--dark-gray);
+}
+
+.li2 {
+    margin: 0;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.li2 a {
+	color: var(--light-gray);
+    background-color: var(--dark-gray);
+    border-radius: 1rem;
+    font-size: 4rem;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
+	padding: 1rem 8rem;
+}
+
+/* animacion */
+.li2:hover {
+	background-color: var(--light-gray);
+    border: 0.2rem solid var(--dark-gray);
+	transform: translateY(-1rem);
+	color: var(--dark-gray);
+    z-index: 1;
+    height: 8rem;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.li2 > a:hover  {
+	color: var(--dark-gray);
+    background-color: var(--light-gray);
+}
+
+
+/*
+.li2:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -140%;
+	width: 130%;
+    z-index: -1;
+	height: 10rem;
+    color: var(--dark-gray);
+    background: var(--light-gray);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+    
+
+.li2:hover::after {
+	left: -25%;
+    z-index: 0;
+    color: var(--light-dark-gray);
+}
+    */
+
+.logo2 {
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    width: 30rem;
+}
+
+.download3 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 9rem;
+    margin: 0rem 3rem;
+    padding: 0;
+}
+
+.title3 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--purple);
+}
+
+.li3 {
+    margin: 3rem 0rem 0rem 0rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.li3 a {
+	color: var(--light-gray);
+    background-color: var(--purple);
+    border-radius: 1rem;
+    font-size: 4rem;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
+	padding: 1rem 8rem;
+}
+
+/* animacion */
+.li3:hover {
+	background-color: var(--light-gray);
+    border: 0.2rem solid var(--purple);
+	transform: translateY(-1rem);
+	color: var(--purple);
+    z-index: 1;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.li3 > a:hover  {
+	color: var(--purple);
+    background-color: var(--light-gray);
+}
+
+.logo3 {
+    justify-content: center;
+    text-align: center;
+    margin: 0rem 0rem 0rem 0rem;
+    height: 20rem;
+    width: 30rem;
+}
+
+.textTemporal {
+    justify-self: left;
+    margin: 0.5rem 3rem 2rem 3rem;
+    font-size: 1.9rem;
+}
+
+.learnLink {
+    color: var(--purple);
+    font-size: var(--subtitle);
+    text-decoration: none;
+    font-weight: 600;
+    transition:800ms ease all;
+    outline:none;
+    border:none;
+    position:relative;
+    padding: 0 0.5rem;
+}
+
+.learnLink:hover{
+  background:#8c6abb22;
+  color:var(--purple);
+}
+
+.learnLink:before{
+  content:'';
+  position:absolute;
+  top:-0.3rem;
+  right:0;
+  height:0.28rem;
+  width:0;
+  background: var(--purple);
+  transition:600ms ease all;
+}
+.learnLink:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0.1rem;
+}
+.learnLink:hover:before,.learnLink:hover:after{
+  width:100%;
+  transition:600ms ease all;
+}
+
+.download4 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 9rem;
+    margin: 0rem 3rem;
+    padding: 0;
+}
+
+.title4 {
+    justify-self: center;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--dark-green);
+}
+
+.li4 {
+    margin: 3rem 0rem 0rem 0rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.li4 a {
+	color: var(--light-gray);
+    background-color: var(--purple);
+    border-radius: 1rem;
+    font-size: 4rem;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
+	padding: 1rem 8rem;
+}
+
+/* animacion */
+.li4:hover {
+	background-color: var(--light-gray);
+    border: 0.2rem solid var(--purple);
+	transform: translateY(-1rem);
+	color: var(--purple);
+    z-index: 1;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.li4 > a:hover  {
+	color: var(--purple);
+    background-color: var(--light-gray);
+}
+
+.logo4 {
+    justify-content: center;
+    text-align: center;
+    margin: 0rem 0rem 0rem 0rem;
+    height: 20rem;
+    width: 30rem;
+}
+
+.learnLink2 {
+    color: var(--dark-green);
+    font-size: var(--subtitle);
+    text-decoration: none;
+    font-weight: 600;
+    transition:800ms ease all;
+    outline:none;
+    border:none;
+    position:relative;
+    padding: 0 0.5rem;
+}
+
+.learnLink2:hover{
+  background:#47624222;
+  color:var(--dark-green);
+}
+
+.learnLink2:before{
+  content:'';
+  position:absolute;
+  top:-0.3rem;
+  right:0;
+  height:0.28rem;
+  width:0;
+  background: var(--dark-green);
+  transition:600ms ease all;
+}
+.learnLink2:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0.1rem;
+}
+.learnLink2:hover:before,.learnLink:hover:after{
+  width:100%;
+  transition:600ms ease all;
+}
+
+.name2 {
+    justify-self: left;
+    text-align: left;
+    margin: 2rem 2.5rem 0rem 2.5rem;
+    font-size: 5rem;
+    color:var(--dark-blue);
+    height: 8rem;
+}
+
+.text {
+    justify-self: left;
+    margin: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 2.5rem;
+}
+
+.buttonText {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.download {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--title);
+    margin: 0.5rem 0rem;
+    height: 7rem;
+    width: 45rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    border-color: var(--dark-blue);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.download span {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download span a {
+    color: var(--light-gray);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover span {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover span a {
+    color: var(--dark-blue);
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+}
+
+.download:hover::before {
+    transform: scaleY(0);
+}
+
+.download:hover::after {
+    transform: scaleX(0);
+}
+
+.download:hover {
+    transition: all 0.5s ease-in-out;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 0 10rem var(--gray);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 2rem 1rem rgba(0, 61, 100, 0.2);  /* Resplandor suave */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 61, 100, 0.2);  /* Vuelve al estado original */
+    }
+}
+
+.download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.download::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.license {
+    color:black;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .name {
+        width: 75rem;
+        font-size: var(--header);
+    }
+
+    .row1 {
+        margin:-8rem 3rem 0rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download1 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .rightColumn {
+        margin: 6rem 0rem;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .logo1 {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row2 {
+        margin:-1rem 3rem 5rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download2 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .logo2 {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row3 {
+        margin:0rem 3rem 4rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download3 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .textTemporal {
+        width:35rem;
+    }
+
+    .logo3 {
+        margin: 0rem 0rem 0rem -2rem;
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .row4 {
+        margin:-1rem 3rem 2rem 3rem;
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .download4 {
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 2rem;
+        margin: 0rem 1rem;
+        padding: 0;
+    }
+
+    .logo4 {
+        margin: 0rem 0rem 0rem -2rem;
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .name2 {
+        width: 65rem;
+        justify-self: center;
+        margin: -5rem 0rem 0rem 0rem;
+        font-size: var(--header);
+        height: 6rem;
+    }
+
+    .text {
+        justify-self: left;
+        justify-self: justify;
+        text-align: justify;
+        margin: 0rem 6rem 2rem 6rem;
+        font-size: 2.5rem;
+    }
+
+    .license {
+        justify-self: left;
+        color:black;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .parentContainer {
+        gap: 0.5rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
+    }
+
+    .container {
+        gap: 0.5rem;
+        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
+    }
+
+    .name {
+        width: 35rem;
+        font-size: var(--title);
+    }
+
+
+    .row1 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 20rem;
+    }
+
+    .leftColumn {
+        margin: 1rem 0rem;
+        gap: 1rem;
+    }
+
+    .download1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .rightColumn {
+        margin: 0rem 0rem;
+        height: 0;
+        width: 0;
+    }
+
+    .title1 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-blue);
+    }
+
+    .li1 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .li1:hover, .li2:hover {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li1 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo1 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .row2 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 20rem;
+    }
+
+    .download2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title2 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-gray);
+    }
+
+    .li2 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li2 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo2 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .row3 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 35rem;
+    }
+
+    .download3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title3 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--purple);
+    }
+
+    .li3 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li3 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo3 {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    .textTemporal {
+        width:33rem;
+    }
+
+    .row4 {
+        margin:0rem 3rem;
+        width: 37rem;
+        height: 35rem;
+    }
+
+    .download4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr; 
+        gap: 0rem;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0;
+    }
+
+    .title4 {
+        font-size: 6rem;
+        font-weight: 800;
+        color: var(--dark-green);
+    }
+
+    .li4 {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+    
+    .li4 a {
+        margin: 0;
+        height: 5rem;
+        font-size: var(--subtitle);
+    }
+
+    .logo4 {
+        height: 0rem;
+        width: 0rem;
+    }
+    .name2 {
+        width: 35rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: var(--subtitle);
+        height: 3rem;
+    }
+
+    .text {
+        justify-self: justify;
+        text-align: justify;
+        margin: 2rem 6rem 2rem 6rem;
+        font-size: var(--body-text);
+        width: 35rem;
+    }
+
+    .buttonText {
+        font-size: var(--details);
+    }
+    
+    .download {
+        text-align: center;
+        font-weight: 600;
+        font-size: var(--title);
+        margin: 1rem 0rem 1rem 0rem;
+        height: 7rem;
+        width: 30rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        position: relative;
+        border-color: var(--dark-blue);
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    .license {
+        justify-self: left;
+        color:black;
+        font-weight: 600;
+        font-size: var(--body-text);
+    }
+}
