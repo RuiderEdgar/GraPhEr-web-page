@@ -1,18 +1,24 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
-	padding: 4rem 2rem 2rem;
+	padding: 1rem 2rem 2rem;
 	background-color: var(--light-gray);
 	border-bottom: 3px solid var(--gray);
 	font-size: 2.4rem;
 	font-weight: bold;
+	min-width: 30rem;
+}
+.current_version {
+	margin-top: 3rem;
 }
 
 .texto {
-	margin: 0 4rem 0 0;
+	margin: 0rem 4rem 0 0;
 }
 .numberVersion {
+	/* margin-top: 3rem; */
 	padding: 0 3rem;
 	background-color: var(--dark-blue);
 	color: white;
@@ -24,10 +30,12 @@
 	-o-border-radius: 6px;
 }
 .versions_container {
+	margin-top: 3rem;
 	display: flex;
 	align-items: center;
 }
 .select {
+	/* margin-top: 3rem; */
 	color: var(--dark-blue);
 	border: 3px solid var(--dark-blue);
 	font-family: "open-sans";
@@ -58,4 +66,7 @@
 .options {
 	color: var(--dark-blue);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
 }
