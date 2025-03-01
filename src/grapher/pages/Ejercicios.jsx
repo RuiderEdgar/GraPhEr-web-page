@@ -12,7 +12,7 @@ export const Ejercicios = () => {
 		</aside>
 
 		{/* ----------documentacion seccion---------- */}
-		<article className={s.contenido}>
+		<article className={s.rightColumn}>
 			<Notas/>
 
 				{/* ToDo: meter el style en un archivo, helper */}
