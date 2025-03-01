@@ -27,7 +27,7 @@ export const TemarioEjercicios = () => {
                         className={`${s.seccion_container} ${dividedSeccion(tema)} ${isLastOne(tema)}`}
                     >
                         <div className={s.tema_container}>
-                            <a href="">
+                            <a href={"#tag"+tema.id}>
                                 {/* -----------tema */}
                                 <span className={s.tema}>{ tema.title }</span>
                             </a>
@@ -38,7 +38,7 @@ export const TemarioEjercicios = () => {
                                 tema.subseccions.map((subseccion) => {
                                     return (
                                         <li key={subseccion.id}>
-                                            <a href="">
+                                            <a href={"#tag"+subseccion.id}>
                                                 <span>{ subseccion.title }</span>
                                             </a>
                                         </li>

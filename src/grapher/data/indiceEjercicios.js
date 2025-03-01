@@ -18,11 +18,6 @@ export const indiceEjercicios = [
 				title: 'Transformadas',
 				subseccions: [],
 			},
-			{
-				id: 1.4,
-				title: 'Otros métodos de solución',
-				subseccions: [],
-			},
 		],
 	},
 	{

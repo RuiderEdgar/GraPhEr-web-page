@@ -4,7 +4,7 @@ import s from "../Ejercicios.module.css";
 export const Notas = () => {
   return (
     <>
-        <h1 className={s.title} id="tag1"> <a href="#tag0" className={s.back}>Ecuaciones Diferenciales Parciales </a> </h1>
+        <h1 className={s.title} id="tag1"> Ecuaciones Diferenciales Parciales </h1>
   
         <p className={s.text}> Varios fenómenos de la naturaleza han sido modelados a través de Ecuaciones Diferenciales Parciales (EDP), es decir, ecuaciones donde aparecen derivadas de una función con respecto de sus variables; por ejemplo, la ecuación de onda se ha utilizado para modelar fenómenos como la vibración de cuerdas o la propagación de ondas en distintos medios.
         </p>
@@ -48,7 +48,7 @@ export const Notas = () => {
         <p className={s.subtitle}>Métodos de Solución</p>
         <p className={s.text}> Existen diversos métodos de solución para EDP. En particular, nos centraremos en los métodos denominados como: de separación de variables, de expansión en funciones propias y de transformadas integrales.
         </p>
-        <h2 className={s.titletheme}>Método de separación de variables</h2>
+        <h2 className={s.titletheme} id="tag1.1">Método de separación de variables</h2>
         <p className={s.text}> Consiste en suponer que la solución de una EDP lineal y homogénea, en el sentido que se da en Ecuaciones Diferenciales Ordinarias (EDO), puede escribirse como un producto de funciones con variables separadas, es decir, donde para cada variable se tiene una función que depende exclusivamente de dicha variable. Este tipo de separación se muestra en la siguiente línea
         </p>
         <div className={s.math}>
@@ -165,7 +165,7 @@ export const Notas = () => {
         <div className={s.math}>
             <BlockMath math="s(x)=-\frac{30}{L} x + 20+\sum_{n=1}^\infty \left[\left(\frac{160}{n\pi}-\frac{220}{n\pi}(-1)^n\right)\sin\left(\frac{n\pi}{L}x\right)\exp\left(-\frac{c^2 n^2\pi^2}{L^2}t\right)\right]." />
         </div>
-        <h2 className={s.titletheme}>Método de expansión en funciones propias</h2>
+        <h2 className={s.titletheme} id="tag1.2">Método de expansión en funciones propias</h2>
         <p className={s.text}>
             Este método consiste en suponer que la solución de la EDP se puede escribir como una combinación lineal de las funciones propias de un operador diferencial hermítico. Difiere del método anterior, en que aquí no se obtiene esta base a partir de una EDO de manera direct, si no que se aprovecha la base de una EDP conveniente (por ejemplo, la ecuación de Helmholtz).
         </p>
@@ -222,7 +222,7 @@ export const Notas = () => {
           <BlockMath math="B_n(s) = \frac{2}{\pi}\int_0^\pi q(x,s) \sin(nx)\ dx." />
         </div>
 
-        <h2 className={s.titletheme}>Método de transformadas</h2>
+        <h2 className={s.titletheme} id="tag1.3">Método de transformadas</h2>
         <p className={s.text}>
             Este método consiste en transformar la EDP en una EDO en una de las variables de problema a través del uso de una transformada integral, resolver dicha EDO y posteriormente ocupar la transformada inversa para obtener la solución en el dominio original.
         </p>
@@ -354,7 +354,7 @@ export const Notas = () => {
             <strong>Nota:</strong> la transformada de Laplace se utiliza cuando se tiene un dominio que es la mitad de la recta real y dependiendo de las condiciones (ya que también se podría hacer uso de las transformadas seno o coseno), en caso contrario se utiliza la transformada de Fourier.
         </p>
 
-        <h2 className={s.title}>Representación de funciones</h2>
+        <h2 className={s.title} id="tag2">Representación de funciones</h2>
         <p className={s.text}>
             El éxito de los métodos de separación de variables y expansión en funciones propias radica en la capacidad de las funciones propias para reconstruir cualquier función continua a trozos en un determinado intervalo. Por ello, en esta sección se presenta la función sierra en su expansión en las bases de Fourier, de Bessel de orden <InlineMath math="n" /> y de Legendre. La función sierra está definida como:
         </p>
@@ -368,7 +368,7 @@ export const Notas = () => {
         </p>
         <img src="../assets/images/Grafica.svg" width="400"></img>
 
-        <h2 className={s.titletheme}>Base de Fourier</h2>
+        <h2 className={s.titletheme} id="tag2.1">Base de Fourier</h2>
         <p className={s.text}>
             Dado que la función sierra es una función con periodo <InlineMath math="2" /> (en realidad es periodo unitario, pero si una función es periódica con periodo <InlineMath math="a" /> entonces también es periódica con periodo <InlineMath math="2a" />), podemos expandirla en términos de la base Fourier como:
         </p>
@@ -414,7 +414,7 @@ export const Notas = () => {
         " />
         </div>
 
-        <h2 className={s.titletheme}>Base de Bessel de orden <InlineMath math="n" /></h2>
+        <h2 className={s.titletheme} id="tag2.2">Base de Bessel de orden <InlineMath math="n" /></h2>
         <p className={s.text}>
             En este caso podemos construir una representación de la función solo para <InlineMath math="x\geq 0" /> debido a que las funciones de la base Bessel pueden construir funciones en intervalos de la forma <InlineMath math="[0,a]" />. En este caso la representación depende del orden <InlineMath math="n" />, así que de manera general se tiene:
         </p>
@@ -448,7 +448,7 @@ export const Notas = () => {
         " />
         </div>
 
-        <h2 className={s.titletheme}>Base de Legendre</h2>
+        <h2 className={s.titletheme} id="tag2.3">Base de Legendre</h2>
         <p className={s.text}>
             Finalmente, podemos expresar la función sierra en el intervalo <InlineMath math="[-1,1]" /> en términos de la base de los polinomios de Legendre. La expansión en este caso se ve como:
         </p>

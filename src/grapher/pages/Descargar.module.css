@@ -11,6 +11,7 @@
 }
 
 .container {
+    margin-top: 12rem;
     background-color:#EAEDEF;
     display: grid;
     place-items: center;
@@ -20,7 +21,6 @@
     grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
     max-width: 144rem;
     gap: 8rem;
-    margin: 0;
     padding: 2rem 0rem;
 }
 

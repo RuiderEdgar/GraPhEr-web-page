@@ -76,7 +76,7 @@ export const Descargar = () => {
 
 					<p className={s.text}> Puedes descargar el código (en Python) de la aplicación (para ordenadores) desde nuestro repositorio en GitHub.</p>
 
-					<a href="/descargar" className={s.buttonText}> <button className={s.download}> <span>  Descargar GraPhEr</span> </button> </a>
+					<a href="https://github.com/LuisNavaFisBio/GraPhEr" target='_blank' className={s.buttonText}> <button className={s.download}> <span>  Descargar GraPhEr desde GitHub</span> </button> </a>
 
 					<p className={s.text}> Recuerda que el uso de este código está sujeto a la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="blank_" class={s.license}> GNU GENERAL PUBLIC LICENSE Versión 3.0</a>. </p>
 				</div>

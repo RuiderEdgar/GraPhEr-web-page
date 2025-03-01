@@ -12,6 +12,11 @@
 .light_blue {
 	background-color: var(--terciary-dark-blue);
 }
+
+:target {
+	scroll-margin-top: 100px; /* Add an offset */
+}
+
 .temario {
 	display: flex;
 	flex-direction: column;
@@ -70,6 +75,7 @@
 }
 
 .rightColumn {
+	margin: 10rem 0rem 0rem 0rem;
     width: 80%;
     padding: 0rem;
     display: flex;
