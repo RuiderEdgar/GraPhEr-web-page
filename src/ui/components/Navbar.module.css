@@ -14,12 +14,12 @@
 	min-width: 102.4rem;
 	min-height: 10rem;
 	box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.75);
-	position: relative;
+	position: sticky;
 	z-index: 1000;
 }
 
 .menu_container {
-	position: relative;
+	position: sticky;
 }
 
 .navbar_container {
@@ -28,6 +28,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	position: sticky;
 }
 .logo_desktop {
 	height: 7.6rem;
