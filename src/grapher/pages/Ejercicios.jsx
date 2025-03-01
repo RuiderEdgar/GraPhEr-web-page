@@ -5,26 +5,29 @@ import { InlineMath } from 'react-katex';
 
 export const Ejercicios = () => {
 	return (
-	<main className={s.main_container}>
-		{/* ----------menu seccion-------------- */}
-		<aside className={s.temario} alt="temario">
-			<TemarioEjercicios />
-		</aside>
+		<div className={s.parentContainer}>
+			<main className={s.main_container}>
+				{/* ----------menu seccion-------------- */}
+				<aside className={s.temario} alt="temario">
+					<TemarioEjercicios />
+				</aside>
 
-		{/* ----------documentacion seccion---------- */}
-		<article className={s.rightColumn}>
-			<Notas/>
+				{/* ----------documentacion seccion---------- */}
+				<article className={s.rightColumn}>
+					<Notas/>
 
-				{/* ToDo: meter el style en un archivo, helper */}
-				<style>
-					{`
-						.katex-html {
-							display: none;
-						}
-			`}
-				</style>
+						{/* ToDo: meter el style en un archivo, helper */}
+						<style>
+							{`
+								.katex-html {
+									display: none;
+								}
+					`}
+						</style>
 
-		</article>
-	</main>
+				</article>
+			</main>
+		</div>
+	
 	)
 }

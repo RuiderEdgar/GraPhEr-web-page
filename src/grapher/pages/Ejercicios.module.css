@@ -1,8 +1,20 @@
+.parentContainer {
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem 0rem;
+}
+
 .main_container {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	background-color: var(--light-gray);
+	max-width: 192rem;
+	justify-content: center;
+	justify-self: center;
 }
 
 /* ----------menu seccion-------------- */
