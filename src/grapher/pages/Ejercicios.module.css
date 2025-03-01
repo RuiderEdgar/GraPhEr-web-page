@@ -75,7 +75,6 @@
     display: flex;
     place-items: center;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
 }
 
@@ -98,15 +97,38 @@
     line-height: 2;
 }
 
-.subsubtitle {
-    padding: 0.5rem 0rem;
+.math {
+	text-align: center;
+	padding: 0.5rem 0rem;
     width: 90%;
-    font-size: 3rem;
-    text-align: left;
-    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2;
+}
+
+.titletheme {
+    padding: 3rem 0rem;
+    font-size:3.4rem;
+    color: var(--dark-blue);
 }
 
 .subtitle {
-    font-size: 3.8rem;
+	width: 90%;
+    font-size: 2.2rem;
+	font-weight: 600;
     color: var(--dark-blue);
+	text-align: left;
+}
+
+.subtitletheme {
+	padding: 1rem 0rem;
+    font-size:2.4rem;
+    color: var(--dark-blue);
+}
+
+.lists {
+	width: 90%;
+	font-size: 1.8rem;
+	text-align: left;
+	line-height: 2;
+	margin: 1rem 0rem 1rem 2rem;
 }
