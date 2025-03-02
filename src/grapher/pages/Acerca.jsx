@@ -2,6 +2,7 @@ import s from "./Acerca.module.css";
 
 export const AcercaDe = () => {
 	return (
+		<div className={s.parentContainer}>
 		<div className={s.container}>
 			<header className={s.header}>
 				<h1 className={s.title}>GraPhEr</h1>
@@ -66,6 +67,7 @@ export const AcercaDe = () => {
 					</p>
 				</article>
 			</main>
+		</div>
 		</div>
 	);
 };

@@ -1,4 +1,15 @@
+.parentContainer {
+	width: 100vw;
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+
 .container {
+	margin-top: 10rem;
 	height: auto;
 	min-height: 100vh;
 	background-color: var(--light-gray);

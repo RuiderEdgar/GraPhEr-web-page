@@ -20,7 +20,7 @@ export const Descargar = () => {
 								</ul>
 							</div>
 							<div className={s.rightColumn}>
-								<img class={s.logo1} src="../assets/logos/LogoGraPhEr_Sin.svg"/>
+								<img className={s.logo1} src="../assets/logos/LogoGraPhEr_Sin.svg"/>
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ export const Descargar = () => {
 								</ul>
 							</div>
 							<div className={s.rightColumn}>
-								<img class={s.logo2} src="../assets/logos/LogoGraPhEr_Gray.svg"/>
+								<img className={s.logo2} src="../assets/logos/LogoGraPhEr_Gray.svg"/>
 							</div>
 						</div>
 					</div>
@@ -53,7 +53,7 @@ export const Descargar = () => {
 								Si quieres apoyar en este proceso acude a la sección <a href="/ejercicios" className={s.learnLink}>Contribuir</a></p>
 							</div>
 							<div className={s.rightColumn}>
-								<img class={s.logo3} src="../assets/logos/LogoGraPhEr_White-Purple.svg"/>
+								<img className={s.logo3} src="../assets/logos/LogoGraPhEr_White-Purple.svg"/>
 							</div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@ export const Descargar = () => {
 								Si quieres apoyar en este proceso acude a la sección <a href="/ejercicios" className={s.learnLink2}>Contribuir</a></p>
 							</div>
 							<div className={s.rightColumn}>
-								<img class={s.logo4} src="../assets/logos/LogoGraPhEr_White-Green.svg"/>
+								<img className={s.logo4} src="../assets/logos/LogoGraPhEr_White-Green.svg"/>
 							</div>
 						</div>
 					</div>
@@ -76,9 +76,9 @@ export const Descargar = () => {
 
 					<p className={s.text}> Puedes descargar el código (en Python) de la aplicación (para ordenadores) desde nuestro repositorio en GitHub.</p>
 
-					<a href="/descargar" className={s.buttonText}> <button className={s.download}> <span>  Descargar GraPhEr</span> </button> </a>
+					<a href="https://github.com/LuisNavaFisBio/GraPhEr" target='_blank' className={s.buttonText}> <button className={s.download}> <span>  Descargar GraPhEr desde GitHub</span> </button> </a>
 
-					<p className={s.text}> Recuerda que el uso de este código está sujeto a la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="blank_" class={s.license}> GNU GENERAL PUBLIC LICENSE Versión 3.0</a>. </p>
+					<p className={s.text}> Recuerda que el uso de este código está sujeto a la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="blank_" className={s.license}> GNU GENERAL PUBLIC LICENSE Versión 3.0</a>. </p>
 				</div>
 				
 			</div>
