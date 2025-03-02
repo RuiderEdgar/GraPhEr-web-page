@@ -1,4 +1,5 @@
 import { Temario, ContentDocumentation } from './components';
+import { FixKatex } from '../helpers';
 import s from './Documentacion.module.css';
 
 export const Documentacion = () => {
@@ -14,17 +15,9 @@ export const Documentacion = () => {
 
 			{/* ----------documentacion seccion---------- */}
 			<article className={s.contenido}>
-				<ContentDocumentation/>
-
-					{/* ToDo: meter el style en un archivo, helper */}
-					<style>
-						{`
-							.katex-html {
-								display: none;
-							}
-        		`}
-					</style>
-
+				<ContentDocumentation />
+				<FixKatex/>
+				{/* ToDo: arreglar el sticky del contentdocumentacion, posible idea, meter el contentDocumentation en un contenedor */}
 			</article>
 		</main>
 	);

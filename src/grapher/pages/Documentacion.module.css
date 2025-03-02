@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	justify-content: center;
 	background-color: var(--light-gray);
 }
 
@@ -14,6 +15,8 @@
 }
 .temario {
 	display: flex;
+	max-width: 38.4rem;
+	min-width: 20.5rem;
 	flex-direction: column;
 	align-items: stretch;
 	width: 20%;
@@ -21,13 +24,13 @@
 	top: 100px;
 	min-height: 100vh;
 	max-height: 100vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 	.title_container {
 		background-color: var(--dark-blue);
 		min-height: 7.4rem;
 		display: flex;
 		align-items: center;
-		padding-left: 2rem;
+		padding: 0 1rem;
 		.title {
 			justify-self: center;
 			align-self: center;
@@ -36,7 +39,7 @@
 		}
 	}
 	.seccion_container {
-		padding: 1rem 0 2rem 2rem;
+		padding: 1rem 1rem 2rem 2rem;
 		font-size: 1.6rem;
 
 		.tema_container {
@@ -49,7 +52,7 @@
 		}
 		.seccion_subtemas_container {
 			list-style: none;
-			padding-left: 2rem;
+			padding: 0 1rem;
 			li {
 				margin: 1rem 0;
 			}
@@ -71,10 +74,18 @@
 
 /* ----------documentacion seccion---------- */
 .contenido {
-	min-height: 200vh;
 	width: 80%;
+	max-width: 153.6rem;
+	min-width: 82rem;
 	background-color: var(--light-gray);
 	padding: 2rem;
+	position: sticky;
+	top: 100px;
+	overflow: auto;
+
+	a {
+		color: black;
+	}
 	.header_title {
 		text-align: center;
 		font-size: 3.2rem;
@@ -95,5 +106,39 @@
 	.viñetas {
 		padding-left: 4rem;
 		list-style-type: square;
+	}
+	.figuraContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		.figura1 {
+			margin: 3rem auto 0;
+			height: 10rem;
+			width: 90%;
+		}
+		.figura2,
+		.figura3,
+		.figura4 {
+			margin: 3rem auto 0;
+			height: 6rem;
+			width: 60rem;
+		}
+		.figura5,
+		.figura8 {
+			margin: 3rem auto 0;
+			height: 10rem;
+			width: 60rem;
+		}
+		.figura6,
+		.figura7 {
+			margin: 3rem auto 0;
+			height: 18rem;
+			width: 60rem;
+		}
+		figcaption {
+			text-align: center;
+			font-style: italic;
+		}
 	}
 }
