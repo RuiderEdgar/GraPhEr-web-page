@@ -1,5 +1,5 @@
 import { InlineMath, BlockMath } from "react-katex";
-import s from "../Ejercicios.module.css";
+import s from "../Teoria.module.css";
 
 export const Notas = () => {
   return (

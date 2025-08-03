@@ -31,15 +31,15 @@ export const Navbar = () => {
 					</NavLink>
 					<div className={s.menu_container}>
 						<ul className={`${s.menu_row} ${s.ul}`}>
-							<li key="ejercicios" className={s.li}>
+							<li key="teoria" className={s.li}>
 								<NavLink
-									to="/ejercicios"
+									to="/teoria"
 									onClick={resetMenu}
 									className={({ isActive }) =>
 										isActive ? s.navlink_active : null
 									}
 								>
-									Ejercicios
+									Teoría
 								</NavLink>
 							</li>
 							<li key="acerca" className={s.li}>
@@ -110,9 +110,9 @@ export const Navbar = () => {
 				</div>
 			</header>
 			<ul className={menuState ? s.menu : `${s.menu} ${s.abierto} ${s.ul}`}>
-				<li key="ejercicios">
-					<a href="/ejercicios" onClick={resetMenu}>
-						Ejercicios
+				<li key="teoria">
+					<a href="/teoria" onClick={resetMenu}>
+						Teoría
 					</a>
 				</li>
 				<li key="acerca">

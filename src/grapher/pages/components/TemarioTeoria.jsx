@@ -1,7 +1,7 @@
-import s from "../Ejercicios.module.css";
-import { indiceEjercicios } from "../../data/indiceEjercicios";
+import s from "../Teoria.module.css";
+import { indiceTeoria } from "../../data/indiceTeoria";
 
-export const TemarioEjercicios = () => {
+export const TemarioTeoria = () => {
     const dividedSeccion = (tema) => {
         if (tema.id % 2 == 0) {
             return (`${s.light_blue}`)
@@ -11,7 +11,7 @@ export const TemarioEjercicios = () => {
     }
 
     const isLastOne = (tema) => {
-        if (indiceEjercicios.length == tema.id) {
+        if (indiceTeoria.length == tema.id) {
             return(`${s.seccion_last}`)
         }
     }
@@ -19,7 +19,7 @@ export const TemarioEjercicios = () => {
     return (
         <>
             {/* ---aside--- */}
-            {indiceEjercicios.map((tema) => {
+            {indiceTeoria.map((tema) => {
                 return (
                     // -----------contenedor
                     <div

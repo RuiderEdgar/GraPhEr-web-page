@@ -1,15 +1,15 @@
 import { Notas } from "./components";
-import { TemarioEjercicios } from "./components/TemarioEjercicios";
-import s from "./Ejercicios.module.css";
+import { TemarioTeoria } from "./components/TemarioTeoria";
+import s from "./Teoria.module.css";
 import { InlineMath } from 'react-katex'; 
 
-export const Ejercicios = () => {
+export const Teoria = () => {
 	return (
 		<div className={s.parentContainer}>
 			<main className={s.main_container}>
 				{/* ----------menu seccion-------------- */}
 				<aside className={s.temario} alt="temario">
-					<TemarioEjercicios />
+					<TemarioTeoria />
 				</aside>
 
 				{/* ----------documentacion seccion---------- */}
