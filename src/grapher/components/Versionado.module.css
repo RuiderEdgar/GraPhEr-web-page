@@ -3,13 +3,14 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 1rem 2rem 2rem;
+	padding: 7rem 2rem 2rem;
 	background-color: var(--light-gray);
 	border-bottom: 3px solid var(--gray);
 	font-size: 2.4rem;
 	font-weight: bold;
 	min-width: 30rem;
 }
+
 .current_version {
 	margin-top: 3rem;
 }
