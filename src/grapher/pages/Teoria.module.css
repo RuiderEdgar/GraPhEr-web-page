@@ -1,0 +1,152 @@
+.parentContainer {
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem 0rem;
+}
+
+.main_container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: var(--light-gray);
+	max-width: 192rem;
+	justify-content: center;
+	justify-self: center;
+}
+
+/* ----------menu seccion-------------- */
+.blue {
+	background-color: var(--secundary-dark-blue);
+}
+.light_blue {
+	background-color: var(--terciary-dark-blue);
+}
+
+:target {
+	scroll-margin-top: 100px; /* Add an offset */
+}
+
+.temario {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 20%;
+	position: sticky;
+	top: 100px;
+	min-height: 100vh;
+	max-height: 100vh;
+	overflow-y: scroll;
+	.title_container {
+		background-color: var(--dark-blue);
+		min-height: 7.4rem;
+		display: flex;
+		align-items: center;
+		padding-left: 2rem;
+		.title {
+			justify-self: center;
+			align-self: center;
+			font-size: 3.2rem;
+			color: white;
+		}
+	}
+	.seccion_container {
+		padding: 1rem 0 2rem 2rem;
+		font-size: 1.6rem;
+
+		.tema_container {
+			margin-bottom: 2rem;
+		}
+		> .tema_container > .tema {
+			font-size: 1.6rem;
+			font-weight: 300;
+			padding-top: 1rem;
+		}
+		.seccion_subtemas_container {
+			list-style: none;
+			padding-left: 2rem;
+			li {
+				margin: 1rem 0;
+			}
+			> li > a > span {
+				font-size: 1.6rem;
+				font-weight: 300;
+				padding-top: 1rem;
+			}
+		}
+		a {
+			color: white;
+		}
+	}
+}
+
+.seccion_last {
+	height: 100%;
+}
+
+.rightColumn {
+	margin: 10rem 0rem 0rem 0rem;
+    width: 80%;
+    padding: 0rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.title {
+    padding: 3rem 0rem;
+    font-size: 4.5rem;
+    color: var(--dark-blue);
+}
+
+.text {
+    padding: 0.5rem 0rem;
+    width: 90%;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 2;
+}
+
+.math {
+	text-align: center;
+	padding: 0.5rem 0rem;
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.2;
+}
+
+.titletheme {
+    padding: 3rem 0rem;
+    font-size:3.4rem;
+    color: var(--dark-blue);
+}
+
+.subtitle {
+	width: 90%;
+    font-size: 2.2rem;
+	font-weight: 600;
+    color: var(--dark-blue);
+	text-align: left;
+}
+
+.subtitletheme {
+	padding: 1rem 0rem;
+    font-size:2.4rem;
+    color: var(--dark-blue);
+}
+
+.lists {
+	width: 90%;
+	font-size: 1.8rem;
+	text-align: left;
+	line-height: 2;
+	margin: 1rem 0rem 1rem 2rem;
+}

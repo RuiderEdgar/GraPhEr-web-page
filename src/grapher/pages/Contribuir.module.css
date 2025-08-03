@@ -1,0 +1,445 @@
+.parentContainer {
+    width: 100vw;
+    background-color: var(--light-gray);
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem 50rem;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0;
+    padding: 6rem 0rem;
+}
+
+.container {
+    background-color:#EAEDEF;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 20rem 35rem 50rem;
+    max-width: 144rem;
+    gap: 8rem;
+    margin-top: 12rem;
+    padding: 0rem 0rem;
+}
+
+.title {
+    place-items: center;
+    justify-content: center;
+    justify-self: left;
+    text-align: left;
+    margin: 0rem 3rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 10rem;
+}
+
+.text {
+    place-items: center;
+    justify-content: center;
+    justify-self: left;
+    text-align: left;
+    margin: 0rem 3rem;
+    font-size: 1.9rem;
+    width: 90rem;
+}
+
+.leftColumn {
+    place-items: center;
+    justify-content: left;
+    justify-self: left;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 14rem;
+    gap: 1rem;
+    width: 100rem;
+    margin: 0rem;
+}
+
+.leftColumn2 {
+    place-items: center;
+    justify-content: left;
+    justify-self: left;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18rem 20rem;
+    gap: 1rem;
+    width: 100rem;
+    margin: 0rem;
+}
+
+.leftColumn3 {
+    place-items: center;
+    justify-content: left;
+    justify-self: left;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 26rem 20rem;
+    gap: 1rem;
+    width: 100rem;
+    margin: 0rem;
+}
+
+.rightColumn {
+    margin: 0rem 2rem;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.row1 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 100rem 30rem; 
+    grid-template-rows: 1fr;
+    gap: 8rem;
+}
+
+.logo1 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 20rem;
+    width: 20rem;
+    margin: 0rem 9rem 0rem 0rem;
+}
+
+.row2 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 100rem 30rem; 
+    grid-template-rows: 1fr;
+    gap: 8rem;
+}
+
+.title2 {
+    place-items: center;
+    justify-content: center;
+    justify-self: left;
+    text-align: left;
+    margin: 0rem 3rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 18rem;
+}
+
+.logo2 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 30rem;
+    width: 30rem;
+    margin: 0rem 12rem 0rem 0rem;
+}
+
+.learnLink {
+	color: var(--dark-blue);
+	font-size: var(--subtitle);
+	text-decoration: none;
+	font-weight: 600;
+	transition: 800ms ease all;
+	outline: none;
+	border: none;
+	position: relative;
+	padding: 0 0.5rem;
+}
+
+.learnLink:hover {
+	background: var(--gray);
+	color: var(--dark-gray);
+}
+
+.learnLink:before {
+	content: "";
+	position: absolute;
+	top: -0.3rem;
+	right: 0;
+	height: 0.28rem;
+	width: 0;
+	background: var(--dark-gray);
+	transition: 600ms ease all;
+}
+.learnLink:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0.1rem;
+}
+.learnLink:hover:before,
+.learnLink:hover:after {
+	width: 100%;
+	transition: 600ms ease all;
+}
+
+.row3 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 100rem 30rem; 
+    grid-template-rows: 1fr;
+    gap: 8rem;
+}
+
+.title3 {
+    place-items: center;
+    justify-content: center;
+    justify-self: left;
+    text-align: left;
+    margin: 0rem 3rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 26rem;
+}
+
+.logo3 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 30rem;
+    width: 30rem;
+    margin: 0rem 9rem 0rem 0rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .parentContainer {
+        padding: 3rem 0rem;
+    }
+
+    .container {
+        grid-template-rows: 25rem 35rem 50rem;
+        gap: 4rem;
+    }
+
+    .title {
+        width: 45rem;
+        font-size: 3rem;
+        height: 5rem;
+        font-weight: 600;
+    }
+    
+    .text {
+        margin: 0rem 3rem;
+        font-size: 1.9rem;
+        width: 48rem;
+    }
+    
+    .leftColumn {
+        grid-template-rows: 6rem 14rem;
+        gap: 1rem;
+        width: 50rem;
+    }
+    
+    .leftColumn2 {
+        grid-template-rows: 10rem 25rem;
+        gap: 1rem;
+        width: 50rem;
+    }
+    
+    .leftColumn3 {
+        grid-template-rows: 14rem 30rem;
+        gap: 1rem;
+        width: 50rem;
+    }
+    
+    .rightColumn {
+        margin: 0rem 2rem;
+        place-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .row1 {
+        grid-template-columns: 55rem 18rem; 
+        gap: 4rem;
+    }
+    
+    .logo1 {
+        height: 15rem;
+        width: 15rem;
+        margin: 0rem 5rem 0rem 0rem;
+    }
+    
+    .row2 {
+        grid-template-columns: 55rem 18rem; 
+        gap: 4rem;
+    }
+    
+    .title2 {
+        width: 45rem;
+        font-size: 3rem;
+        height: 10rem;
+        font-weight: 600;
+    }
+    
+    .logo2 {
+        height: 20rem;
+        width: 20rem;
+        margin: 0rem 8rem 0rem 0rem;
+    }
+    
+    .row3 {
+        grid-template-columns: 55rem 18rem; 
+        gap: 4rem;
+    }
+    
+    .title3 {
+        margin: 0rem 3rem;
+        font-size: 3rem;
+        height: 13rem;
+        font-weight: 600;
+    }
+    
+    .logo3 {
+        height: 20rem;
+        width: 20rem;
+        margin: 0rem 5rem 0rem 0rem;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        grid-template-rows: 50rem 70rem 90rem;
+        gap: 4rem;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem 18rem; 
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    .title {
+        justify-content: left;
+        text-align: center;
+        width: 45rem;
+        font-size: 2.5rem;
+        height: 5rem;
+        font-weight: 600;
+    }
+    
+    .text {
+        justify-content: center;
+        text-align: justify;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        margin: 0rem 3rem;
+        font-size: 1.9rem;
+        width: 35rem;
+    }
+
+    .logo1 {
+        height: 15rem;
+        width: 15rem;
+        margin: 0;
+    }
+    
+    .leftColumn {
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        grid-template-rows: 4rem 20rem;
+        gap: 1rem;
+        width: 45rem;
+    }
+    
+    .leftColumn2 {
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        grid-template-rows: 12rem 30rem;
+        gap: 1rem;
+        width: 50rem;
+    }
+    
+    .leftColumn3 {
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        grid-template-rows: 10rem 45rem;
+        gap: 1rem;
+        width: 50rem;
+    }
+    
+    .row2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 48rem 25rem; 
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+    }
+    
+    .title2 {
+        justify-content: left;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+        width: 35rem;
+        font-size: 2.5rem;
+        height: 8rem;
+        font-weight: 600;
+    }
+    
+    .logo2 {
+        height: 20rem;
+        width: 20rem;
+        margin: 0rem 0rem 4rem 0rem;
+    }
+    
+    .row3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60rem 25rem; 
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+    }
+    
+    .title3 {
+        justify-content: left;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        text-align: center;
+        width: 35rem;
+        font-size: 2.5rem;
+        height: 16rem;
+        font-weight: 600;
+    }
+    
+    .logo3 {
+        height: 20rem;
+        width: 20rem;
+        margin: 0;
+    }
+}

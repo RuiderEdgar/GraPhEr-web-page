@@ -1,0 +1,112 @@
+.footer {
+    padding: 0;
+    margin: 0;
+    background-color: var(--gray);
+}
+
+.footer_container {
+    display: grid;
+    justify-content: center;
+    margin: 0rem 2rem;
+    padding: 0;
+    grid-template-columns: 4fr 1.8fr 0.1fr; /* Dos columnas del mismo tamaño */
+    gap: 0.8fr; /* Espacio entre las columnas */
+}
+
+.footerColumnLeft {
+    justify-content: left;
+    margin: 0.5rem 0rem;
+    font-size: var(--details);
+    padding: 0;
+}
+
+.footerColumnRight {
+    text-align: right;
+    justify-content: end;
+    margin: 0.5rem 0.5rem 0.5rem 15rem;
+    font-size: var(--details);
+    padding: 0;
+}
+
+.footerContainerImage {
+    display: flex;
+    align-items: center; 
+    place-items: center;
+    margin: 0.5rem 0rem;
+    padding: 0;
+    font-size: var(--details);
+    max-width: 1.5rem;
+}
+
+.footerImage {
+    text-align: center;
+    padding: 0;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.footerImageLink {
+    text-align: center;
+    display: inline-block; 
+    padding: 0;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.license {
+    color:black;
+    font-weight: 600;
+}
+
+/* ---- media querys ---- */
+
+@media screen and (max-width: 1024px) {
+    .footer_container {
+        grid-template-columns: 1.8fr 1.9fr 0.1fr; /* Dos columnas del mismo tamaño */
+        gap: 0rem; /* Espacio entre las columnas */
+        place-items: center;
+    }
+    
+    .footerColumnLeft {
+        margin: 0.5rem 0rem 0.5rem 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+	.footer_container {
+        grid-template-columns: 1fr; /* Dos columnas del mismo tamaño */
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0.5rem; /* Espacio entre las columnas */
+        place-items: center;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+    
+    .footerColumnLeft {
+        justify-content: center;
+        width: 34rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: var(--details);
+    }
+
+    .footerColumnRight {
+        justify-content: center;
+        text-align: center;
+        margin: 0rem 0rem;
+        font-size: var(--details);
+        padding: 0;
+    }
+
+    .footerContainerImage {
+        margin: 0rem;
+    }
+
+    .footerImage {
+        margin: 0;
+    }
+
+    .footerImageLink {
+        margin: 0;
+    }
+}

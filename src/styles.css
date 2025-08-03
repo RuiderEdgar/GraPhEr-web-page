@@ -1,0 +1,75 @@
+.open-sans-light {
+	font-family: "Open Sans", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+.open-sans {
+	font-family: "Open Sans", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+.open-sans-bold {
+	font-family: "Open Sans", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 62.5%;
+	font-family: "Open Sans";
+	scroll-behavior: smooth;
+}
+
+:root {
+	/* Variables */
+
+	/* Font size */
+	--smallest: 1rem;
+	--details: 1.3rem;
+	/*up to 1.4 or 14px*/
+	--body-text: 1.6rem;
+	/*up to 1.8 or 18px*/
+	--subtitle: 1.8rem;
+	/*up to 2.0*/
+	--title: 2.4rem;
+	/*up to 2.8*/
+	--header: 3.2rem;
+	/*up to 3.8*/
+
+	--font-sz-logo: 8rem;
+	--font-sz-sublogo: 3rem;
+	--font-sz-body-homepage: 1.8rem;
+
+	--font-sz-navbar: 1.7rem;
+
+	--font-logo-title: 7.2rem;
+	--font-logo-subtitle: 1.8rem;
+
+	/* Colors */
+	--dark-gray: #474747;
+	--light-dark-gray: #47474733;
+	--gray: #dbdbdb;
+	--light-gray: #eaedef;
+	--dark-blue: #003d64;
+	--secundary-dark-blue: #003d64e6;
+	--terciary-dark-blue: #003d64b3;
+	--cuaternary-dark-blue: #003d6433;
+	--light-blue: #003e6433;
+	--dark-green: #476242;
+	--light-green: #47624233;
+	--purple: #8c6abb;
+	--light-purple: #8c6abb4d;
+}
