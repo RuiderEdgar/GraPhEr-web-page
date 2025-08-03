@@ -17,6 +17,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 7rem 0rem 2.8rem 0rem;
 	overflow-y: auto;
 }
 

@@ -32,6 +32,7 @@
 	width: 100%;
 	position: fixed;
 }
+
 .logo_desktop {
 	height: 5.5rem;
 	width: 21.3rem;
@@ -90,13 +91,13 @@
 .menu_row > li:hover {
 	background-color: var(--dark-blue);
 	border: 1px solid var(--gray);
-	transform: translateY(-1rem);
+	transform: translateY(-0.5rem);
 	color: var(--dark-blue);
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-	-webkit-transform: translateY(-1rem);
-	-moz-transform: translateY(-1rem);
-	-ms-transform: translateY(-1rem);
-	-o-transform: translateY(-1rem);
+	-webkit-transform: translateY(-0.5rem);
+	-moz-transform: translateY(-0.5rem);
+	-ms-transform: translateY(-0.5rem);
+	-o-transform: translateY(-0.5rem);
 }
 .menu_row > li > a:hover {
 	color: var(--dark-blue);
