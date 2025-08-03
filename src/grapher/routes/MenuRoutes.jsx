@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { HomePage, Ejercicios, AcercaDe, Descargar, Documentacion, Novedades, Contribuir } from "../pages"
+import { HomePage,Teoria, AcercaDe, Descargar, Documentacion, Novedades, Contribuir } from "../pages"
 import { Navbar, Footer } from "../../ui/components"
 
 export const MenuRoutes = () => {
@@ -9,7 +9,7 @@ export const MenuRoutes = () => {
 			<div>
 				<Routes>
 					<Route path="/homepage" element={<HomePage/>} />
-					<Route path="/ejercicios" element={<Ejercicios/>} />
+					<Route path="/teoria" element={<Teoria/>} />
 					<Route path="/acercade" element={<AcercaDe/>} />
 					<Route path="/descargar" element={<Descargar/>} />
 					<Route path="/documentacion" element={<Documentacion/>} />

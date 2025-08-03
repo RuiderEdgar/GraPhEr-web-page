@@ -1,4 +1,4 @@
-export const indiceEjercicios = [
+export const indiceTeoria = [
 	{
 		id: '1',
 		title: 'Ecuaciones Diferenciales Parciales',

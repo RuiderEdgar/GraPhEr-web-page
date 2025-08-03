@@ -1,5 +1,5 @@
 export * from "./HomePage";
-export * from "./Ejercicios";
+export * from "./Teoria";
 export * from "./Acerca";
 export * from "./Descargar";
 export * from "./Documentacion";
