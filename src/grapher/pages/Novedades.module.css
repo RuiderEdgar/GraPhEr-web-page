@@ -40,13 +40,30 @@
 }
 
 .img_container {
-	grid-area: img;
-	background-color: var(--dark-gray);
+	max-width: 100px;
+}
+
+.image1 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 40rem;
+    width: 60rem;
+    margin: 3rem 0rem 0rem 10rem;
+}
+
+.video1 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 40rem;
+    width: 60rem;
+    margin: 0rem 0rem 0rem 10rem;
 }
 
 .video_container {
 	grid-area: video;
-	background-color: var(--dark-gray);
+	max-width: 200px;
 }
 
 .article2 {

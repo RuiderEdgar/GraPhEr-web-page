@@ -82,7 +82,7 @@
 
 /* ---- media querys ---- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1236px) {
     .license_container{
         display: flex;
         flex-direction: column;
