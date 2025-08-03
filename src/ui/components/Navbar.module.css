@@ -129,7 +129,7 @@
 
 /* ---- media querys ---- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1236px) {
 	/* ocultamos el menu principal */
 	.menu_row {
 		display: none;
