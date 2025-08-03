@@ -7,11 +7,21 @@ export const Footer = () => {
             <footer className={s.footer}>
                 <div className={s.footer_container}>
                     <div className={s.footerColumnLeft}>
-                        <p>GraPhEr es un software de uso abierto bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="blank_" className={s.license}> GNU GENERAL PUBLIC LICENSE Versión 3.0 </a></p>
+                        <div className={s.license_container}>
+                            <div><p>GraPhEr es un software de uso abierto bajo la licencia&nbsp;</p> </div>
+                            <div><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="blank_" className={s.license}> GNU GENERAL PUBLIC LICENSE Versión 3.0 </a></div>
+                        </div>
+                    </div>
+
+                    <div className={s.footerColumnCenter}>
+                        <p> </p>
                     </div>
 
                     <div className={s.footerColumnRight}>
-                        <p> © Luis Enrique Nava Garcia - 2025 </p>
+                        <div className={s.author_container}>
+                            <div><p>© Luis Enrique Nava Garcia&nbsp;</p> </div>
+                            <div><p>2025</p></div>
+                        </div>
                     </div>
 
                     <div className={s.footerContainerImage}>
