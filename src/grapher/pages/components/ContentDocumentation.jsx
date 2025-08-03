@@ -1,4 +1,12 @@
 import { InlineMath, BlockMath } from "react-katex";
+import figura1 from "../../../../assets/images/figura1.png";
+import figura2 from "../../../../assets/images/figura2.png";
+import figura3 from "../../../../assets/images/figura3.png";
+import figura4 from "../../../../assets/images/figura4.png";
+import figura5 from "../../../../assets/images/figura5.png";
+import figura6 from "../../../../assets/images/figura6.png";
+import figura7 from "../../../../assets/images/figura7.png";
+import figura8 from "../../../../assets/images/figura8.png";
 import s from "../Documentacion.module.css";
 
 export const ContentDocumentation = () => {
@@ -6,13 +14,16 @@ export const ContentDocumentation = () => {
 		<>
 			<h2 className={s.header_title}>Documentación de GraPher 1.0</h2>
 			{/* --------------tema */}
-			<h3 className={s.topic}>1. Sintaxis de entrada</h3>
+			<h3 id="1" className={s.topic}>
+				1. Sintaxis de entrada
+			</h3>
 			<p className={s.texto}>
-				La sintaxis de entrada está basada en la sintaxis de la librería de
-				SymPy11; sin embargo, para facilitar el ingreso de la entrada se
-				realizaron algunas modificaciones, por ello esta sección está destinada
-				a indicar la sintaxis de entrada de la interfaz para un correcto uso.
-				Para otras funciones es necesario dirigirse a la página de SymPy.
+				La sintaxis de entrada está basada en la sintaxis de la librería de{" "}
+				<a href="https://www.sympy.org/en/index.html">SymPy</a>; sin embargo,
+				para facilitar el ingreso de la entrada se realizaron algunas
+				modificaciones, por ello esta sección está destinada a indicar la
+				sintaxis de entrada de la interfaz para un correcto uso. Para otras
+				funciones es necesario dirigirse a la página de <i>SymPy.</i>
 			</p>
 			<p className={s.texto}>
 				Cada función de interés se muestra como un par{" "}
@@ -21,7 +32,9 @@ export const ContentDocumentation = () => {
 			</p>
 
 			{/* --------------tema */}
-			<h3 className={s.topic}>1.1. Símbolos especiales</h3>
+			<h3 id="1.1" className={s.topic}>
+				1.1. Símbolos especiales
+			</h3>
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Variable x :</strong> x
@@ -72,7 +85,7 @@ export const ContentDocumentation = () => {
 				</li>
 			</ul>
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>
+			<h3 id="1.2" className={s.topic}>
 				1.2. Operaciones básicas y signos de agrupación
 			</h3>
 			<ul className={s.viñetas}>
@@ -107,7 +120,9 @@ export const ContentDocumentation = () => {
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>1.3. Funciones elementales</h3>
+			<h3 id="1.3" className={s.topic}>
+				1.3. Funciones elementales
+			</h3>
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Exponencial : </strong> exp( )
@@ -174,8 +189,9 @@ export const ContentDocumentation = () => {
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>1.4. Operadores integrales y diferenciales</h3>
-
+			<h3 id="1.4" className={s.topic}>
+				1.4. Operadores integrales y diferenciales
+			</h3>
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Integral simple sobre una coordenada espacial :</strong> Int[
@@ -228,7 +244,9 @@ export const ContentDocumentation = () => {
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>1.5. Funciones especiales</h3>
+			<h3 id="1.5" className={s.topic}>
+				1.5. Funciones especiales
+			</h3>
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>
@@ -289,7 +307,9 @@ export const ContentDocumentation = () => {
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>1.6. Otros</h3>
+			<h3 id="1.6" className={s.topic}>
+				1.6. Otros
+			</h3>
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Funciones definidas a trozos :</strong> Piecewise((val_1,
@@ -351,7 +371,9 @@ export const ContentDocumentation = () => {
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>2. Interacción con la solución</h3>
+			<h3 id="2" className={s.topic}>
+				2. Interacción con la solución
+			</h3>
 
 			<p className={s.texto}>
 				Una vez obtenida la gráfica de la solución, hay varias maneras de
@@ -360,15 +382,15 @@ export const ContentDocumentation = () => {
 			</p>
 
 			{/* --------------tema--- */}
-			<h4 className={s.topic}>2.1. Interacción con la gráfica</h4>
-
+			<h4 id="2.1" className={s.topic}>
+				2.1. Interacción con la gráfica
+			</h4>
 			<p className={s.texto}>
 				En la vista tridimensional, además de permitir la inspección de la
 				solución haciendo zoom o modificando la posición desde la que se
 				visualiza la gráfica con ayuda del mouse, la aplicación permite
 				interactuar con la gráfica a través de las siguientes acciones:
 			</p>
-
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Inspección en el tiempo o inspección por cortes</strong> (solo
@@ -376,7 +398,16 @@ export const ContentDocumentation = () => {
 					respectivamente). En este caso aparecen botones de reproducción como
 					en la siguiente figura:
 					<br />
-					<em>Figura 6: Vista de los botones de reproducción.</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura1}
+							src={figura1}
+							alt="vista botones reproducción"
+						/>
+						<figcaption>
+							Figura 1: Vista de los botones de reproducción.
+						</figcaption>
+					</figure>
 					<br />
 					Estos permiten visualizar la gráfica para instantes determinados en el
 					tiempo o en los cortes determinados de una coordenada específica. De
@@ -387,47 +418,85 @@ export const ContentDocumentation = () => {
 					<br />
 					Si se desea visualizar un tiempo o corte en particular que no se
 					encuentra a través de estos botones, es posible utilizar el campo de
-					entrada <strong>Valor de la Coordenada Fija</strong> (no disponible en
-					mapas de calor por obvias razones) para indicar a la aplicación que se
-					requiere hacer cálculos para este valor particular. Una vez ingresado
-					un valor en el campo, se debe presionar el botón <strong>Ir</strong> a
-					su derecha.
+					entrada <i>Valor de la Coordenada Fija</i> (no disponible en mapas de
+					calor por obvias razones) para indicar a la aplicación que se requiere
+					hacer cálculos para este valor particular. Una vez ingresado un valor
+					en el campo, se debe presionar el botón <i>Ir</i> a su derecha.
 					<br />
-					<em>
-						Figura 7: Vista de los elementos para cambiar el valor de la
-						coordenada fija.
-					</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura2}
+							src={figura2}
+							alt="Vista de los elementos para cambiar el valor de la coordenada fija."
+						/>
+						<figcaption>
+							Figura 2: Vista de los elementos para cambiar el valor de la
+							coordenada fija.
+						</figcaption>
+					</figure>
+					<br />
+					Para intercambiar entre coordenadas fijas se debe hacer uso de las
+					casillas seleccionables a la izquierda del texto{" "}
+					<i>Coordenada Fija.</i>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura3}
+							src={figura3}
+							alt="Vista de los elementos para cambiar la coordenada fija"
+						/>
+						<figcaption>
+							Figura 3: Vista de los elementos para cambiar la coordenada fija.
+						</figcaption>
+					</figure>
 				</li>
 				<li className={s.texto}>
 					<strong>Intercambio entre modo de visualización.</strong> A través de
-					la casilla <strong>Proyección/Mapa de calor</strong>, se puede elegir
-					entre una vista como lo explicado para el campo de entrada{" "}
+					la casilla <i>Proyección/Mapa de calor</i>, se puede elegir entre una
+					vista como lo explicado para el campo de entrada{" "}
 					<strong>Proyección</strong> (ver Otras Características en el punto
-					4.1). Mientras que con las casillas <strong>Modo por modo</strong> y{" "}
-					<strong>Solución parcial</strong>, se puede entrar o salir de los
-					modos especiales de visualización (ver punto 6.3).
+					4.1). Mientras que con las casillas <i>Modo por modo</i> y{" "}
+					<i>Solución parcial</i>, se puede entrar o salir de los modos
+					especiales de visualización (ver punto 6.3).
 					<br />
-					<em>Figura 9: Vista de los elementos para cambiar de modo.</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura4}
+							src={figura4}
+							alt="Vista de los elementos para cambiar de modo"
+						/>
+						<figcaption>
+							Figura 4: Vista de los elementos para cambiar de modo.
+						</figcaption>
+					</figure>
+					<br />
 				</li>
 				<li className={s.texto}>
 					<strong>Visualización de curvas de nivel</strong> (solo en problemas
 					con más de una dimensión espacial). Hay dos formas de elegir los
 					valores de las curvas de nivel que se quieren mostrar: de manera
-					automática seleccionando la casilla{" "}
-					<strong>Curvas de nivel automáticas</strong> (el proceso se inicia
-					automáticamente) o de manera manual seleccionando inicialmente la
-					casilla <strong>Curvas de nivel específicas</strong>, especificando
-					posteriormente los valores, separados por “;”, en el campo de
-					escritura <strong>Valores de las curvas</strong> y presionando el
-					botón <strong>Ir</strong> a la derecha del campo anterior.
+					automática seleccionando la casilla <i>Curvas de nivel automáticas</i>{" "}
+					(el proceso se inicia automáticamente) o de manera manual
+					seleccionando inicialmente la casilla{" "}
+					<i>Curvas de nivel específicas</i>, especificando posteriormente los
+					valores, separados por “;”, en el campo de escritura{" "}
+					<i>Valores de las curvas</i> y presionando el botón <i>Ir</i> a la
+					derecha del campo anterior.
 					<br />
 					En ambos casos, se abre una ventana de etiquetas donde se muestra la
 					leyenda de las curvas de nivel, indicando el color de la curva y el
 					valor.
 					<br />
-					<em>
-						Figura 10: Vista de los elementos para graficar curvas de nivel.
-					</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura5}
+							src={figura5}
+							alt="Vista de los elementos para graficar curvas de nivel"
+						/>
+						<figcaption>
+							Figura 5: Vista de los elementos para graficar curvas de nivel.
+						</figcaption>
+					</figure>
+					<br />
 				</li>
 			</ul>
 
@@ -444,7 +513,7 @@ export const ContentDocumentation = () => {
 			</p>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>
+			<h3 id="2.2" className={s.topic}>
 				2.2. Interacción con la aproximación calculada
 			</h3>
 
@@ -460,9 +529,9 @@ export const ContentDocumentation = () => {
 			<ul className={s.viñetas}>
 				<li className={s.texto}>
 					<strong>Obtención de los coeficientes de cada término.</strong> En el
-					campo <strong>Coeficientes</strong> en la ventana de graficación, se
-					encontrará un cuadro de número para determinar el subproblema en donde
-					se encuentra el término de interés y, dependiendo de la cantidad de
+					campo <i>Coeficientes</i> en la ventana de graficación, se encontrará
+					un cuadro de número para determinar el subproblema en donde se
+					encuentra el término de interés y, dependiendo de la cantidad de
 					conjuntos de valores propios presentes en el subproblema (la cantidad
 					de índices en la suma iterada), se encontrarán cuadros de números para
 					determinar el valor de cada índice (estos cuadros de números tendrán
@@ -473,27 +542,48 @@ export const ContentDocumentation = () => {
 					cuadro inferior a estos elementos, se mostrarán los valores propios
 					correspondientes a los índices elegidos, separados entre ellos por “:”
 					y separados del valor del coeficiente correspondiente por “;”.
-					<br />
-					<em>Figura 11: Vista de los elementos del campo Coeficientes.</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura6}
+							src={figura6}
+							alt="Vista de los elementos del campo Coeficientes"
+						/>
+						<figcaption>
+							Figura 6: Vista de los elementos del campo Coeficientes.
+						</figcaption>
+					</figure>
+					Cuando el término se compone de una suma, se mostrarán los
+					coeficientes ordenados y separados por “;” de acuerdo al orden en el
+					que se introdujeron en el campo <i>Coeficientes.</i>
 				</li>
 				<li className={s.texto}>
 					<strong>Evaluación de la solución.</strong> En el campo{" "}
-					<strong>Solución</strong> en la ventana de graficación, se encuentran
+					<i>Solución</i> en la ventana de graficación, se encuentran
 					los correspondientes campos de escritura para especificar el valor de
 					cada una de las variables (esto determinará el punto en el dominio en
 					donde se quiere evaluar la solución). El resultado se muestra en el
 					cuadro inferior a estos campos.
-					<br />
-					<em>Figura 12: Vista de los elementos del campo Solución.</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura7}
+							src={figura7}
+							alt="Vista de los elementos del campo Solución."
+						/>
+						<figcaption>
+							Figura 7: Vista de los elementos del campo Solución.
+						</figcaption>
+					</figure>
 				</li>
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>2.3. Modos especiales de visualización</h3>
+			<h3 id="2.3" className={s.topic}>
+				2.3. Modos especiales de visualización
+			</h3>
 			<p className={s.texto}>
 				La aplicación permite elegir entre dos modos especiales de
-				visualización: el modo denominado <strong>“solución parcial”</strong> y
-				el modo denominado <strong>“por modo”</strong>. Se puede ingresar a
+				visualización: el modo denominado “solución parcial” y
+				el modo denominado “por modo”. Se puede ingresar a
 				estos modos seleccionando la casilla correspondiente en la ventana de
 				graficación, con esto se habilitan los cuadros de números que se
 				encuentran por debajo de estas casillas. A continuación se describe cada
@@ -514,16 +604,25 @@ export const ContentDocumentation = () => {
 					funcionamiento es análogo al usado para acceder a los coeficientes).
 					Es decir, en este modo es posible observar el comportamiento de cada
 					término por separado.
-					<br />
-					<em>
-						Figura 13: Vista de los elementos para los modos especiales de
-						visualización.
-					</em>
+					<figure className={s.figuraContainer}>
+						<img
+							className={s.figura8}
+							src={figura8}
+							alt="Vista de los elementos para los modos especiales de
+						visualización"
+						/>
+						<figcaption>
+							Figura 8: Vista de los elementos para los modos especiales de
+							visualización.
+						</figcaption>
+					</figure>
 				</li>
 			</ul>
 
 			{/* --------------tema--- */}
-			<h3 className={s.topic}>3. Exportación de animaciones</h3>
+			<h3 id="3" className={s.topic}>
+				3. Exportación de animaciones
+			</h3>
 			<p className={s.texto}>
 				En la ventana de graficación, se puede guardar una animación de la
 				gráfica en su estado actual (cuando el problema no depende del tiempo y

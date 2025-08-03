@@ -30,6 +30,7 @@ html,
 body {
 	font-size: 62.5%;
 	font-family: "Open Sans";
+	scroll-behavior: smooth;
 }
 
 :root {
