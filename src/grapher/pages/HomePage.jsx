@@ -22,9 +22,9 @@ export const HomePage = () => {
 					</div>
 
 					<div className={s.column}>
-						<img className={s.video} src="../assets/images/Miniatura1.png"/>
+						<video className={s.video1} src="../assets/videos/Principal.mp4" alt="Video muestra" controls  muted></video>
 						<p className={s.learn}>
-						Aprende más sobre los escenarios de uso visitando la sección de <a href="/ejercicios" className={s.learnLink}> Ejercicios</a>
+						Aprende más sobre los escenarios de uso visitando la sección de <a href="/teoria" className={s.learnLink}> Teoría</a>
 						</p>
 					</div>
 				</div>

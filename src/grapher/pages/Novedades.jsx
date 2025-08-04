@@ -31,7 +31,7 @@ export const Novedades = () => {
 						
 					</article>
 					<aside className={s.video_container}>
-						<video className={s.video1} src="../assets/images/Novedades.mp4" alt="video de la actualización" controls  muted></video>
+						<video className={s.video1} src="../assets/videos/Novedades.mp4" alt="video de la actualización" controls  muted></video>
 					</aside>
 					<article className={s.article2}>
 						<p>

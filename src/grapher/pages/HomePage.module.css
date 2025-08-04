@@ -1,3 +1,7 @@
+body {
+  overflow: hidden; 
+}
+
 .parentContainer {
 	height: calc(100vh - 2.8rem);
 	width: 100vw;
@@ -149,17 +153,19 @@
 	transform: scaleX(1);
 }
 
-.video {
-	margin: 2rem 8rem 2rem 4rem;
-	height: 39rem;
-	width: 60rem;
-	border-radius: 3rem;
-	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.45);
+.video1 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 40rem;
+    width: 60rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 .learn {
 	justify-self: center;
-	margin: 0.5rem 8rem 0rem 4rem;
+	justify-content: center;
+	margin: 0.5rem 4rem 0rem 4rem;
 	font-size: var(--body-text);
 }
 
