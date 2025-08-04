@@ -30,7 +30,7 @@ export const Contribuir = () => {
 
 					<div className={s.row3}>
 						<div className={s.leftColumn3}>
-							<p className={s.title3}> ¿Quieres distribuir la aplicación a dispositivos móviles u otros sistemas? </p>
+							<p className={s.title3}> ¿Quieres distribuir la aplicación a dispositivos móviles u otros sistemas operativos? </p>
 							<p className={s.text}> Descarga el código en Python desde nuestro repositorio en <a href="https://github.com/LuisNavaFisBio/GraPhEr" target='_blank' className={s.learnLink}>Github</a> y comparte el proceso de creación del archivo instalador para el sistema operativo. Todo el proceso debe estar explicado a detalle, con esto nos aseguramos que el archivo es seguro para todos los usuarios. Una vez verificado, nuestro equipo seguirá las instrucciones y podrá crear el archivo instalador. <br></br>
 							En el caso de dispositivos móviles, revisa el estado actual del proyecto en el repositorio de Github <br></br> <a href="https://github.com/LuisNavaFisBio/GraPhEr_mobileApp" target='_blank' className={s.learnLink} > GraPhEr para dispositivos móviles</a> y comparte tus aportaciones a través de un fork, el equipo se encargará de revisar tus sugerencias.</p>
 						</div>
