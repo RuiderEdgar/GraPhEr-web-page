@@ -17,30 +17,33 @@
 	margin: 0 2rem;
 	padding-top: 1rem;
 }
-.grid_container {
-	display: grid;
+
+.newsRow1 {
+	display: flex;
 	max-width: 144rem;
-	grid-template-areas:
-		"article1 article1 img img img"
-		"video video video article2 article2";
-	grid-template-columns: 28.8rem 28.8rem 28.8rem 28.8rem 28.8rem;
-	grid-template-rows: repeat(2, 40rem);
-	row-gap: 6rem;
+	flex-direction: row;
+	padding: 5rem;
+}
+
+.newsRow2 {
+	display: flex;
+	max-width: 144rem;
+	flex-direction: row;
+	padding: 5rem;
 }
 
 .article1 {
-	grid-area: article1;
+	width: 80rem;
 	font-size: 2.2rem;
 	align-self: center;
 	text-align: justify;
-	padding-right: 4rem;
 	> p {
 		margin-bottom: 4rem;
 	}
 }
 
 .img_container {
-	max-width: 100px;
+	width: 60rem;
 }
 
 .image1 {
@@ -56,22 +59,21 @@
     justify-content: center;
     text-align: center;
     place-items: center;
-    height: 40rem;
+    height: 34rem;
     width: 60rem;
-    margin: 0rem 0rem 0rem 10rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 .video_container {
-	grid-area: video;
-	max-width: 200px;
+	width: 60rem;
 }
 
 .article2 {
-	grid-area: article2;
+	width: 80rem;
 	font-size: 2.2rem;
 	align-self: center;
 	text-align: justify;
-	padding-left: 4rem;
+	padding: 0rem 0rem 0rem 10rem;
 	> p {
 		margin-bottom: 4rem;
 	}

@@ -13,7 +13,7 @@ export const Descargar = () => {
 								<p className={s.title1}>Windows </p>
 								<ul className={s.ul}>
 									<li key="ejercicios" className={s.li1}>
-										<a href="/ejercicios">
+										<a href="https://www.dropbox.com/scl/fi/wl0hix5btiweu6i4um70h/GraPhErEDPS_Windows.zip?rlkey=9ncp3cuqfbsc4ip9m74js993d&st=nx40qqzk&dl=0" target='_blank'>
 											Descargar
 										</a>
 									</li>
@@ -31,7 +31,7 @@ export const Descargar = () => {
 								<p className={s.title2}>Linux </p>
 								<ul className={s.ul}>
 									<li key="ejercicios" className={s.li2}>
-										<a href="/ejercicios">
+										<a href="https://www.dropbox.com/scl/fi/g4jqqniyisyx0kow22z0c/GraPhErEDPS_Linux.zip?rlkey=lk8o1lz9fqgtn3dx30y5845by&st=7yx7w5g5&dl=0" target='_blank'>
 											Descargar
 										</a>
 									</li>
