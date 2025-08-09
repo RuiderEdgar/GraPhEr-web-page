@@ -22,7 +22,7 @@ export const Novedades = () => {
 						<img className={s.image1} src="../assets/images/Novedades1_V1_0.png" alt="imagen de app" />
 					</div>
 				</div>
-				<div className={s.newsRow1}>
+				<div className={s.newsRow2}>
 					<div className={s.video_container}>
 						<video className={s.video1} src="../assets/videos/Novedades.mp4" alt="video de la actualización" controls  muted></video>
 					</div>
@@ -38,17 +38,20 @@ export const Novedades = () => {
 						</p>
 					</div>
 				</div>
-				<h1 className={s.second_title}>Descripción Completa</h1>
-				<section className={s.description}>
-					<p>
-						A continuación puedes encontrar todos los detalles de la última
-						actualización:
-					</p>
-					<ul className={s.ul}>
-						<li>Adición de los botones de Importación y Exportación</li>
-						<li>Adición de los modos especiales de visualización.</li>
-					</ul>
-				</section>
+				<div className={s.update}>
+					<h1 className={s.second_title}>Descripción Completa</h1>
+					<section className={s.description}>
+						<p>
+							A continuación puedes encontrar todos los detalles de la última
+							actualización:
+						</p>
+						<ul className={s.ul}>
+							<li>Adición de los botones de Importación y Exportación</li>
+							<li>Adición de los modos especiales de visualización.</li>
+						</ul>
+					</section>
+				</div>
+				
 			</main>
 		</>
 	);
