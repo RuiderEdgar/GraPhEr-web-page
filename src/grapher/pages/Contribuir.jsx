@@ -38,6 +38,16 @@ export const Contribuir = () => {
 							<img className={s.logo3} src="../assets/images/Dispositivos.svg"/>
 						</div>
 					</div>
+
+					<div className={s.row}>
+						<div className={s.leftColumn}>
+							<p className={s.title4}> ¿Encontraste algún error en la aplicación o en la página web? </p>
+							<p className={s.text}> Si encuentras algún error en la aplicación o en la página web, por favor repórtalo en GitHub. Para errores en la aplicación, si consideras que puedes solucionarlo desde el código crea un fork en GitHub, lo revisaremos lo más pronto posible.</p>
+						</div>
+						<div className={s.rightColumn}>
+							<img className={s.logo4} src="../assets/images/Errores.svg"/>
+						</div>
+					</div>
 				</div>
 				
 			</div>
