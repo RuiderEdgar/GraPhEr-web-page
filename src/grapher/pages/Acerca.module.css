@@ -7,7 +7,6 @@
 	padding: 0;
 }
 
-
 .container {
 	margin-top: 10rem;
 	height: auto;
@@ -126,7 +125,8 @@
 	grid-column: 2;
 	grid-row: 3;
 }
-@media screen and (max-width: 1500px) {
+
+@media screen and (max-width: 1280px) {
 	.main_grid {
 		grid-template-columns: repeat(2, 46rem);
 		grid-template-rows: repeat(2, 44rem) 30rem;
@@ -135,7 +135,8 @@
 	}
 	.img_app {
 		align-self: center;
-		height: 35rem;
+		height: 25rem;
+		width: 40rem;
 	}
 	.img_grafica3d {
 		align-self: center;
