@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 7rem 2rem 2rem;
+	padding: 1.5rem 2rem;
 	background-color: var(--light-gray);
 	border-bottom: 3px solid var(--gray);
 	font-size: 2.4rem;
@@ -12,7 +12,8 @@
 }
 
 .current_version {
-	margin-top: 3rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
 }
 
 .texto {
@@ -32,7 +33,7 @@
 	-o-border-radius: 6px;
 }
 .versions_container {
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 	display: flex;
 	align-items: center;
 }
@@ -70,5 +71,38 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1024px) {
+	.header {
+		margin: 2rem 0rem 0rem 0rem;
+		padding: 0.5rem 2rem 2rem 0rem;
+		background-color: var(--light-gray);
+		border-bottom: 3px solid var(--gray);
+		font-size: 2.2rem;
+		font-weight: bold;
+		min-width: 30rem;
+	}
 }
+
+@media screen and (max-width: 575px) {
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		margin: 2rem 0rem 0rem 0rem;
+		padding: 0.5rem 2rem 2rem 0rem;
+		background-color: var(--light-gray);
+		border-bottom: 3px solid var(--gray);
+		font-size: 2.2rem;
+		font-weight: bold;
+		min-width: 30rem;
+	}
+
+	.current_version {
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		place-items: center;
+		margin-left: 0rem;
+	}
+}
+
+
