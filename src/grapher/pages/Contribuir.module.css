@@ -19,7 +19,7 @@
     max-width: 144rem;
 	width: clamp(36rem, 100vw, 144rem);
 	min-width: 36rem;
-	margin: 9rem 0rem 2rem 0rem;
+	margin: 2rem 0rem 2rem 0rem;
     padding: 0rem 0rem;
     overflow-y: auto;
     overflow-x: hidden;
@@ -201,8 +201,8 @@
     justify-content: center;
     text-align: center;
     place-items: center;
-    height: 40rem;
-    width: 30rem;
+    height: 35rem;
+    width: 25rem;
     margin: 0rem 0rem 0rem 0rem;
 }
 
@@ -400,8 +400,8 @@
     }
     
     .logo4 {
-        height: 22rem;
-        width: 22rem;
-        margin: 4rem 0rem 0rem 0rem;
+        height: 20rem;
+        width: 20rem;
+        margin: 4rem 0rem 2rem 0rem;
     }
 }
