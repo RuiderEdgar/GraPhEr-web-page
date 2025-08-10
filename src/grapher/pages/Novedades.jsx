@@ -46,8 +46,8 @@ export const Novedades = () => {
 							actualización:
 						</p>
 						<ul className={s.ul}>
-							<li>Adición de los botones de Importación y Exportación</li>
-							<li>Adición de los modos especiales de visualización.</li>
+							<li>Adición de los botones de <b>Importación</b> y <b>Exportación</b>.</li>
+							<li>Adición de los <b>modos especiales de visualización</b>.</li>
 						</ul>
 					</section>
 				</div>
