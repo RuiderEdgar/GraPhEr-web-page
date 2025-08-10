@@ -8,7 +8,7 @@
 }
 
 .container {
-    margin-top: 5rem;
+    margin-top: 2rem;
     height: auto;
 	min-height: 100vh;
     background-color:#EAEDEF;
@@ -18,7 +18,7 @@
     justify-content: center;
     text-align: center;
     max-width: 144rem;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -557,7 +557,7 @@
 	    width: clamp(30rem, 90vw, 75rem);
 	    min-width: 30rem;
         height: 8rem;
-        margin: 4rem 0rem 0rem 0rem;
+        margin: 2rem 0rem 0rem 0rem;
         font-size: var(--header);
     }
 
@@ -692,6 +692,7 @@
     .name {
         width: 35rem;
         font-size: var(--title);
+        margin: 1rem 0rem;
     }
 
     .leftColumn {
