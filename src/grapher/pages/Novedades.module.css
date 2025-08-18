@@ -1,3 +1,12 @@
+.parentContainer {
+	width: 100vw;
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+	margin: 0rem;
+	padding: 0rem;
+}
+
 .main {
 	background-color: var(--light-gray);
 	padding-top: 1rem;
@@ -7,6 +16,9 @@
 	align-items: center;
 	min-height: 100vh;
 	min-width: 30rem;
+	max-width: 144rem;
+	width: clamp(36rem, 100vw, 144rem);
+	min-width: 36rem;
 }
 
 .title {

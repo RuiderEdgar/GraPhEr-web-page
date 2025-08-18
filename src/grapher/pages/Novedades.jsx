@@ -5,7 +5,8 @@ export const Novedades = () => {
 	return (
 		<>
 			<Versionado />
-			<main className={s.main}>
+			<div className={s.parentContainer}>
+				<div className={s.main}>
 				<h1 className={s.title}>Última Actualización (V 1.0)</h1>
 				<div className={s.newsRow1}>
 					<div className={s.article1}>
@@ -51,8 +52,8 @@ export const Novedades = () => {
 						</ul>
 					</section>
 				</div>
-				
-			</main>
+			</div>
+			</div>
 		</>
 	);
 }
