@@ -1,5 +1,5 @@
 import s from "../Documentacion.module.css";
-import { indiceDocumentatio } from "/src/grapher/data/IndiceDocumentation.js";
+import { indiceDocumentatio } from "../../data/IndiceDocumentation.js";
 
 export const Temario = () => {
 	const dividedSeccion = (tema) => {
