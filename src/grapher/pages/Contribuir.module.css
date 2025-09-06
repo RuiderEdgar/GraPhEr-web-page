@@ -2,26 +2,61 @@
     width: 100vw;
     background-color: var(--light-gray);
     display: flex;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 50rem;
     justify-content: center;
-    gap: 8rem;
     margin: 0;
-    padding: 6rem 0rem;
+    padding: 0rem 0rem;
 }
 
 .container {
+	height: auto;
+	min-height: 100vh;
     background-color:#EAEDEF;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 144rem;
+	width: clamp(36rem, 100vw, 144rem);
+	min-width: 36rem;
+	margin: 2rem 0rem 2rem 0rem;
+    padding: 0rem 0rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.row {
+    display: flex;
     place-items: center;
     justify-content: center;
     text-align: center;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 20rem 35rem 50rem;
-    max-width: 144rem;
-    gap: 8rem;
-    margin-top: 12rem;
+    max-width: 130rem;
+	width: clamp(30rem, 90vw, 130rem);
+	min-width: 30rem;
+    margin: 4rem 0rem;
+}
+
+.leftColumn {
+    place-items: center;
+    justify-content: left;
+    justify-self: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 110rem;
+	width: clamp(30rem, 75vw, 110rem);
+	min-width: 30rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.rightColumn {
     padding: 0rem 0rem;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 30rem;
+	width: clamp(20rem, 20vw, 30rem);
+	min-width: 20rem;
 }
 
 .title {
@@ -34,6 +69,9 @@
     color:var(--dark-blue);
     background-color: var(--light-gray);
     height: 10rem;
+    max-width: 100rem;
+	width: clamp(30rem, 70vw, 100rem);
+	min-width: 30rem;
 }
 
 .text {
@@ -41,84 +79,20 @@
     justify-content: center;
     justify-self: left;
     text-align: left;
-    margin: 0rem 3rem;
+    margin: 0rem 0rem;
     font-size: 1.9rem;
-    width: 90rem;
-}
-
-.leftColumn {
-    place-items: center;
-    justify-content: left;
-    justify-self: left;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6rem 14rem;
-    gap: 1rem;
-    width: 100rem;
-    margin: 0rem;
-}
-
-.leftColumn2 {
-    place-items: center;
-    justify-content: left;
-    justify-self: left;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 18rem 20rem;
-    gap: 1rem;
-    width: 100rem;
-    margin: 0rem;
-}
-
-.leftColumn3 {
-    place-items: center;
-    justify-content: left;
-    justify-self: left;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 26rem 20rem;
-    gap: 1rem;
-    width: 100rem;
-    margin: 0rem;
-}
-
-.rightColumn {
-    margin: 0rem 2rem;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.row1 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 100rem 30rem; 
-    grid-template-rows: 1fr;
-    gap: 8rem;
+    max-width: 100rem;
+	width: clamp(30rem, 70vw, 100rem);
+	min-width: 30rem;
 }
 
 .logo1 {
     justify-content: center;
     text-align: center;
     place-items: center;
-    height: 20rem;
-    width: 20rem;
-    margin: 0rem 9rem 0rem 0rem;
-}
-
-.row2 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 100rem 30rem; 
-    grid-template-rows: 1fr;
-    gap: 8rem;
+    height: 15rem;
+    width: 15rem;
+    margin: 0rem;
 }
 
 .title2 {
@@ -131,15 +105,18 @@
     color:var(--dark-blue);
     background-color: var(--light-gray);
     height: 18rem;
+    max-width: 100rem;
+	width: clamp(30rem, 70vw, 100rem);
+	min-width: 30rem;
 }
 
 .logo2 {
     justify-content: center;
     text-align: center;
     place-items: center;
-    height: 30rem;
-    width: 30rem;
-    margin: 0rem 12rem 0rem 0rem;
+    height: 20rem;
+    width: 20rem;
+    margin: 0rem;
 }
 
 .learnLink {
@@ -181,16 +158,6 @@
 	transition: 600ms ease all;
 }
 
-.row3 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 100rem 30rem; 
-    grid-template-rows: 1fr;
-    gap: 8rem;
-}
-
 .title3 {
     place-items: center;
     justify-content: center;
@@ -201,33 +168,45 @@
     color:var(--dark-blue);
     background-color: var(--light-gray);
     height: 26rem;
+    max-width: 100rem;
+	width: clamp(30rem, 70vw, 100rem);
+	min-width: 30rem;
 }
 
 .logo3 {
     justify-content: center;
     text-align: center;
     place-items: center;
-    height: 30rem;
-    width: 30rem;
-    margin: 0rem 9rem 0rem 0rem;
+    height: 20rem;
+    width: 20rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.title4 {
+    place-items: center;
+    justify-content: center;
+    justify-self: left;
+    text-align: left;
+    margin: 0rem 3rem;
+    font-size: 6rem;
+    color:var(--dark-blue);
+    background-color: var(--light-gray);
+    height: 18rem;
+    max-width: 100rem;
+	width: clamp(30rem, 70vw, 100rem);
+	min-width: 30rem;
+}
+
+.logo4 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 35rem;
+    width: 25rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
 @media screen and (max-width: 1024px) {
-    .parentContainer {
-        padding: 3rem 0rem;
-    }
-
-    .container {
-        grid-template-rows: 25rem 35rem 50rem;
-        gap: 4rem;
-    }
-
-    .title {
-        width: 45rem;
-        font-size: 3rem;
-        height: 5rem;
-        font-weight: 600;
-    }
     
     .text {
         margin: 0rem 3rem;
@@ -236,89 +215,90 @@
     }
     
     .leftColumn {
-        grid-template-rows: 6rem 14rem;
-        gap: 1rem;
-        width: 50rem;
-    }
-    
-    .leftColumn2 {
-        grid-template-rows: 10rem 25rem;
-        gap: 1rem;
-        width: 50rem;
-    }
-    
-    .leftColumn3 {
-        grid-template-rows: 14rem 30rem;
-        gap: 1rem;
-        width: 50rem;
+        max-width: 70rem;
+	    width: clamp(20rem, 75vw, 70rem);
+	    min-width: 20rem;
     }
     
     .rightColumn {
-        margin: 0rem 2rem;
-        place-items: center;
-        justify-content: center;
-        text-align: center;
+        max-width: 20rem;
+	    width: clamp(15rem, 20vw, 20rem);
+	    min-width: 15rem;
     }
     
-    .row1 {
-        grid-template-columns: 55rem 18rem; 
-        gap: 4rem;
+    .row {
+        max-width: 100rem;
+	    width: clamp(30rem, 90vw, 100rem);
+	    min-width: 30rem;
+    }
+
+    .title {
+        width: 48rem;
+        font-size: 3rem;
+        height: 5rem;
+        font-weight: 600;
+        justify-self: left;
+        text-align: left;
+        margin: 0rem;
+        padding: 0rem;
     }
     
     .logo1 {
-        height: 15rem;
-        width: 15rem;
-        margin: 0rem 5rem 0rem 0rem;
+        height: 13rem;
+        width: 13rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
     
-    .row2 {
-        grid-template-columns: 55rem 18rem; 
-        gap: 4rem;
-    }
     
     .title2 {
-        width: 45rem;
+        width: 48rem;
         font-size: 3rem;
         height: 10rem;
         font-weight: 600;
     }
     
     .logo2 {
-        height: 20rem;
-        width: 20rem;
-        margin: 0rem 8rem 0rem 0rem;
+        height: 14rem;
+        width: 14rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
     
-    .row3 {
-        grid-template-columns: 55rem 18rem; 
-        gap: 4rem;
-    }
     
     .title3 {
-        margin: 0rem 3rem;
+        width: 48rem;
         font-size: 3rem;
         height: 13rem;
         font-weight: 600;
     }
     
     .logo3 {
-        height: 20rem;
-        width: 20rem;
-        margin: 0rem 5rem 0rem 0rem;
+        height: 18rem;
+        width: 14rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .title4 {
+        width: 48rem;
+        font-size: 3rem;
+        height: 13rem;
+        font-weight: 600;
+    }
+    
+    .logo4 {
+        height: 18rem;
+        width: 14rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
 
 }
 
 @media screen and (max-width: 575px) {
     .container {
-        grid-template-rows: 50rem 70rem 90rem;
-        gap: 4rem;
+        flex-direction: column;
     }
 
-    .row1 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 30rem 18rem; 
-        gap: 2rem;
+    .row {
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         place-items: center;
@@ -329,7 +309,7 @@
     .title {
         justify-content: left;
         text-align: center;
-        width: 45rem;
+        width: 40rem;
         font-size: 2.5rem;
         height: 5rem;
         font-weight: 600;
@@ -343,13 +323,13 @@
         justify-items: center;
         margin: 0rem 3rem;
         font-size: 1.9rem;
-        width: 35rem;
+        width: 33rem;
     }
 
     .logo1 {
         height: 15rem;
         width: 15rem;
-        margin: 0;
+        margin: 4rem 0rem 0rem 0rem;
     }
     
     .leftColumn {
@@ -358,42 +338,17 @@
         place-items: center;
         justify-self: center;
         justify-items: center;
-        grid-template-rows: 4rem 20rem;
-        gap: 1rem;
         width: 45rem;
     }
-    
-    .leftColumn2 {
+
+    .rightColumn {
         justify-content: center;
         text-align: center;
         place-items: center;
         justify-self: center;
         justify-items: center;
-        grid-template-rows: 12rem 30rem;
-        gap: 1rem;
-        width: 50rem;
-    }
-    
-    .leftColumn3 {
-        justify-content: center;
-        text-align: center;
-        place-items: center;
-        justify-self: center;
-        justify-items: center;
-        grid-template-rows: 10rem 45rem;
-        gap: 1rem;
-        width: 50rem;
-    }
-    
-    .row2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 48rem 25rem; 
-        gap: 2rem;
-        justify-content: center;
-        text-align: center;
-        place-items: center;
-        justify-self: center;
-        justify-items: center;
+        width: 20rem;
+        height: 20rem;
     }
     
     .title2 {
@@ -401,28 +356,17 @@
         place-items: center;
         justify-self: center;
         justify-items: center;
-        text-align: center;
-        width: 35rem;
+        text-align: justify;
+        width: 33rem;
         font-size: 2.5rem;
         height: 8rem;
         font-weight: 600;
     }
     
     .logo2 {
-        height: 20rem;
-        width: 20rem;
-        margin: 0rem 0rem 4rem 0rem;
-    }
-    
-    .row3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 60rem 25rem; 
-        gap: 2rem;
-        justify-content: center;
-        text-align: center;
-        place-items: center;
-        justify-self: center;
-        justify-items: center;
+        height: 18rem;
+        width: 18rem;
+        margin: 4rem 0rem 0rem 0rem;
     }
     
     .title3 {
@@ -430,16 +374,34 @@
         place-items: center;
         justify-self: center;
         justify-items: center;
-        text-align: center;
-        width: 35rem;
+        text-align: justify;
+        width: 33rem;
         font-size: 2.5rem;
         height: 16rem;
         font-weight: 600;
     }
     
     .logo3 {
+        height: 18rem;
+        width: 14rem;
+        margin: 4rem 0rem 0rem 0rem;
+    }
+
+    .title4 {
+        justify-content: left;
+        place-items: center;
+        justify-self: center;
+        justify-items: center;
+        text-align: justify;
+        width: 33rem;
+        font-size: 2.5rem;
+        height: 12rem;
+        font-weight: 600;
+    }
+    
+    .logo4 {
         height: 20rem;
         width: 20rem;
-        margin: 0;
+        margin: 4rem 0rem 2rem 0rem;
     }
 }

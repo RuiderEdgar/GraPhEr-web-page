@@ -5,49 +5,55 @@ export const Novedades = () => {
 	return (
 		<>
 			<Versionado />
-			<main className={s.main}>
-				<h1 className={s.title}>Última Actualización</h1>
-				<section className={s.grid_container}>
-					<article className={s.article1}>
+			<div className={s.parentContainer}>
+				<div className={s.main}>
+				<h1 className={s.title}>Última Actualización (V 1.0)</h1>
+				<div className={s.newsRow1}>
+					<div className={s.article1}>
 						<p>
-							Hemos añadido los botones Importar y Exportar en la ventana
+							Hemos añadido los botones <b>Importar</b> y <b>Exportar</b> en la ventana
 							principal de la aplicación.
 						</p>
 						<p>
 							Con esto botones será más fácil ingresar y compartir entradas
 							contenidas en un archivo de texto.
 						</p>
-					</article>
-					<aside className={s.img_container}>
-						<img src="" alt="imagen de app" />
-					</aside>
-					<aside className={s.video_container}>
-						<video src="" alt="video de la actualización"></video>
-					</aside>
-					<article className={s.article2}>
+					</div>
+					<div className={s.img_container}>
+						<img className={s.image1} src="../assets/images/Novedades1_V1_0.png" alt="imagen de app" />
+					</div>
+				</div>
+				<div className={s.newsRow2}>
+					<div className={s.video_container}>
+						<video className={s.video1} src="../assets/videos/Novedades.mp4" alt="video de la actualización" controls  muted></video>
+					</div>
+					<div className={s.article2}>
 						<p>
-							Hemos añadido los modos especiales de visualización: Solución
-							parcial y Modo por modo.
+							Hemos añadido los modos especiales de visualización: <b>Solución
+							parcial</b> y <b>Modo por modo</b>.
 						</p>
 						<p>
 							Con el primero puedes visualizar la gráfica de una suma parcial de
 							la solución aproximada y con el segundo puedes visualizar la
-							gráfica de cada término.
+							gráfica de cada sumando de la solución.
 						</p>
-					</article>
-				</section>
-				<h1 className={s.second_title}>Descripción Completa</h1>
-				<section className={s.description}>
-					<p>
-						A continuación puedes encontrar todos los detalles de la última
-						actualización:
-					</p>
-					<ul className={s.ul}>
-						<li>Adición de los botones de Importación y Exportación</li>
-						<li>Adición de los modos especiales de visualización.</li>
-					</ul>
-				</section>
-			</main>
+					</div>
+				</div>
+				<div className={s.update}>
+					<h1 className={s.second_title}>Descripción Completa</h1>
+					<section className={s.description}>
+						<p>
+							A continuación puedes encontrar todos los detalles de la última
+							actualización:
+						</p>
+						<ul className={s.ul}>
+							<li>Adición de los botones de <b>Importación</b> y <b>Exportación</b>.</li>
+							<li>Adición de los <b>modos especiales de visualización</b>.</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+			</div>
 		</>
 	);
 }

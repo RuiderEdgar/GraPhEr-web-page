@@ -2,99 +2,105 @@
     width: 100vw;
     background-color: var(--light-gray);
     display: flex;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
     justify-content: center;
-    gap: 8rem;
     margin: 0;
     padding: 2rem 0rem;
 }
 
 .container {
-    margin-top: 12rem;
+    margin-top: 1rem;
+    height: auto;
+	min-height: 100vh;
     background-color:#EAEDEF;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 6rem 24rem 24rem 24rem 24rem 5rem 4rem 5rem 4rem;
     max-width: 144rem;
-    gap: 8rem;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .name {
     justify-self: center;
     text-align: center;
-    margin: 2rem 0rem;
-    font-size: 6rem;
+    font-size: clamp(4rem, 5rem, 6rem);
     color:var(--dark-blue);
     background-color: var(--light-gray);
     height: 10rem;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
+	margin: 2rem 0rem 2rem 0rem;
+    padding: 0rem;
 }
 
 .row1 {
+    display: flex;
     padding: 0;
-    margin: 2rem 3rem;
     justify-content: center;
     place-items: center;
     background-color: var(--cuaternary-dark-blue);
-    width: 130rem;
     height: 30rem;
     border-radius: 2rem;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
 .row2 {
+    display: flex;
     padding: 0;
-    margin: 2rem 3rem;
     justify-content: center;
     place-items: center;
     background-color: var(--light-dark-gray);
-    width: 130rem;
     height: 30rem;
     border-radius: 2rem;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
 .row3 {
+    display: flex;
     padding: 0;
-    margin: 2rem 3rem;
     justify-content: center;
     place-items: center;
     background-color: var(--light-purple);
-    width: 130rem;
     height: 30rem;
     border-radius: 2rem;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
 .row4 {
+    display: flex;
     padding: 0;
-    margin: 2rem 3rem;
     justify-content: center;
     place-items: center;
     background-color: var(--light-green);
-    width: 130rem;
     height: 30rem;
     border-radius: 2rem;
-}
-
-.download1 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1.5fr 1fr; 
-    gap: 9rem;
-    margin: 0rem 3rem;
-    padding: 0;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 
 .leftColumn {
     place-items: center;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+	width: clamp(36rem, 60vw, 80rem);
+	min-width: 36rem;
     margin: 0rem;
 }
 
@@ -102,12 +108,16 @@
     margin: 5rem 2rem;
     place-items: center;
     justify-content: center;
+    max-width: 60rem;
+	width: clamp(30rem, 30vw, 60rem);
+	min-width: 30rem;
 }
 
 .title1 {
     justify-self: center;
     text-align: center;
     font-size: 6rem;
+    margin: 0rem 0rem 2rem 0rem;
     font-weight: 800;
     color: var(--dark-blue);
 }
@@ -167,22 +177,12 @@
     width: 30rem;
 }
 
-.download2 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1.5fr 1fr; 
-    gap: 9rem;
-    margin: 0rem 3rem;
-    padding: 0;
-}
-
 .title2 {
     justify-self: center;
     text-align: center;
     font-size: 6rem;
     font-weight: 800;
+    margin: 0rem 0rem 2rem 0rem;
     color: var(--dark-gray);
 }
 
@@ -224,33 +224,6 @@
     background-color: var(--light-gray);
 }
 
-
-/*
-.li2:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -140%;
-	width: 130%;
-    z-index: -1;
-	height: 10rem;
-    color: var(--dark-gray);
-    background: var(--light-gray);
-	transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-}
-    
-
-.li2:hover::after {
-	left: -25%;
-    z-index: 0;
-    color: var(--light-dark-gray);
-}
-    */
-
 .logo2 {
     justify-content: center;
     text-align: center;
@@ -258,21 +231,11 @@
     width: 30rem;
 }
 
-.download3 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1.5fr 1fr; 
-    gap: 9rem;
-    margin: 0rem 3rem;
-    padding: 0;
-}
-
 .title3 {
     justify-self: center;
     text-align: center;
     font-size: 6rem;
+    margin: 0rem 0rem 2rem 0rem;
     font-weight: 800;
     color: var(--purple);
 }
@@ -366,22 +329,12 @@
   transition:600ms ease all;
 }
 
-.download4 {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 1.5fr 1fr; 
-    gap: 9rem;
-    margin: 0rem 3rem;
-    padding: 0;
-}
-
 .title4 {
     justify-self: center;
     text-align: center;
     font-size: 6rem;
     font-weight: 800;
+    margin: 0rem 0rem 2rem 0rem;
     color: var(--dark-green);
 }
 
@@ -471,21 +424,33 @@
 .name2 {
     justify-self: left;
     text-align: left;
-    margin: 2rem 2.5rem 0rem 2.5rem;
+    margin: 2rem 0rem 0rem 0rem;
     font-size: 5rem;
     color:var(--dark-blue);
     height: 8rem;
 }
 
 .text {
-    justify-self: left;
-    margin: 0.5rem 3rem 0.5rem 3rem;
+    text-align: left;
+    justify-content: left;
+    justify-items: left;
+    place-items: left;
+    margin: 0.5rem 0rem 0.5rem 0rem;
     font-size: 2.5rem;
 }
 
 .buttonText {
     text-decoration: none;
     color: var(--light-gray);
+    padding: 2rem 0rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 144rem;
+	width: clamp(36rem, 90vw, 144rem);
+	min-width: 36rem;
 }
 
 .download {
@@ -588,27 +553,53 @@
 
 @media screen and (max-width: 1024px) {
     .name {
-        width: 75rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+        height: 8rem;
+        margin: 2rem 0rem 0rem 0rem;
         font-size: var(--header);
     }
 
-    .row1 {
-        margin:-8rem 3rem 0rem 3rem;
-        width: 70rem;
-        height: 30rem;
-    }
-
-    .download1 {
-        grid-template-columns: 1.5fr 1fr; 
-        gap: 2rem;
-        margin: 0rem 1rem;
-        padding: 0;
+    .leftColumn {
+        max-width: 40rem;
+        width: clamp(20rem, 50vw, 40rem);
+        min-width: 20rem;
+        margin: 0rem;
     }
 
     .rightColumn {
-        margin: 6rem 0rem;
-        place-items: center;
-        justify-content: center;
+        max-width: 25rem;
+        width: clamp(15rem, 40vw, 25rem);
+        min-width: 15rem;
+    }
+
+    .row1 {
+        margin: 0rem 0rem 2rem 0rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+        height: 25rem;
+    }
+
+    .li1, .li2 {
+        height: 6.5rem;
+        padding: 0.5rem 4rem;
+        max-width: 50rem;
+        width: clamp(20rem, 38rem, 50rem);
+        min-width: 20rem;
+    }
+
+    .li1 a, .li2 a {
+        border-radius: 1rem;
+        font-size: 3.3rem;
+        max-width: 50rem;
+        width: clamp(20rem, 38rem, 50rem);
+        min-width: 20rem;
+    }
+
+    .li1:hover, .li2:hover {
+        height: 6rem;
     }
 
     .logo1 {
@@ -617,17 +608,13 @@
     }
 
     .row2 {
-        margin:-1rem 3rem 5rem 3rem;
-        width: 70rem;
-        height: 30rem;
+        margin: 0rem 0rem 2rem 0rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+        height: 25rem;
     }
 
-    .download2 {
-        grid-template-columns: 1.5fr 1fr; 
-        gap: 2rem;
-        margin: 0rem 1rem;
-        padding: 0;
-    }
 
     .logo2 {
         height: 16rem;
@@ -635,16 +622,11 @@
     }
 
     .row3 {
-        margin:0rem 3rem 4rem 3rem;
-        width: 70rem;
-        height: 30rem;
-    }
-
-    .download3 {
-        grid-template-columns: 1.5fr 1fr; 
-        gap: 2rem;
-        margin: 0rem 1rem;
-        padding: 0;
+        margin: 0rem 0rem 2rem 0rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+        height: 25rem;
     }
 
     .textTemporal {
@@ -658,16 +640,11 @@
     }
 
     .row4 {
-        margin:-1rem 3rem 2rem 3rem;
-        width: 70rem;
-        height: 30rem;
-    }
-
-    .download4 {
-        grid-template-columns: 1.5fr 1fr; 
-        gap: 2rem;
-        margin: 0rem 1rem;
-        padding: 0;
+        margin: 0rem 0rem 2rem 0rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+        height: 25rem;
     }
 
     .logo4 {
@@ -676,19 +653,29 @@
         width: 24rem;
     }
 
+    .info {
+        margin: 2rem 0rem 0rem 0rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
+    }
+
     .name2 {
-        width: 65rem;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
         justify-self: center;
-        margin: -5rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 4rem 0rem;
         font-size: var(--header);
         height: 6rem;
     }
 
     .text {
-        justify-self: left;
-        justify-self: justify;
+        max-width: 75rem;
+	    width: clamp(30rem, 90vw, 75rem);
+	    min-width: 30rem;
         text-align: justify;
-        margin: 0rem 6rem 2rem 6rem;
+        margin: 0rem 0rem 2rem 0rem;
         font-size: 2.5rem;
     }
 
@@ -701,45 +688,36 @@
 }
 
 @media screen and (max-width: 575px) {
-    .parentContainer {
-        gap: 0.5rem;
-        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
-    }
-
-    .container {
-        gap: 0.5rem;
-        grid-template-rows: 6rem 24rem 24rem 40rem 40rem 8rem 8rem 11rem 8rem;
-    }
 
     .name {
         width: 35rem;
         font-size: var(--title);
-    }
-
-
-    .row1 {
-        margin:0rem 3rem;
-        width: 37rem;
-        height: 20rem;
+        margin: 1rem 0rem;
     }
 
     .leftColumn {
         margin: 1rem 0rem;
-        gap: 1rem;
-    }
-
-    .download1 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0fr; 
-        gap: 0rem;
-        margin: 0rem 1rem 0rem 1rem;
-        padding: 0;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .rightColumn {
+        place-items: center;
+        justify-content: center;
         margin: 0rem 0rem;
-        height: 0;
-        width: 0;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
+    }
+
+    .row1 {
+        flex-direction: column;
+        margin:0rem 0rem 2rem 0rem;
+        height: 40rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .title1 {
@@ -767,14 +745,18 @@
     }
 
     .logo1 {
-        height: 0rem;
-        width: 0rem;
+        margin: 2rem 0rem 0rem 0rem;
+        height: 16rem;
+        width: 24rem;
     }
 
     .row2 {
-        margin:0rem 3rem;
-        width: 37rem;
-        height: 20rem;
+        flex-direction: column;
+        margin:0rem 0rem 2rem 0rem;
+        height: 40rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .download2 {
@@ -804,22 +786,18 @@
     }
 
     .logo2 {
-        height: 0rem;
-        width: 0rem;
+        margin: 2rem 0rem 0rem 0rem;
+        height: 16rem;
+        width: 24rem;
     }
 
     .row3 {
-        margin:0rem 3rem;
-        width: 37rem;
-        height: 35rem;
-    }
-
-    .download3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0fr; 
-        gap: 0rem;
-        margin: 0rem 1rem 0rem 1rem;
-        padding: 0;
+        flex-direction: column;
+        margin:0rem 0rem 2rem 0rem;
+        height: 50rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .title3 {
@@ -841,8 +819,9 @@
     }
 
     .logo3 {
-        height: 0rem;
-        width: 0rem;
+        margin: 2rem 0rem 0rem 0rem;
+        height: 16rem;
+        width: 24rem;
     }
 
     .textTemporal {
@@ -850,17 +829,12 @@
     }
 
     .row4 {
-        margin:0rem 3rem;
-        width: 37rem;
-        height: 35rem;
-    }
-
-    .download4 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0fr; 
-        gap: 0rem;
-        margin: 0rem 1rem 0rem 1rem;
-        padding: 0;
+        flex-direction: column;
+        margin:0rem 0rem 2rem 0rem;
+        height: 50rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .title4 {
@@ -882,22 +856,34 @@
     }
 
     .logo4 {
-        height: 0rem;
-        width: 0rem;
+        margin: 2rem 0rem 0rem 0rem;
+        height: 16rem;
+        width: 24rem;
     }
+
+    .info {
+        margin: 2rem 0rem 0rem 0rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
+    }
+
     .name2 {
-        width: 35rem;
-        margin: 0rem 0rem 0rem 0rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
+        margin: 0rem 0rem 2rem 0rem;
         font-size: var(--subtitle);
         height: 3rem;
     }
 
     .text {
-        justify-self: justify;
         text-align: justify;
-        margin: 2rem 6rem 2rem 6rem;
+        margin: 1rem 0rem 1rem 0rem;
         font-size: var(--body-text);
-        width: 35rem;
+        max-width: 37rem;
+	    width: clamp(30rem, 90vw, 37rem);
+	    min-width: 30rem;
     }
 
     .buttonText {
