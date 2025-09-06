@@ -1,7 +1,6 @@
 import { Notas } from "./components";
 import { TemarioTeoria } from "./components/TemarioTeoria";
 import s from "./Teoria.module.css";
-import { InlineMath } from 'react-katex'; 
 
 export const Teoria = () => {
 	return (
@@ -28,6 +27,6 @@ export const Teoria = () => {
 				</article>
 			</main>
 		</div>
-	
+
 	)
 }

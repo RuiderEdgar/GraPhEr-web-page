@@ -1,4 +1,5 @@
 import s from './Footer.module.css';
+import github_icon from "/assets/icons/github-mark.svg";
 
 export const Footer = () => {
 
@@ -25,7 +26,7 @@ export const Footer = () => {
                     </div>
 
                     <div className={s.footerContainerImage}>
-                        <a href="https://github.com/LuisNavaFisBio/GraPhEr" target="blank_" className={s.footerImageLink}> <img src="../../../assets/icons/github-mark.svg" className={s.footerImage} /> </a>
+                        <a href="https://github.com/LuisNavaFisBio/GraPhEr" target="blank_" className={s.footerImageLink}> <img src={github_icon} className={s.footerImage} /> </a>
                     </div>
                 </div>
             </footer>

@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import s from './Navbar.module.css';
+import logoPrincipal from "/assets/logos/LogoGraPhEr_Blue.svg";
+import list_icon from '/assets/icons/list.svg';
+import close_icon from '/assets/icons/close.svg';
 
 export const Navbar = () => {
 
@@ -27,7 +30,7 @@ export const Navbar = () => {
 						<NavLink to="/homepage">
 							<img
 								className={s.logo_desktop}
-								src="../../../assets/logos/LogoGraPhEr_Blue.svg"
+								src={logoPrincipal}
 								alt="logo principal"
 							/>
 						</NavLink>
@@ -104,8 +107,8 @@ export const Navbar = () => {
 								className={s.icon_menu}
 								src={
 									menuState
-										? "/assets/icons/list.svg"
-										: "/assets/icons/close.svg"
+										? {list_icon}
+										: {close_icon}
 								}
 								alt="menu navegacion"
 								onClick={toggleMenu}

@@ -1,4 +1,5 @@
-import s from './Homepage.module.css';
+import s from './HomePage.module.css';
+import principal_gif from "/assets/gif/Principal.gif";
 
 export const HomePage = () => {
 	return (
@@ -21,7 +22,7 @@ export const HomePage = () => {
 					</div>
 
 					<div className={s.column}>
-						<img className={s.video1} src="../../../assets/gif/Principal.gif" alt="Video muestra" />
+						<img className={s.video1} src={principal_gif} alt="Video muestra" />
 						{/* <video className={s.video1} src="../assets/videos/Principal.mp4" alt="Video muestra" controls  muted poster="../assets/images/thumbnailPrincipal.png"></video> */}
 						<p className={s.learn}>
 						Aprende más sobre los escenarios de uso visitando la sección de <a href="/teoria" className={s.learnLink}> Teoría</a>

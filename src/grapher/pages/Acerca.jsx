@@ -1,4 +1,7 @@
 import s from "./Acerca.module.css";
+import app_image from "/assets/images/ImagenApp.png";
+import grafica3d_image from "/assets/images/grafica3d.png";
+import grafica2d_image from "/assets/images/grafica2d.png";
 
 export const AcercaDe = () => {
 	return (
@@ -15,7 +18,7 @@ export const AcercaDe = () => {
 					<div className={s.img_container1}>
 						<img
 							className={s.img_app1}
-							src="/assets/images/ImagenApp.png"
+							src={app_image}
 							alt="imagen app"
 						/>
 					</div>
@@ -57,7 +60,7 @@ export const AcercaDe = () => {
 					<div className={s.img_container2}>
 						<img
 							className={s.img_app2}
-							src="/assets/images/grafica3d.png"
+								src={grafica3d_image}
 							alt="imagen graficas 3d"
 						/>
 					</div>
@@ -67,7 +70,7 @@ export const AcercaDe = () => {
 					<div className={s.img_container3}>
 						<img
 							className={s.img_app3}
-							src="/assets/images/grafica2d.png"
+							src={grafica2d_image}
 					alt="imagen graficas 2d"
 						/>
 					</div>
@@ -80,7 +83,7 @@ export const AcercaDe = () => {
 						</p>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 		</div>

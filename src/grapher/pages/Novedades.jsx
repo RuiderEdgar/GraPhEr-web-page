@@ -1,5 +1,7 @@
 import { Versionado } from "../components"
 import s from "./Novedades.module.css"
+import novedades1_V1_0_image from "/assets/images/Novedades1_V1_0.png";
+import novedades_video from "/assets/videos/Novedades.mp4";
 
 export const Novedades = () => {
 	return (
@@ -20,12 +22,12 @@ export const Novedades = () => {
 						</p>
 					</div>
 					<div className={s.img_container}>
-						<img className={s.image1} src="../assets/images/Novedades1_V1_0.png" alt="imagen de app" />
+						<img className={s.image1} src={novedades1_V1_0_image} alt="imagen de app" />
 					</div>
 				</div>
 				<div className={s.newsRow2}>
 					<div className={s.video_container}>
-						<video className={s.video1} src="../assets/videos/Novedades.mp4" alt="video de la actualización" controls  muted></video>
+						<video className={s.video1} src={novedades_video} alt="video de la actualización" controls  muted></video>
 					</div>
 					<div className={s.article2}>
 						<p>

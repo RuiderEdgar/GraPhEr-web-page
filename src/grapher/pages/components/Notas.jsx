@@ -1,11 +1,12 @@
 import { InlineMath, BlockMath } from "react-katex";
 import s from "../Teoria.module.css";
+import grafica_image from "/assets/images/Grafica.svg";
 
 export const Notas = () => {
   return (
     <>
         <h1 className={s.title} id="tag1"> Ecuaciones Diferenciales Parciales </h1>
-  
+
         <p className={s.text}> Varios fenómenos de la naturaleza han sido modelados a través de Ecuaciones Diferenciales Parciales (EDP), es decir, ecuaciones donde aparecen derivadas de una función con respecto de sus variables; por ejemplo, la ecuación de onda se ha utilizado para modelar fenómenos como la vibración de cuerdas o la propagación de ondas en distintos medios.
         </p>
         <p className={s.text}> Estas ecuaciones determinan el comportamiento general del fenómeno, sin embargo, en muchas ocasiones estamos interesados en estudiar el comportamiento de un problema específico. Por lo anterior, además de la EDP es necesario agregar al modelo matemático las denominadas condiciones iniciales y/o condiciones de frontera; las <strong>condiciones iniciales</strong> determinan el estado del sistema en un instante dado, mientras que las <strong>condiciones de frontera</strong> indican el comportamiento del fenómeno en los extremos del dominio. En particular, las condiciones iniciales generalmente se reducen a dos tipos:
@@ -94,7 +95,7 @@ export const Notas = () => {
         <p className={s.text}>
             función que satisface las condiciones de frontera si y solo si
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
             <BlockMath math="A=-\frac{30}{L}, \quad B = 20," />
         </div>
         <p className={s.text}>
@@ -195,14 +196,14 @@ export const Notas = () => {
                   q(x,t) = \sum_{n=1}^\infty q_n(t) \sin(\lambda_n x),
           "/>
         </div>
-        
+
         <p className={s.text}>
             donde <InlineMath math="b_n" /> y <InlineMath math="q_n(t)" /> se obtienen al aplicar las propiedades de ortogonalidad de la base; cuando estas expresiones se sustituyen en el problema se encuentra la siguiente EDO para los coeficientes <InlineMath math="B_n(t)" />:
         </p>
         <div className={s.math}> <BlockMath math="
             \frac{d B_n(t)}{dt}+\frac{n^2}{\pi}B_n = q_n(t)
         " /></div>
-        
+
         <p className={s.text}>
             con la condición inicial <InlineMath math="B_n(0)=b_n" />.
         </p>
@@ -212,11 +213,11 @@ export const Notas = () => {
         <div className={s.math}> <BlockMath math="
             u(x,t)=\sum_{n=1}^\infty \sin(nx)\exp\left(-\frac{n^2 t}{\pi}\right) \left[A_n+\int_0^t B_n(s) \exp\left(\frac{n^2 s}{\pi}\right)\ ds \right]
         " /></div>
-        
+
         <p className={s.text}>
             donde:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
           <BlockMath math="A_n = \frac{2}{\pi}\int_0^\pi \sin(nx)\ dx" />
           <br></br>
           <BlockMath math="B_n(s) = \frac{2}{\pi}\int_0^\pi q(x,s) \sin(nx)\ dx." />
@@ -231,7 +232,7 @@ export const Notas = () => {
         <p className={s.text}>
             La transformada de Fourier, <InlineMath math="\mathcal{F}\{f\}(w)=\hat{f}(w)" />, de una función <InlineMath math="f(x)" /> se define como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \hat{f}(w)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty f(x)e^{-iwx}\ dx,
         " />
@@ -239,7 +240,7 @@ export const Notas = () => {
         <p className={s.text}>
             donde el factor que aparece antes de la integral es necesario para que la transformada inversa devuelva la función original (es decir, para que ambas funciones sean inversas una de la otra); la transformada inversa se define como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f(x)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty e^{iwx} \hat{f}(w)\ dw.
         " />
@@ -247,7 +248,7 @@ export const Notas = () => {
         <p className={s.text}>
             Ahora podemos resolver el problema de onda para una cuerda infinita:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}, \ (-\infty < x < \infty,\ t>0)
         " />
@@ -255,7 +256,7 @@ export const Notas = () => {
         <p className={s.text}>
             bajo las condiciones iniciales <InlineMath math="u(x,0)=f(x)" /> y <InlineMath math="u_t(x,0)=g(x)" />. Si fijamos <InlineMath math="t" /> y aplicamos la transformada de Fourier a la ecuación diferencial junto con sus condiciones iniciales obtenemos una EDO en esta variable fijada, es decir, obtenemos la ecuación:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \frac{d^2 \hat{u}(w, t)}{d t^2} +c^2 w^2 \hat{u}(w,t) = 0
         " />
@@ -263,7 +264,7 @@ export const Notas = () => {
         <p className={s.text}>
             sujeta a las condiciones iniciales <InlineMath math="\hat{u}(w,0)=\hat{f}(w)" /> y <InlineMath math="\hat{u}_t(w,0)=\hat{g}(w)" />. La solución de dicha ecuación es:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \hat{u}(w, t) =\hat{f}(w)\cos(cwt)+\frac{1}{cw}\hat{g}(w) \sin(cwt),
         " />
@@ -271,7 +272,7 @@ export const Notas = () => {
         <p className={s.text}>
             por lo que la solución de la EDP está dada simplemente por la transformada inversa de <InlineMath math="\hat{u}(w, t)" />, esto es:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             u(x,t) = \frac{1}{\sqrt{2\pi}} \int_{-\infty} ^\infty e^{iwx} \left[\hat{f}(w)\cos(cwt)+\frac{1}{cw}\hat{g}(w) \sin(cwt)\right] dx
         " />
@@ -280,7 +281,7 @@ export const Notas = () => {
         <p className={s.text}>
             Cuando el problema involucra solo la mitad de la recta real se utilizan las transformadas seno y coseno dependiendo de la naturaleza de las condiciones, ya que es necesario contar con toda la información necesaria que requiera una determinada transformada de acuerdo a las fórmulas correspondientes. A continuación se muestran las definiciones de estas transformadas y sus inversas:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
           <BlockMath math="  \hat{f}_s(w)= \sqrt{\frac{2}{\pi}}\int_{0}^\infty f(x)\sin(wx)\ dx,  " />
           <br></br>
           <BlockMath math=" f(x)= \sqrt{\frac{2}{\pi}}\int_{0}^\infty \hat{f}_s(w)\sin(wx)\ dx, " />
@@ -294,7 +295,7 @@ export const Notas = () => {
         <p className={s.text}>
             La transformada de Laplace, <InlineMath math="\mathcal{L}\{f\}(s)" />, de una función <InlineMath math="f(x)" /> se define como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \mathcal{L}\{f\}(s)=\int_{0}^\infty f(s)e^{-st}\ dt;
         " />
@@ -305,7 +306,7 @@ export const Notas = () => {
         <p className={s.text}>
             Ahora podemos resolver el problema de onda para una cuerda infinita:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \frac{\partial u}{\partial t} = c^2 \frac{\partial^2 u}{\partial x^2}, \ (0 < x < \infty,\ t>0)
         " />
@@ -313,7 +314,7 @@ export const Notas = () => {
         <p className={s.text}>
             bajo las condiciones <InlineMath math="u(0,t)=f(t)" /> y <InlineMath math="u(x,0)=0" />. Si fijamos <InlineMath math="x" /> y aplicamos la transformada de Laplace en la variable <InlineMath math="t" /> a la ecuación diferencial, obtenemos una EDO en la variable fijada, es decir, obtenemos la ecuación:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             c^2\frac{d^2 U(x, s)}{d x^2}- s U(x,s) = 0
         " />
@@ -321,7 +322,7 @@ export const Notas = () => {
         <p className={s.text}>
             sujeta a la condición <InlineMath math="U(0,s)=F(s)" />; es importante notar que la segunda condición necesaria para resolver esta EDO de segundo orden es una condición impuesta para que la solución tenga sentido físico, es decir, requerimos que la solución esté acotada en todo el dominio de la variable <InlineMath math="x" />. La solución general de la EDO es:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             U(x,s) =A(s) e^{\displaystyle\sqrt{s}x/c}+B(s)e^{ \displaystyle -\sqrt{s}x/c},
         " />
@@ -329,7 +330,7 @@ export const Notas = () => {
         <p className={s.text}>
             como la solución debe ser acotada entonces <InlineMath math="A(s)=0" /> y al aplicar la segunda condición obtenemos que <InlineMath math="B(s)=F(s)" />, por lo que la solución es:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             U(x,s)= F(s)e^{\displaystyle -\sqrt{s}x/c}.
         " />
@@ -337,7 +338,7 @@ export const Notas = () => {
         <p className={s.text}>
             Por lo tanto, <InlineMath math="u(x,t)" /> debe ser una convolución (mejor dicho, podemos buscar la solución en forma de una convolución para simplificar el proceso de hallar la transformada inversa). Al buscar en tablas encontramos que:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             u(x,t) = f(t) * \frac{xe^{-x^2/4c^2 t}}{2c\sqrt{\pi}t^{3/2}}
         " />
@@ -345,7 +346,7 @@ export const Notas = () => {
         <p className={s.text}>
             o de manera explícita:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             u(x,t) = \frac{x}{2c\sqrt{\pi}} \int_0^t \frac{1}{(t-\tau)^{3/2}} \exp\left(-\frac{x^2}{4c^2(t-\tau)}\right) d\tau
         " />
@@ -358,7 +359,7 @@ export const Notas = () => {
         <p className={s.text}>
             El éxito de los métodos de separación de variables y expansión en funciones propias radica en la capacidad de las funciones propias para reconstruir cualquier función continua a trozos en un determinado intervalo. Por ello, en esta sección se presenta la función sierra en su expansión en las bases de Fourier, de Bessel de orden <InlineMath math="n" /> y de Legendre. La función sierra está definida como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f(x)=\begin{cases} 1-2x & \text{ si } 0<x\leq 1, \\ f(x+1) & \text{ en otro caso.} \end{cases}
         " />
@@ -366,13 +367,13 @@ export const Notas = () => {
         <p className={s.text}>
             y su gráfica se muestra a continuación:
         </p>
-        <img src="../assets/images/Grafica.svg" width="400"></img>
+        <img src={grafica_image} width="400"></img>
 
         <h2 className={s.titletheme} id="tag2.1">Base de Fourier</h2>
         <p className={s.text}>
             Dado que la función sierra es una función con periodo <InlineMath math="2" /> (en realidad es periodo unitario, pero si una función es periódica con periodo <InlineMath math="a" /> entonces también es periódica con periodo <InlineMath math="2a" />), podemos expandirla en términos de la base Fourier como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f(x)= a_0 +\sum_{n=0}^\infty \left[a_n\cos(n\pi x)+b_n\sin(n\pi x)\right]
         " />
@@ -380,7 +381,7 @@ export const Notas = () => {
         <p className={s.text}>
             donde:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             \begin{align*}
                 a_0 & = \frac{1}{2}\int_{-1}^1 f(x)\ dx \\
@@ -392,7 +393,7 @@ export const Notas = () => {
         <p className={s.text}>
             es sencillo concluir que <InlineMath math="a_0=a_n=0" />, por otro lado:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math=" b_n = -\int_{-1}^0 (1+2x)\sin(n\pi x)\ dx +\int_{0}^1 (1-2x)\sin(n\pi x)\ dx  " />
         <br></br>
         <BlockMath math=" = 2\int_{0}^1\sin(n\pi x)\ dx -2\int_{-1}^1 x\sin(n\pi x)\ dx
@@ -408,7 +409,7 @@ export const Notas = () => {
         <p className={s.text}>
             Por lo tanto:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f(x) = \sum_{n=1}^\infty \frac{2}{n\pi}\left[1+(-1)^n\right] \sin(n\pi x).
         " />
@@ -418,7 +419,7 @@ export const Notas = () => {
         <p className={s.text}>
             En este caso podemos construir una representación de la función solo para <InlineMath math="x\geq 0" /> debido a que las funciones de la base Bessel pueden construir funciones en intervalos de la forma <InlineMath math="[0,a]" />. En este caso la representación depende del orden <InlineMath math="n" />, así que de manera general se tiene:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f_n(x) = \sum_{j=1}^\infty b_j J_{n}\left(\frac{\alpha_{nj}}{a} x\right)
         " />
@@ -426,7 +427,7 @@ export const Notas = () => {
         <p className={s.text}>
             con:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             b_j= \frac{2}{a^2 J_{n+1}^2(\alpha_{nj})}\int_0^a f(x) J_{n}\left(\frac{\alpha_{nj}}{a} x\right) x\ dx.
         " />
@@ -434,7 +435,7 @@ export const Notas = () => {
         <p className={s.text}>
             En particular si escogemos el intervalo como <InlineMath math="[0,2]" /> y el orden como <InlineMath math="n=0" />, obtenemos:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f_0(x) = \sum_{j=1}^\infty b_j J_{0}\left(\frac{\alpha_{j}}{a} x\right)
         " />
@@ -442,7 +443,7 @@ export const Notas = () => {
         <p className={s.text}>
             donde <InlineMath math="\alpha_{j}" /> es el <InlineMath math="j" />-ésimo cero de la función de Bessel de orden cero y:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             b_j=\frac{1}{2 J_{1}^2(\alpha_{j})}\int_0^2 f(x) J_{0}\left(\frac{\alpha_{j}}{2} x\right) x\ dx.
         " />
@@ -452,7 +453,7 @@ export const Notas = () => {
         <p className={s.text}>
             Finalmente, podemos expresar la función sierra en el intervalo <InlineMath math="[-1,1]" /> en términos de la base de los polinomios de Legendre. La expansión en este caso se ve como:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f(x) = \sum_{n=0}^\infty c_n P_n(x)
         " />
@@ -460,7 +461,7 @@ export const Notas = () => {
         <p className={s.text}>
             donde:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             c_n = \frac{2n+1}{2}\int_{-1}^1 f(x)P_n(x)dx.
         " />
@@ -468,7 +469,7 @@ export const Notas = () => {
         <p className={s.text}>
             Por otro lado, la expansión en términos de los polinomios asociados de Legendre de orden <InlineMath math="m" /> está dada por:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             f_m(x) = \sum_{n=m}^\infty c_n P^m_n(x)
         " />
@@ -476,7 +477,7 @@ export const Notas = () => {
         <p className={s.text}>
             donde:
         </p>
-        <div className={s.math}> 
+        <div className={s.math}>
         <BlockMath math="
             c_n = \frac{2n+1}{2}\frac{(n-m)!}{(n+m)!}\int_{-1}^1 f(x)P_n^m(x)dx.
         " />
