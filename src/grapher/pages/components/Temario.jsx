@@ -1,5 +1,5 @@
 import s from "../Documentacion.module.css";
-import { indiceDocumentatio } from "../../data/IndiceDocumentation.js";
+import { indiceDocumentatio } from "../../data/indiceDocumentation.js";
 
 export const Temario = () => {
 	const dividedSeccion = (tema) => {
