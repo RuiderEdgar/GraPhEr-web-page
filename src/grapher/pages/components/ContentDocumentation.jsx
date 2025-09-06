@@ -1,12 +1,12 @@
 import { InlineMath, BlockMath } from "react-katex";
-import figura1 from "/assets/images/figura1.png";
-import figura2 from "/assets/images/figura2.png";
-import figura3 from "/assets/images/figura3.png";
-import figura4 from "/assets/images/figura4.png";
-import figura5 from "/assets/images/figura5.png";
-import figura6 from "/assets/images/figura6.png";
-import figura7 from "/assets/images/figura7.png";
-import figura8 from "/assets/images/figura8.png";
+import figura1 from "/assets/images/Figura1.png";
+import figura2 from "/assets/images/Figura2.png";
+import figura3 from "/assets/images/Figura3.png";
+import figura4 from "/assets/images/Figura4.png";
+import figura5 from "/assets/images/Figura5.png";
+import figura6 from "/assets/images/Figura6.png";
+import figura7 from "/assets/images/Figura7.png";
+import figura8 from "/assets/images/Figura8.png";
 import s from "../Documentacion.module.css";
 
 export const ContentDocumentation = () => {
